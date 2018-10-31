@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastard Café</title>
+</head>
+
+<body>
+  <section id="eventcontainer">
+
+   </section>
+      <div class="image">
+       <img src="">
+   </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", getJson);
+
+let page;
+
+async function getJson() {
+let eventcontainer = document.querySelector("#eventcontainer");
+
+let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/bastard_cafe/172");
+page = await jsonObject.json();
+
+
+document.querySelector("#eventcontainer").innerHTML = page.content.rendered;
+document.querySelector("img").src = page.billede;
+
+
+
+}
+</script>
+</body>
+</html>
