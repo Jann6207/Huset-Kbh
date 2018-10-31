@@ -27,8 +27,5 @@
             //title
             document.querySelector("img").title = page.acf.billede.title;
 
-            //Video
-            document.querySelector(".video_container").innerHTML = page.acf.video;
-
 
         }
