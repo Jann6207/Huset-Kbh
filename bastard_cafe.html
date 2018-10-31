@@ -27,9 +27,9 @@ page = await jsonObject.json();
 
 
 document.querySelector("#eventcontainer").innerHTML = page.content.rendered;
-document.querySelector("img").src = page.billede;
+document.querySelector("img").src = page.acf.billede.url;
 
-
+    console.log(page.acf.billede.url)
 
 }
 </script>
