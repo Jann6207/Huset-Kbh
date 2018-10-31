@@ -5,7 +5,7 @@
         //henter json fil fra WP url
         async function getJson() {
 
-            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/bastard_cafe/172");
+            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/xenon_vox/190");
             page = await jsonObject.json();
 
             //indsæt header info
@@ -18,7 +18,7 @@
 
             //indsætter content i valgt html class
 
-            document.querySelector(".bastard_content").innerHTML = page.content.rendered;
+            document.querySelector(".xenon_vox_content").innerHTML = page.content.rendered;
 
             //Billede url
             document.querySelector("img").src = page.acf.billede.url;
