@@ -8,7 +8,7 @@
             let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/generelle_sporgsmal/209");
             page = await jsonObject.json();
 
-            //indsæt header info
+//            indsæt header info
 
             document.querySelector(".site_header").textContent = page.acf.header;
 
