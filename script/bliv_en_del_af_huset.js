@@ -5,30 +5,36 @@
         //henter json fil fra WP url
         async function getJson() {
 
-            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/bliv_en_del_af_huset/210");
+            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/bliv_en_del_af_huset");
             page = await jsonObject.json();
 
-            //indsæt header info
+            post210Output();
 
-            document.querySelector(".site_header").textContent = page.acf.header;
+        }
+
+function post210Output() {
+
+    let post210 = page.find(x => x.id == '210');
+
+                //indsæt header info
+
+            document.querySelector(".site_header").textContent = post210.acf.header;
 
             //indsæt tag-line info
 
-            document.querySelector(".tag_line").textContent = page.acf.tagline;
+            document.querySelector(".tag_line").textContent = post210.acf.tagline;
 
             //indsætter content i valgt html class
 
-            document.querySelector(".bliv_en_del_af_huset_content").innerHTML = page.content.rendered;
+            document.querySelector(".bliv_en_del_af_huset_content").innerHTML = post210.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = page.acf.billede.url;
+            document.querySelector("img").src = post210.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = page.acf.billede.alt;
+            document.querySelector("img").alt = post210.acf.billede.alt;
             //title
-            document.querySelector("img").title = page.acf.billede.title;
+            document.querySelector("img").title = post210.acf.billede.title;
 
             //Video
-            document.querySelector(".video_container").innerHTML = page.acf.video;
-
-
-        }
+            document.querySelector(".video_container").innerHTML = post210.acf.video;
+}
