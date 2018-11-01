@@ -5,30 +5,37 @@
         //henter json fil fra WP url
         async function getJson() {
 
-            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/salon_K/215");
+            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/salon_K");
             page = await jsonObject.json();
 
-            //indsæt header info
 
-            document.querySelector(".site_header").textContent = page.acf.header;
+post215Output();
+
+        }
+
+function post215Output() {
+
+    let post215 = page.find(x => x.id == '215');
+
+                //indsæt header info
+
+            document.querySelector(".site_header").textContent = post215.acf.header;
 
             //indsæt tag-line info
 
-            document.querySelector(".tag_line").textContent = page.acf.tagline;
+            document.querySelector(".tag_line").textContent = post215.acf.tagline;
 
             //indsætter content i valgt html class
 
-            document.querySelector(".salon_k_content").innerHTML = page.content.rendered;
+            document.querySelector(".salon_k_content").innerHTML = post215.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = page.acf.billede.url;
+            document.querySelector("img").src = post215.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = page.acf.billede.alt;
+            document.querySelector("img").alt = post215.acf.billede.alt;
             //title
-            document.querySelector("img").title = page.acf.billede.title;
+            document.querySelector("img").title = post215.acf.billede.title;
 
             //Video
-            document.querySelector(".video_container").innerHTML = page.acf.video;
-
-
-        }
+            document.querySelector(".video_container").innerHTML = post215.acf.video;
+}
