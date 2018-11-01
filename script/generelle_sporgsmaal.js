@@ -8,9 +8,12 @@
             let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/generelle_sporgsmal");
             page = await jsonObject.json();
 
-            //post find variabler lavers for hver post ID
+            post229Output();
+        }
 
-            //post med id 209
+function post229Output (){
+
+                //post med id 209
             let post209 = page.find(x => x.id == '209');
 
 
@@ -38,4 +41,4 @@
             document.querySelector(".video_container").innerHTML = post209.acf.video;
 
 
-        }
+}
