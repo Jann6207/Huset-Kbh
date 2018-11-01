@@ -18,6 +18,8 @@
 function post196Output() {
     console.log("test");
 
+    //post med id 196
+
     let post196 = page.find(x => x.id == '196');
 
                 //indsæt header info
