@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--    style sheets-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/test_event_filter.css">
+    <title>test</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="filter_con">
+
+             <div class="periode filter_knap">
+                <div class="event_item periode_title" data-kategori="alle">Alle Events</div>
+            </div>
+
+            <div class="genre filter_knap event_item">
+                <div class="genre_title">Genre</div>
+            </div>
+            <div class="venues filter_knap event_item">
+                <div class="venues_title">Venues</div>
+            </div>
+
+
+        </div>
+
+
+        <div class="genre_block">
+
+            <div class="event_item tema" data-kategori="Musik">Musik</div>
+
+            <ul>
+                <li>
+                    <div class="event_item" data-kategori="Jazz">Jazz</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Alternative">Alternative</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Rock">Rock</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Folk">Folk</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Elektronisk">Elektronisk</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Andet-Musik">Andet Musik</div>
+                </li>
+
+            </ul>
+
+
+
+            <div class="event_item tema" data-kategori="Film">Film </div>
+                <ul>
+                    <li>
+                        <div class="event_item" data-kategori="Kult">Kult</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Erotica">Erotica</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Art">Art</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Klassiker">Klassiker</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Horror">Horror</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Musik">Musik</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Drama">Drama</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Western">Western</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Andre-Film">Andre Film</div>
+                    </li>
+                </ul>
+
+
+                  <div class="event_item tema" data-kategori="Ord">Ord   </div>
+                <ul>
+                    <li>
+                        <div class="event_item" data-kategori="Stand-Up">Stand Up</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Poetry-Slam">Poetry Slam
+</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Litteratur">Litteratur</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Quiz">Quiz</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Historiefortælling">Historiefortælling</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Andre-Ord
+">Andre Ord
+</div>
+                    </li>
+
+                </ul>
+
+
+
+            <div class="event_item tema" data-kategori="Scenekunst">SceneKunst</div>
+                <ul>
+                    <li>
+                        <div class="event_item" data-kategori="Teater-Teaterkunst">Teater/Teaterkunst</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Andet-Teater">Andet Teater</div>
+                    </li>
+
+                </ul>
+
+
+
+
+
+
+            <div class="event_item tema" data-kategori="Andet">Andet</div>
+                <ul>
+                    <li>
+                        <div class="event_item" data-kategori="Hygge">Hygge</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Samlingspunkt-Indre-by">Samlingspunkt Indre By</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Familie">Familie</div>
+                    </li>
+                    <li>
+                        <div class="event_item" data-kategori="Andre-Events">Andre Events</div>
+                    </li>
+
+
+
+                </ul>
+
+
+
+
+        </div>
+
+        <div class="venues_block">
+            <ul>
+                <li>
+                    <div class="event_item" data-kategori="Stardust">Stardust</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Musikcaféen">Musikcaféen</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Xenon">Xenon</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Vox">Vox</div>
+                </li>
+                <li>
+                    <div class="event_item" data-kategori="Husets-Biograf">Husets Biograf</div>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </header>
+
+    <section class="event_kalender">
+
+
+
+
+    </section>
+
+
+    <template class="event_template">
+
+   <article class="event_con">
+       <img class="event_image" src="" alt="">
+
+       <div class="dato_con">
+          <div class="dag"></div>
+          <div class="maaned"></div>
+          <div class="aar"></div>
+       </div>
+
+       <div class="genre"></div>
+       <div class="tema"></div>
+
+       <div class="event_navn"></div>
+
+       <div class="se_mere"></div>
+
+       <div class="venue"></div>
+
+       <div class="pris"></div>
+
+        <a class="knap_link"href=""><button>Køb Billet</button></a>
+
+
+   </article>
+
+
+
+</template>
+
+    <script src="script/test_event_filter.js"></script>
+
+</body>
+
+</html>

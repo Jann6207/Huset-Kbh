@@ -1,0 +1,32 @@
+img {
+
+
+    width:100%;
+}
+
+/*EVENT STYLE*/
+
+.event_kalender{
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.event_con{
+
+    border: solid black 1px;
+    font-family: sans-serif;
+
+}
+
+
+.event_item{
+    display: inline-block;
+}
+
+.event_item:hover{
+    cursor: pointer;
+    color: aqua;
+
+}
