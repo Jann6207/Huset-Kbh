@@ -12,10 +12,10 @@ img {
 }
 
 *{
-    border: solid red 1px;
+/*    border: solid red 1px;*/
 }
 
-EVENT STYLE
+/*EVENT STYLE*/
 
 .event_kalender{
 
@@ -23,12 +23,14 @@ EVENT STYLE
 }
 
 .event_con{
+    z-index: -3:
+    background-color: black;
 
 color: white;
 font-family: "Avenir";
     display: grid;
-    grid-template-columns: 10px repeat(6, 1fr) 10px;
-    grid-template-rows: 10px repeat(6, 1fr) 10px ;
+    grid-template-columns: 20px repeat(6, 1fr) 20px;
+    grid-template-rows: 20px repeat(6, 1fr) 20px ;
     grid-template-areas:
 
          ". . . . . . . ."
@@ -48,33 +50,44 @@ font-family: "Avenir";
 
     grid-column: 1/9;
     grid-row: 1/9;
+    z-index: -2;
 
 }
 .grey_bg{
 
-    background-color: rgba(3, 1, 1, 0.72);
+  background-image: linear-gradient(to bottom, #241717, #000000);
+    opacity: 0.5;
     grid-column: 1/9;
     grid-row: 1/9;
+    z-index: -1;
+}
+
+.dato_con{
+
+    grid-column: 2/4;
+    grid-row: 2/3 ;
+
+    display: flex;
 }
 
 .dag{
 
     font-family: "HUSET";
     font-size: 5rem;
-    grid-column: 2/4;
-    grid-row: 2/3 ;
+
 
 }
 .maaned{
 
+    align-self:flex-end;
     font-size: 2rem;
-    grid-column: 4/6;
-    grid-row: 2/3 ;
+
 
 
 }
 .tid{
-
+    text-align:right;
+    text-transform: capitalize;
     font-size: 2rem;
     grid-column: 6/8;
     grid-row: 2/3 ;
@@ -84,7 +97,7 @@ font-family: "Avenir";
 
 .genre{
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     grid-column: 2/4;
     grid-row: 3/4;
 
@@ -93,24 +106,31 @@ font-family: "Avenir";
 
 .event_navn{
 
-    font-size: 2rem;
-    grid-column: 3/7;
-    grid-row: 4/5;
+    font-family: "Portrait";
+    align-self: center;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    grid-column: 2/8;
+    grid-row: 4/6;
 
 
 }
 
 
 .venue{
-   font-size: 2rem;
+    text-align: right;
+   font-size: 1.5rem;
     grid-column: 6/8;
     grid-row: 3/4;
 
 }
 .se_mere{
 
+    text-align: center;
     font-size: 2rem;
-    grid-column: 3/7;
+    grid-column: 2/8;
     grid-row: 6/7;
 
 ;
@@ -118,6 +138,8 @@ font-family: "Avenir";
 }
 
 .pris{
+    align-self: flex-end;
+
     font-size: 2rem;
     grid-column: 2/4;
     grid-row: 7/8;
@@ -133,10 +155,12 @@ font-family: "Avenir";
 }
 .kob_knap{
 
-    background-color: green;
+    border-radius: 5px;
+    font-family: "AvenirNext";
+    background-color: #dff2fd;
     width: 100%;
     height: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 
