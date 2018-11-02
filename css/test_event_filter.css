@@ -3,10 +3,7 @@
     font-size: 10px;
 }
 
- @font-face {
-  font-family: "HUSET";
-  src: url("fonts/huset.otf");
-  }
+
 
 img {
 
@@ -28,6 +25,7 @@ EVENT STYLE
 .event_con{
 
 color: white;
+font-family: "Avenir";
     display: grid;
     grid-template-columns: 10px repeat(6, 1fr) 10px;
     grid-template-rows: 10px repeat(6, 1fr) 10px ;
@@ -61,8 +59,8 @@ color: white;
 
 .dag{
 
-
-    font-size: 2rem;
+    font-family: "HUSET";
+    font-size: 5rem;
     grid-column: 2/4;
     grid-row: 2/3 ;
 
@@ -120,7 +118,6 @@ color: white;
 }
 
 .pris{
-    font-family: "HUSET";
     font-size: 2rem;
     grid-column: 2/4;
     grid-row: 7/8;
