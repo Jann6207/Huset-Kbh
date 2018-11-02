@@ -3,6 +3,11 @@
     font-size: 10px;
 }
 
+ @font-face {
+  font-family: "HUSET";
+  src: url("fonts/huset.otf");
+  }
+
 img {
 
 
@@ -115,6 +120,7 @@ color: white;
 }
 
 .pris{
+    font-family: "HUSET";
     font-size: 2rem;
     grid-column: 2/4;
     grid-row: 7/8;
