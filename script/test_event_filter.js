@@ -73,7 +73,18 @@ function filtrering(){
             klon.querySelector(".event_image").src = event.acf.billede.url;
             klon.querySelector(".genre").textContent = event.acf.genre;
             klon.querySelector(".venue").textContent = event.acf.venue;
-            klon.querySelector(".tema").textContent = event.acf.tema;
+            klon.querySelector(".pris").textContent = "Pris" + " " + event.acf.pris + "kr.";
+            klon.querySelector(".event_navn").textContent = event.acf.event_navn;
+
+
+            klon.querySelector(".dag").textContent = event.acf.dato_dag;
+            klon.querySelector(".maaned").textContent = event.acf.dato_maaned;
+            klon.querySelector(".tid").textContent = "kl." + event.acf.tidspunkt;
+
+
+
+
+
 
                                     console.log("event printet");
 
