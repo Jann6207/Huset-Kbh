@@ -22,8 +22,7 @@ img {
 
 .event_kalender{
 
-    width: 100vw;
-    height: 100vw;
+
     display: grid;
     grid-gap: 1px;
 
@@ -33,7 +32,8 @@ img {
 .event_con{
 
     background-color: black;
-
+ width: 100vw;
+height: 100vw;
 color: white;
 font-family: "Avenir";
     display: grid;
@@ -205,13 +205,76 @@ font-family: "Avenir";
 @media screen and (min-width: 700px) {
 
 
+    :root{
+
+
+    }
+
     .event_kalender{
 
         grid-template-columns: 1fr 1fr;
     }
+    .event_con{
 
+        width: 50vw;
+        height: 50vw;
+    }
 
 }
 
 
+@media screen and (min-width: 100px) {
+
+
+    :root{
+
+
+    }
+
+    .event_kalender{
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .event_con{
+
+        width: 33.3vw;
+        height: 33.3vw;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .kalender_container{
+
+        width: 100%;
+         display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-areas:
+            ". main ."
+    }
+
+
+    :root{
+
+        font-size: 50%;
+    }
+
+    .event_kalender{
+
+        grid-area: main;
+
+        max-width: 1240px;
+        align-self: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+    }
+    .event_con{
+
+        width: 310px;
+        height: 310px;
+    }
+
+}
 
