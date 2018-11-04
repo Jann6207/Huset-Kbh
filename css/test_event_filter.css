@@ -20,6 +20,20 @@ img {
 
 /*EVENT STYLE*/
 
+.overskrift_events{
+    font-family: "Huset";
+    text-transform: uppercase;
+    font-size: 6em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.overskrift_pil{
+
+}
+
+
 .event_kalender{
 
 
@@ -223,7 +237,7 @@ font-family: "Avenir";
 }
 
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 1000px) {
 
 
     :root{
