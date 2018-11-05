@@ -4,8 +4,7 @@
 }
 
 body{
-    margin: 0;
-    padding: 0;
+
 }
 
 img {
@@ -19,13 +18,18 @@ img {
 }
 
 /*EVENT STYLE*/
+.main_content{
+
+    padding: 50px 0px 100px 0px;
+    background-color: white;
+}
 
 .overskrift_events{
     font-family: "Huset";
     text-transform: uppercase;
     font-size: 6em;
     margin: 0;
-    padding: 0;
+    padding: 10px 0px 50px 0px;
     text-align: center;
 }
 
@@ -44,7 +48,9 @@ img {
 /*FILTER*/
 
 .filter_wrapper{
-
+border-top: solid black 1px;
+border-bottom: solid black 5px;
+    z-index: 2;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -441,7 +447,7 @@ font-family: "Avenir";
     }
 
     .event_kalender{
-
+        overflow: visible;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .event_con{

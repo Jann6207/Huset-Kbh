@@ -1,60 +1,12 @@
-<!DOCTYPE html>
-<html lang="da">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--    style sheets-->
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/test_event_filter.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 
-
-    <!--    FONTE-->
-    <style>
-        @font-face {
-            font-family: "Huset";
-            src: url("fonts/huset.otf");
-
-        }
-
-        @font-face {
-            font-family: "Avenir";
-            src: url("fonts/Avenir.ttc");
-
-        }
-
-        @font-face {
-            font-family: "Helvetica";
-            src: url("fonts/Helvetica.dfont.ttc");
-
-        }
-
-        @font-face {
-            font-family: "AvenirNext";
-            src: url("fonts/AvenirNext.ttc");
-
-        }
-
-        @font-face {
-            font-family: "Portrait";
-            src: url("fonts/Portrait-Medium.otf");
-
-        }
-
-    </style>
-
-
-    <title>test</title>
-</head>
 
 <body>
 
-   <div class="nav-container">
+    <div class="nav-container">
 
         <div class="logo"><b><span>HUSET</span></b>
 
@@ -261,246 +213,11 @@
         </div>
     </div>
 
-      <section class="main_content">
-    <h2 class="overskrift_events">Find Event</h2>
-    <div class="overskrift_pil"></div>
 
- <section class="filter_wrapper">
 
-        <div class="filter_con">
 
-            <div class="filter_title">
-                <div class="filter_knap event_item knap" data-kategori="alle">Alle
-                    <div class="filter_pil"></div>
 
-                </div>
-            </div>
-
-            <div class="filter_title">
-                <div class="genre_tekst knap">Genre
-                    <div class="filter_pil"></div>
-
-                </div>
-            </div>
-
-            <div class="filter_title">
-
-                <div class="venues_tekst knap">Venues
-                    <div class="filter_pil"></div>
-                </div>
-
-            </div>
-
-
-        </div>
-        </section>
-
-        <div class="genre_block">
-
-                <div class="tema tema_musik" data-kategori="Musik">Musik
-                <div class="tema_pil"></div>
-                </div>
-
-            <ul class="musik_filter filter_list">
-                <li>
-                    <div class="event_item" data-kategori="Jazz">Jazz</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Alternative">Alternative</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Rock">Rock</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Folk">Folk</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Elektronisk">Elektronisk</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andet-Musik">Andet Musik</div>
-                </li>
-
-            </ul>
-
-
-
-            <div class="tema tema_film" data-kategori="Film">Film
-            <div class="tema_pil"></div>
-            </div>
-            <ul class="film_filter filter_list">
-                <li>
-                    <div class="event_item" data-kategori="Kult">Kult</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Erotica">Erotica</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Art">Art</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Klassiker">Klassiker</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Horror">Horror</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Musik">Musik</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Drama">Drama</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Western">Western</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andre-Film">Andre Film</div>
-                </li>
-            </ul>
-
-
-            <div class="tema tema_ord" data-kategori="Ord">Ord
-            <div class="tema_pil"></div>
-
-            </div>
-            <ul class="ord_filter ">
-                <li>
-                    <div class="event_item" data-kategori="Stand-Up">Stand Up</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Poetry-Slam">Poetry Slam
-                    </div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Litteratur">Litteratur</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Quiz">Quiz</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Historiefortælling">Historiefortælling</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andre-Ord
-">Andre Ord
-                    </div>
-                </li>
-
-            </ul>
-
-
-
-            <div class="tema tema_scenekunst" data-kategori="Scenekunst">SceneKunst
-                        <div class="tema_pil"></div>
-
-            </div>
-            <ul class="scenekunst_filter">
-                <li>
-                    <div class="event_item" data-kategori="Teater-Teaterkunst">Teater/Teaterkunst</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andet-Teater">Andet Teater</div>
-                </li>
-
-            </ul>
-
-
-
-
-
-
-            <div class="tema tema_andet" data-kategori="Andet">Andet
-                        <div class="tema_pil"></div>
-
-            </div>
-            <ul class="andet_filter">
-                <li>
-                    <div class="event_item" data-kategori="Hygge">Hygge</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Samlingspunkt-Indre-by">Samlingspunkt Indre By</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Familie">Familie</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andre-Events">Andre Events</div>
-                </li>
-
-
-
-            </ul>
-
-
-
-
-        </div>
-
-        <div class="venues_block">
-            <ul>
-                <li>
-                    <div class="event_item" data-kategori="Stardust">Stardust</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Musikcaféen">Musikcafeen</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Xenon">Xenon</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Vox">Vox</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Husets-Biograf">Husets Biograf</div>
-                </li>
-
-            </ul>
-        </div>
-
-
-
-    <main class="kalender_container">
-        <section class="event_kalender">
-        </section>
-    </main>
-</section>
-    <template class="event_template">
-
-
-   <article class="event_con">
-
-
-
-        <div class="dato_con">
-          <div class="dag"></div>
-          <div class="maaned"></div>
-            </div>
-
-            <div class="tid"></div>
-
-       <div class="genre"></div>
-
-       <div class="event_navn"></div>
-
-       <div class="se_mere">Klik og se mere.</div>
-
-       <div class="venue"></div>
-
-       <div class="pris"></div>
-
-        <a class="knap_link"href=""><button class="kob_knap">Køb Billet</button></a>
-
-  <img class="event_image" src="" alt="">
-          <div class="grey_bg"></div>
-
-   </article>
-
-
-
-</template>
-
-
-   <footer>
+    <footer>
         <div class="footer_container">
 
             <div class="sociale_ikoner1"> <img src="Ikon-Bank/huset-ikon-facebook.png" alt="Facebook Ikon"> <img src="Ikon-Bank/huset-ikon-twitter.png" alt="Facebook Ikon"> <img src="Ikon-Bank/huset-ikon-instagram.png" alt="Facebook Ikon"> <img src="Ikon-Bank/huset-ikon-flikr.png" alt="Facebook Ikon">
@@ -590,11 +307,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="/script/java.js"></script>
-    <script src="script/test_event_filter.js"></script>
-    <script src="script/filter_show.js"></script>
+
 
 
 
 </body>
-
-</html>
