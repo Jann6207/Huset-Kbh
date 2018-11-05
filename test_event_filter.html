@@ -11,38 +11,39 @@
 
 
 
-<!--    FONTE-->
-   <style> @font-face {
-font-family: "Huset";
-src: url("fonts/huset.otf");
+    <!--    FONTE-->
+    <style>
+        @font-face {
+            font-family: "Huset";
+            src: url("fonts/huset.otf");
 
-}
+        }
 
-       @font-face {
-font-family: "Avenir";
-src: url("fonts/Avenir.ttc");
+        @font-face {
+            font-family: "Avenir";
+            src: url("fonts/Avenir.ttc");
 
-}
+        }
 
-             @font-face {
-font-family: "Helvetica";
-src: url("fonts/Helvetica.dfont.ttc");
+        @font-face {
+            font-family: "Helvetica";
+            src: url("fonts/Helvetica.dfont.ttc");
 
-}
+        }
 
-                   @font-face {
-font-family: "AvenirNext";
-src: url("fonts/AvenirNext.ttc");
+        @font-face {
+            font-family: "AvenirNext";
+            src: url("fonts/AvenirNext.ttc");
 
-}
+        }
 
-            @font-face {
-font-family: "Portrait";
-src: url("fonts/Portrait-Medium.otf");
+        @font-face {
+            font-family: "Portrait";
+            src: url("fonts/Portrait-Medium.otf");
 
-}
+        }
 
-</style>
+    </style>
 
 
     <title>test</title>
@@ -51,31 +52,42 @@ src: url("fonts/Portrait-Medium.otf");
 <body>
     <h2 class="overskrift_events">Find Event</h2>
     <div class="overskrift_pil"></div>
-    <header>
 
+ <section class="filter_wrapper">
 
         <div class="filter_con">
 
-            <div class="periode filter_knap">
-                <div class="event_item periode_title" data-kategori="alle">Alle Events</div>
+            <div class="filter_title">
+                <div class="filter_knap event_item knap" data-kategori="alle">Alle
+                    <div class="filter_pil"></div>
+
+                </div>
             </div>
 
-            <div class="genre filter_knap event_item">
-                <div class="genre_title">Genre</div>
+            <div class="filter_title">
+                <div class="genre_tekst knap">Genre
+                    <div class="filter_pil"></div>
+
+                </div>
             </div>
-            <div class="venues filter_knap event_item">
-                <div class="venues_title">Venues</div>
+
+            <div class="filter_title">
+
+                <div class="filter_knap knap">Venues
+                    <div class="filter_pil"></div>
+                </div>
+
             </div>
 
 
         </div>
-
+        </section>
 
         <div class="genre_block">
 
-            <div class="event_item tema" data-kategori="Musik">Musik</div>
+                <div class="tema tema_musik" data-kategori="Musik">Musik</div>
 
-            <ul>
+            <ul class="musik_filter filter_list">
                 <li>
                     <div class="event_item" data-kategori="Jazz">Jazz</div>
                 </li>
@@ -99,8 +111,8 @@ src: url("fonts/Portrait-Medium.otf");
 
 
 
-            <div class="event_item tema" data-kategori="Film">Film </div>
-            <ul>
+            <div class="tema tema_film" data-kategori="Film">Film</div>
+            <ul class="film_filter filter_list">
                 <li>
                     <div class="event_item" data-kategori="Kult">Kult</div>
                 </li>
@@ -131,8 +143,8 @@ src: url("fonts/Portrait-Medium.otf");
             </ul>
 
 
-            <div class="event_item tema" data-kategori="Ord">Ord </div>
-            <ul>
+            <div class="tema tema_ord" data-kategori="Ord">Ord</div>
+            <ul class="ord_filter ">
                 <li>
                     <div class="event_item" data-kategori="Stand-Up">Stand Up</div>
                 </li>
@@ -159,8 +171,8 @@ src: url("fonts/Portrait-Medium.otf");
 
 
 
-            <div class="event_item tema" data-kategori="Scenekunst">SceneKunst</div>
-            <ul>
+            <div class="tema tema_scenekunst" data-kategori="Scenekunst">SceneKunst</div>
+            <ul class="scenekunst_filter">
                 <li>
                     <div class="event_item" data-kategori="Teater-Teaterkunst">Teater/Teaterkunst</div>
                 </li>
@@ -175,8 +187,8 @@ src: url("fonts/Portrait-Medium.otf");
 
 
 
-            <div class="event_item tema" data-kategori="Andet">Andet</div>
-            <ul>
+            <div class="tema tema_andet" data-kategori="Andet">Andet</div>
+            <ul class="andet_filter">
                 <li>
                     <div class="event_item" data-kategori="Hygge">Hygge</div>
                 </li>
@@ -220,18 +232,17 @@ src: url("fonts/Portrait-Medium.otf");
             </ul>
         </div>
 
-
-    </header>
-
-   <main class="kalender_container">
-    <section class="event_kalender">
+</section>
 
 
+    <main class="kalender_container">
+        <section class="event_kalender">
+        </section>
 
 
-    </section>
 
-</main>
+
+    </main>
 
     <template class="event_template">
 
@@ -267,8 +278,10 @@ src: url("fonts/Portrait-Medium.otf");
 
 
 </template>
-
     <script src="script/test_event_filter.js"></script>
+        <script src="script/filter_show.js"></script>
+
+
 </body>
 
 </html>

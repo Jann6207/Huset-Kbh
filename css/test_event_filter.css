@@ -29,17 +29,158 @@ img {
     text-align: center;
 }
 
+/*
 .overskrift_pil{
+
+    background-image: url(../svg/huset_pil.svg);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+}
+*/
+
+
+
+/*FILTER*/
+
+.filter_wrapper{
+
+    width: 100vw;
+    border: solid red 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". filter ."
+}
+
+.filter_con{
+    grid-area: filter;
+
+   display: flex;
+    flex-direction:row;
 
 }
 
+.filter_title{
+    text-align: center;
+    font-family: "Huset";
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 10px;
+    display: flex;
 
+}
+
+.filter_pil{
+    background-image: url(../svg/huset_pil.svg);
+    background-size: 100% 100%;
+    width: 10px;
+    height: 10px;
+}
+
+/*SUB FILTER GENRE*/
+
+.genre_block{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    background-color: aqua;
+    font-family: "Huset";
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+.show{
+    display: block;
+}
+.genre_block ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.genre_block ul li{
+    font-family: "AvenirNext";
+    font-size: .4em;
+    padding: 5px 0px 5px 0px;
+}
+
+.genre_block ul li:nth-child(even){
+
+    background-color: #f8f8f8;
+}
+
+
+.genre_block ul li:nth-child(odd){
+
+    background-color: white;
+}
+
+.venues_block{
+
+    display: none;
+}
+.musik_filter, .film_filter, .ord_filter, .scenekunst_filter, .andet_filter{
+
+    display: none;
+}
+/*musik knap*/
+.tema_musik:hover~.musik_filter{
+
+display: block;
+}
+
+.musik_filter:hover{
+    display: block;
+}
+
+/*Film knap*/
+.tema_film:hover~.film_filter{
+
+display: block;
+}
+.film_filter:hover{
+    display: block;
+}
+
+/*Ord knap*/
+.tema_ord:hover~.ord_filter{
+
+display: block;
+}
+.ord_filter:hover{
+    display: block;
+}
+
+/*Scenekunst knap*/
+.tema_scenekunst:hover~.scenekunst_filter{
+
+display: block;
+}
+.scenekunst_filter:hover{
+    display: block;
+}
+
+/*Andet knap*/
+.tema_andet:hover~.andet_filter{
+
+display: block;
+}
+.andet_filter:hover{
+    display: block;
+}
+
+
+/*EVENT KALENDER*/
 .event_kalender{
 
 
     display: grid;
     grid-gap: 1px;
-
+    text-align: center;
 
 }
 
@@ -198,15 +339,6 @@ font-family: "Avenir";
 
 }
 
-.event_item{
-    display: inline-block;
-}
-
-.event_item:hover{
-    cursor: pointer;
-    color: aqua;
-
-}
 
 
 
