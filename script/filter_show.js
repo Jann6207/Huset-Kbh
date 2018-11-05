@@ -7,18 +7,31 @@ function showSubFilter(){
 
 
 
-    document.querySelector(".genre_tekst").addEventListener("click", show);
+    document.querySelector(".genre_tekst").addEventListener("click", showMusikMenu);
+    document.querySelector(".venues_tekst").addEventListener("click", showVenuesMenu);
 
 
 }
 
-function show(){
+function showMusikMenu(){
 
-    console.log("Hvis menu");
+    console.log("Hvis musik menu");
     document.querySelector(".genre_block").classList.add("show");
 
+        document.querySelector(".venues_block").classList.remove("show");
+
 
 
 }
 
 
+function showVenuesMenu(){
+
+    console.log("Hvis venues menu");
+        document.querySelector(".genre_block").classList.remove("show");
+
+    document.querySelector(".venues_block").classList.add("show");
+
+
+
+}

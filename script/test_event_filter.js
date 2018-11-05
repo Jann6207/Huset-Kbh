@@ -37,6 +37,8 @@
 
         console.log("filter");
         document.querySelector(".genre_block").classList.remove("show");
+        document.querySelector(".venues_block").classList.remove("show");
+
         eventOutPut.textContent = "";
         eventFilter = this.getAttribute("data-kategori");
         visEvents();
