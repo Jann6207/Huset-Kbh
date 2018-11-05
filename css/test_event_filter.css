@@ -83,6 +83,10 @@ img {
     border-bottom: 1px solid black;
     padding: 5px;
 }
+
+.tema:hover{
+    cursor: pointer;
+}
 .genre_block{
     display: none;
     position: absolute;
@@ -118,6 +122,16 @@ img {
 .genre_block ul li:nth-child(odd){
 
     background-color: white;
+}
+
+.tema_pil{
+
+    float: left;
+    background-image: url(../svg/huset_pil.svg);
+    background-size: 100% 100%;
+    width: 10px;
+    height: 10px;
+
 }
 
 /*genre sub filter */
@@ -194,14 +208,13 @@ display: block;
 }
 
 .venues_block ul li:nth-child(even){
-
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 
 .venues_block ul li:nth-child(odd){
 
-    background-color: white;
+    background-color: #f8f8f8;
 }
 
 
@@ -223,7 +236,10 @@ display: block;
 
     display: grid;
     grid-gap: 1px;
+    height: 1000px;
+    overflow: scroll;
     text-align: center;
+
 
 }
 
@@ -293,8 +309,9 @@ font-family: "Avenir";
 }
 .tid{
     text-align:right;
+    align-self: flex-end;
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 2rem;
     grid-column: 6/8;
     grid-row: 2/3 ;
      z-index: 1;
@@ -304,8 +321,8 @@ font-family: "Avenir";
 .genre{
     text-align: left;
     z-index: 1;
-    font-size: 2rem;
-    grid-column: 2/6;
+    font-size: 1rem;
+    grid-column: 2/5;
     grid-row: 3/4;
 
 
@@ -318,7 +335,7 @@ font-family: "Avenir";
     text-align: left;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     grid-column: 2/8;
     grid-row: 4/6;
 
@@ -328,7 +345,7 @@ font-family: "Avenir";
 
 .venue{
     text-align: right;
-   font-size: 2rem;
+   font-size: 1rem;
     grid-column: 5/8;
     grid-row: 3/4;
      z-index: 1;
@@ -336,6 +353,7 @@ font-family: "Avenir";
 .se_mere{
 
     text-align: left;
+    align-self: flex-end;
     text-decoration: underline;
     font-size: 2rem;
     grid-column: 2/8;
@@ -346,8 +364,9 @@ font-family: "Avenir";
 }
 
 .pris{
+    text-align: left;
     align-self: flex-end;
-    font-size: 2.5rem;
+    font-size: 2rem;
     grid-column: 2/4;
     grid-row: 7/8;
      z-index: 1;
@@ -369,7 +388,7 @@ font-family: "Avenir";
 
     width: 100%;
     height: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -440,8 +459,9 @@ font-family: "Avenir";
         width: 100%;
          display: grid;
         grid-template-columns:  1fr 1fr 1fr;
-        grid-template-areas:
-            ". main ."
+        grid-template-rows: auto;
+
+
     }
 
 
@@ -452,7 +472,7 @@ font-family: "Avenir";
 
     .event_kalender{
 
-        grid-area: main;
+        grid-column: 2/3;
 
         max-width: 1240px;
         align-self: center;
