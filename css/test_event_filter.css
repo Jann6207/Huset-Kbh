@@ -447,6 +447,7 @@ font-family: "Avenir";
     }
 
     .event_kalender{
+        padding: 50px 0px;
         overflow: visible;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -478,11 +479,13 @@ font-family: "Avenir";
 
     .event_kalender{
 
-        grid-column: 2/3;
 
+        grid-column: 2/3;
+        height: 100%;
         max-width: 1240px;
         align-self: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
 
 
     }
