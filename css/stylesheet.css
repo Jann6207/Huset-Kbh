@@ -20,6 +20,7 @@ body {
 
 }
 
+/* STYLING AF CONTENT I P START (TEST)*/
 .content p {
 
     font: 4vw "husetregular";
@@ -29,10 +30,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 45%;
+    margin-top: 15%;
+     margin-bottom: 13%;
     color: white;
 
 }
+
+/* STYLING AF CONTENT I P END (TEST)*/
+
+
+/* GRID TIL NAV START */
 
 .nav-container {
 
@@ -42,6 +49,10 @@ body {
     grid-template-areas: "logo logo logo . . . . . . . . ." "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar";
     background-color: black;
 }
+
+/* GRID TIL NAV END */
+
+/* LOGO ANIMATION START */
 
 .logo {
 
@@ -101,6 +112,10 @@ body {
     }
 }
 
+/* LOGO ANIMATION END */
+
+/* STYLING AF P START */
+
 p {
 
     font-family: 'Roboto', sans-serif;
@@ -112,6 +127,9 @@ p {
 
 }
 
+/* STYLING AF P END */
+
+/* GRID FOR NAVBAR START */
 
 .navbar {
 
@@ -123,7 +141,9 @@ p {
     margin-right: 10%;
 
 }
+/* GRID FOR NAVBAR END */
 
+/* SOCIALE IKONER LINKER TIL SOCIALE MEDIER START*/
 
 .sociale_ikoner {
 
@@ -140,12 +160,9 @@ p {
 
 }
 
-#wrap {
+/* SOCIALE IKONER LINKER TIL SOCIALE MEDIER END*/
 
-    grid-area: wrap1;
-}
-
-
+/* VALG AF SPROG (ENGELSK FLAG) START*/
 
 .sprog {
 
@@ -165,6 +182,15 @@ p {
     width: 40%;
 }
 
+/* VALG AF SPROG (ENGELSK FLAG) END*/
+
+
+/* SØGE FUNKTION DEKSTOP START */
+
+#wrap {
+
+    grid-area: wrap1;
+}
 
 
 #wrap {
@@ -240,7 +266,7 @@ input[type="submit"]:hover {
     opacity: 1;
 }
 
-
+/* SØGE FUNKTION DESKTOP END */
 
 
 .dropdown {
@@ -525,6 +551,16 @@ input[type="submit"]:hover {
 
 /* MEDIA QUERY START */
 
+/* MEDIA QUERY SØRGER FOR AT DROPDOWN BRUGER MENU IKKE VISES VED WIDTH PÅ OVER 1025px START */
+
+@media only screen and (min-width: 1025px) {
+    .navbar2, .link_container, .dropdownbutton, .dropdown_content_mobile {
+        display: none;
+    }
+
+}
+/* MEDIA QUERY SØRGER FOR AT DROPDOWN BRUGER MENU IKKE VISES VED WIDTH PÅ OVER 1025px END */
+
 @media only screen and (max-width: 1024px) {
 
 
@@ -585,14 +621,7 @@ input[type="submit"]:hover {
         justify-self: center;
 
 
-
-
-
     }
-
-
-
-
 
 
 
