@@ -31,11 +31,11 @@ function post203Output() {
             document.querySelector(".kontakt_os_content").innerHTML = post203.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = post203.acf.billede.url;
+            document.querySelector(".content_image").src = post203.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = post203.acf.billede.alt;
+            document.querySelector(".content_image").alt = post203.acf.billede.alt;
             //title
-            document.querySelector("img").title = post203.acf.billede.title;
+            document.querySelector(".content_image").title = post203.acf.billede.title;
 
             //Video
             document.querySelector(".video_container").innerHTML = post203.acf.video;
