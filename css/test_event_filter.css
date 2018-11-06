@@ -11,6 +11,7 @@ body{
 img {
 
 
+
     width:100%;
 }
 
@@ -244,7 +245,6 @@ display: block;
     display: grid;
     grid-gap: 1px;
     height: 1000px;
-    overflow: scroll;
     text-align: center;
 
 
