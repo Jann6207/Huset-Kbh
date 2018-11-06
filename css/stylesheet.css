@@ -304,6 +304,7 @@ input[type="submit"]:hover {
 .dropdown-content1 {
 
     min-width: 260px;
+    left: -95px;
 
 }
 
@@ -311,20 +312,20 @@ input[type="submit"]:hover {
 .dropdown-content2 {
 
     min-width: 200px;
-    left: -42;
+    left: -42px;
 
 }
 
 .dropdown-content3 {
 
-    left: -40;
-    min-width: 210;
+    left: -40px;
+    min-width: 210px;
 }
 
 .dropdown-content4 {
 
     min-width: 170px;
-    left: -53;
+    left: -53px;
 }
 
 .dropdown-content a {
