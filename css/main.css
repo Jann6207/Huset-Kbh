@@ -11,7 +11,7 @@ iframe{
 .site_content_wrapper{
 
     display: grid;
-    grid-template-columns: 1fr minmax(200px, 400px) 1fr;
+    grid-template-columns: 1fr minmax(200px, 800px) 1fr;
 
 }
 
@@ -39,3 +39,19 @@ hr{
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
+
+.muligheder{
+    background-color: red;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .site_content_wrapper{
+
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+
+}
+
+}
+
