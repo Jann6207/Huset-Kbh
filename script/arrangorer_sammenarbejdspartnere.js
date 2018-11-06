@@ -31,11 +31,11 @@ function post202Output (){
             document.querySelector(".arrangore_sammenarbejdspartnere_content").innerHTML = post202.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = post202.acf.billede.url;
+            document.querySelector(".content_image").src = post202.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = post202.acf.billede.alt;
+            document.querySelector(".content_image").alt = post202.acf.billede.alt;
             //title
-            document.querySelector("img").title = post202.acf.billede.title;
+            document.querySelector(".content_image").title = post202.acf.billede.title;
 
             //Video
             document.querySelector(".video_container").innerHTML = post202.acf.video;
