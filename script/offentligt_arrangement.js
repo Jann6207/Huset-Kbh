@@ -32,11 +32,11 @@ function post177Output() {
             document.querySelector(".offentligt_arrangement_content").innerHTML = post177.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = post177.acf.billede.url;
+            document.querySelector(".content_image").src = post177.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = post177.acf.billede.alt;
+            document.querySelector(".content_image").alt = post177.acf.billede.alt;
             //title
-            document.querySelector("img").title = post177.acf.billede.title;
+            document.querySelector(".content_image").title = post177.acf.billede.title;
 
             //Video
 

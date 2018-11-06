@@ -5,18 +5,315 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+                    <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+
     <!--    style sheets-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/privat_arrangement.css">
+
+                            <!--   nav icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="ikon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ikon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ikon.png">
+
+<!--   Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
     <title>Privat Arrangement</title>
 </head>
 
 <body>
+
+   <header>
+        <div class="nav-container">
+            <!--         LOGO HUSET BLINK FUNCTION START-->
+            <div class="logo"><b><span>HUSET</span></b>
+
+            </div>
+            <!--         LOGO HUSET BLINK FUNCTION END-->
+            <!--         SOCIALE IKONER LINKER TIL SOCIALE MEDIER START-->
+            <div class="sociale_ikoner"> <img src="Ikon-Bank/huset-ikon-facebook.png" alt="Facebook Ikon"> <img src="Ikon-Bank/huset-ikon-twitter.png" alt="Facebook Ikon"> <img src="Ikon-Bank/huset-ikon-instagram.png" alt="Facebook Ikon"> <img src="Ikon-Bank/huset-ikon-flikr.png" alt="Facebook Ikon">
+            </div>
+            <!--         SOCIALE IKONER LINKER TIL SOCIALE MEDIER END-->
+            <!--        SØGEFUNTION START -->
+            <div id="wrap">
+                <form action="" autocomplete="off">
+                    <input id="search" name="search" type="text" placeholder="Hvad søger vi efter?"><input id="search_submit" value="Rechercher" type="submit">
+                </form>
+            </div>
+
+            <div id="wrap2">
+                <form action="" autocomplete="off">
+                    <input id="search" name="search" type="text" placeholder="Søg..."><input id="search_submit" value="Rechercher" type="submit">
+                </form>
+            </div>
+            <!--        SØGEFUNTION END -->
+            <!--        BURGER MENU MOBILE START-->
+
+
+
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+
+
+            <nav class="navbar2">
+                <div class="link_container">
+
+                    <a href="index.html">
+                        <p>Nyheder</p>
+                    </a>
+                    <a href="test_event_filter.html">
+                        <p>Kalender</p>
+                    </a>
+                    <div class="dropdownbutton">
+                        <a href="#">
+                            <p>Venues &amp; Places <i class="arrow down"></i></p>
+                        </a>
+
+                        <div class="dropdown_content_mobile">
+                            <a href="bastard_cafe.html">
+                                <p>Bastard Café</p>
+                            </a>
+                            <a href="husets_biograf.html">
+                                <p>Husets Biograf</p>
+                            </a>
+                            <a href="musikcafeen.html">
+                                <p>Musikcaféen</p>
+                            </a>
+                            <a href="bib_bib_bar.html">
+                                <p>Bip Bip Bar - Pop Up</p>
+                            </a>
+                            <a href="evoo_street_kitchen.html">
+                                <p>Evoo - Street Kitchen</p>
+                            </a>
+                            <a href="xenon_vox.html">
+                                <p>Xenon &amp; Vox</p>
+                            </a>
+                            <a href="stardust.html">
+                                <p>Stardust</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="dropdownbutton">
+                        <a href="#">
+                            <p>Skab Arrangement <i class="arrow down"></i></p>
+                        </a>
+
+                        <div class="dropdown_content_mobile">
+                            <a href="offentligt_arrangement.html">
+                                <p>Offentligt Arrangement</p>
+                            </a>
+                            <a href="privat_arrangement.html">
+                                <p>Privat Arrangement</p>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <a href="frivilligt_arbejde.html">
+                        <p>Frivilligt Arbejde</p>
+                    </a>
+
+                    <div class="dropdownbutton">
+                        <a href="#">
+                            <p>Om-Huset <i class="arrow down"></i></p>
+                        </a>
+                        <div class="dropdown_content_mobile">
+                            <a href="kultur_historie.html">
+                                <p>Kultur &amp; Historie</p>
+
+                            </a>
+                            <a href="arrangorer_sammenarbejdspartnere.html">
+                                <p>Arrangører &amp; Samarbejdspartner</p>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div class="dropdownbutton">
+                        <a href="#">
+                            <p>Kontakt <i class="arrow down"></i></p>
+                        </a>
+                        <div class="dropdown_content_mobile">
+                            <a href="kontakt_os.html">
+                                <p>Kontakt Os</p>
+                            </a>
+                            <a href="bliv_en_del_af_huset.html">
+                                <p>Bliv en del af Huset</p>
+                            </a>
+                            <a href="generelle_sporgsmaal.html">
+                                <p>FAQ</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <!--        BURGER MENU MOBILE END-->
+
+            <!--       ENGELSK FLAG VALGMULIGHED FOR AT ÆNDRE SPROG START-->
+
+            <div class="sprog">
+
+            </div>
+            <!--       ENGELSK FLAG VALGMULIGHED FOR AT ÆNDRE SPROG END-->
+
+            <!--       DEKSTOP NAVBAR START-->
+            <div class="navbar">
+                <div class="_1">
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <a href="index.html">
+                                <p>Nyheder</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="_2">
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <a href="test_event_filter.html">
+                                <p>Kalender</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="_3">
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <p>Places &amp; Venues </p>
+                        </div>
+                        <div class="dropdown-content dropdown-content2">
+                            <a href="bastard_cafe.html">
+                                <p>Bastard Café</p>
+                            </a>
+                            <a href="husets_briograf.html">
+                                <p>Husets Biograf</p>
+                            </a>
+                            <a href="musikcafeen.html">
+                                <p>Musikcaféen</p>
+                            </a>
+                            <a href="bib_bib_bar.html">
+                                <p>Bip Bip Bar - Pop Up</p>
+                            </a>
+                            <a href="evoo_street_kitchen.html">
+                                <p>Evoo - Street Kitchen</p>
+                            </a>
+                            <a href="xenon_vox.html">
+                                <p>Xenon &amp; Vox</p>
+                            </a>
+                            <a href="stardust.html">
+                                <p>Stardust</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="_4">
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <p>Skab Arrangement</p>
+                        </div>
+                        <div class="dropdown-content dropdown-content3">
+                            <a href="offentligt_arrangement.html">
+                                <p>Offentligt Arrangement</p>
+                            </a>
+                            <a href="privat_arrangement.html">
+                                <p>Privat Arrangement</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="_5">
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <a href="frivilligt_arbejde.html">
+                                <p>Frivilligt Arbejde</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="_6">
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <p>Om Huset</p>
+                        </div>
+                        <div class="dropdown-content dropdown-content1">
+                            <a href="kultur_historie.html">
+                                <p>Kultur &amp; Historie</p>
+                            </a>
+                            <a href="arrangorer_sammenarbejdspartnere.html">
+                                <p>Arrangører &amp; Samarbejdspartner</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="_7">
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <p>Kontakt</p>
+                        </div>
+                        <div class="dropdown-content dropdown-content4">
+                            <a href="kontakt_os.html">
+                                <p>Kontakt Os</p>
+                            </a>
+                            <a href="bliv_en_del_af_huset.html">
+                                <p>Bliv en del af Huset</p>
+                            </a>
+                            <a href="generelle_sporgsmaal.html">
+                                <p>FAQ</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!--       DEKSTOP NAVBAR END-->
+    </header>
+
     <section id="privat_arrangement_wrapper">
         <!--her indsættes url til billede -->
 
         <div class="privat_arrangement_image">
-            <img src="">
+            <img class="content_image" src="">
         </div>
 
         <!--        her indsættes heder info-->

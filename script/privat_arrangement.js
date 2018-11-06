@@ -30,11 +30,11 @@ function post179Output() {
             document.querySelector(".privat_arrangement_content").innerHTML = post179.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = post179.acf.billede.url;
+            document.querySelector(".content_image").src = post179.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = post179.acf.billede.alt;
+            document.querySelector(".content_image").alt = post179.acf.billede.alt;
             //title
-            document.querySelector("img").title = post179.acf.billede.title;
+            document.querySelector(".content_image").title = post179.acf.billede.title;
 
             //Video
 
