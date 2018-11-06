@@ -16,7 +16,6 @@ function trykPaaMenubutton() {
 }
 
 
-
 /*
 function trykPaaDropdownbutton() {
     console.log("Tryk paa dropdown_mobile");

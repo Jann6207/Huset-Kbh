@@ -20,6 +20,8 @@ body {
 
 }
 
+
+
 /* STYLING AF CONTENT I P START (TEST)*/
 .content p {
 
@@ -30,8 +32,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15%;
-     margin-bottom: 13%;
+    margin-top: 20%;
+     margin-bottom: 20%;
     color: white;
 
 }
@@ -55,7 +57,7 @@ body {
 /* LOGO ANIMATION START */
 
 .logo {
-    z-index: 90;
+    z-index: 9;
     grid-area: logo;
     display: grid;
     align-self: center;
