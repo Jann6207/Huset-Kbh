@@ -30,11 +30,11 @@ function post113Output() {
             document.querySelector(".husets_biograf_content").innerHTML = post113.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = post113.acf.billede.url;
+            document.querySelector(".content_image").src = post113.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = post113.acf.billede.alt;
+            document.querySelector(".content_image").alt = post113.acf.billede.alt;
             //title
-            document.querySelector("img").title = post113.acf.billede.title;
+            document.querySelector(".content_image").title = post113.acf.billede.title;
 
             //Video
             document.querySelector(".video_container").innerHTML = post113.acf.video;
