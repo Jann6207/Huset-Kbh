@@ -15,7 +15,7 @@
 
 body {
     margin: 0;
-    background-color: #121212;
+/*    background-color: #121212;*/
 
 
 }
@@ -118,7 +118,17 @@ body {
 
 /* STYLING AF P START */
 
-p {
+header p {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+
+}
+footer p {
 
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
