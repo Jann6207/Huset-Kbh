@@ -32,11 +32,11 @@ function post172Output (){
             document.querySelector(".bastard_content").innerHTML = post172.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = post172.acf.billede.url;
+            document.querySelector(".content_image").src = post172.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = post172.acf.billede.alt;
+            document.querySelector(".content_image").alt = post172.acf.billede.alt;
             //title
-            document.querySelector("img").title = post172.acf.billede.title;
+            document.querySelector(".content_image").title = post172.acf.billede.title;
 
             //Video
             document.querySelector(".video_container").innerHTML = post172.acf.video;
