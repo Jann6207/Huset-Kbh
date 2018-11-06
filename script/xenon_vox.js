@@ -30,11 +30,11 @@ function post190Output() {
             document.querySelector(".xenon_vox_content").innerHTML = post190.content.rendered;
 
             //Billede url
-            document.querySelector("img").src = post190.acf.billede.url;
+            document.querySelector(".content_image").src = post190.acf.billede.url;
             //alt tekst url
-            document.querySelector("img").alt = post190.acf.billede.alt;
+            document.querySelector(".content_image").alt = post190.acf.billede.alt;
             //title
-            document.querySelector("img").title = post190.acf.billede.title;
+            document.querySelector(".content_image").title = post190.acf.billede.title;
 
             //Video
             document.querySelector(".video_container").innerHTML = post190.acf.video;
