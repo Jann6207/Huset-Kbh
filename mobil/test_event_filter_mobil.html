@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- For loader screen -->
+     <link rel="stylesheet" href="mobil_css/loader.css">
+
     <!--    style sheets-->
 <!--    nav-->
      <link rel="stylesheet" type="text/css" href="mobil_css/stylesheet_mobil.css">
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="mobil_css/main_mobil.css">
 <!--    Kun for denne side-->
     <link rel="stylesheet" href="mobil_css/test_event_filter_mobil.css">
+
 
    <!--   nav icons-->
     <link rel="apple-touch-icon" sizes="180x180" href="ikon.png">
@@ -64,6 +68,9 @@
 </head>
 
 <body>
+<div id="loader"></div>
+
+<div id="content" class="animate-bottom">
 
 
     <header>
@@ -686,9 +693,13 @@
         </div>
 
     </footer>
+
+    </div>
     <!--       FOOTER END-->
 
    <!--   script-->
+   <script src="mobil_script/loader.js"></script>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="mobil_script/mobil_script.js"></script>
 
