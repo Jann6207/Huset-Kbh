@@ -51,7 +51,7 @@ body {
 /* GRID TIL NAV START */
 
 .nav-container {
-
+    z-index: 30;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -152,7 +152,7 @@ footer p {
 /* GRID FOR NAVBAR START */
 
 .navbar {
-
+    z-index: 30;
     grid-area: navbar;
     grid-template-columns: repeat(7, 1fr);
     align-self: center;
@@ -290,7 +290,7 @@ input[type="submit"]:hover {
 
 
 .dropdown {
-
+z-index: 30;
     position: relative;
     display: inline-block;
 
