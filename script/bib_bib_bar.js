@@ -30,7 +30,8 @@ function post184Output(){
             document.querySelector(".bib_bib_bar_content").innerHTML = post184.content.rendered;
 
             //Billede url
-            document.querySelector(".content_image").src = post184.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post184.acf.billede.url + "')";
+
             //alt tekst url
             document.querySelector(".content_image").alt = post184.acf.billede.alt;
             //title
