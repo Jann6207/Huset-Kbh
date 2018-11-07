@@ -9,6 +9,7 @@
             page = await jsonObject.json();
 
             post210Output();
+            screenSize();
 
         }
 
@@ -38,3 +39,53 @@ function post210Output() {
             //Video
             document.querySelector(".video_container").innerHTML = post210.acf.video;
 }
+
+// SCREEN LISTENER ÅBNER OG LUKKER ET ELEMENT
+
+function screenSize(){
+    console.log("screeeen siiize");
+    if (window.matchMedia("(min-width: 1000px)").matches) {
+  /* the viewport is at least 400 pixels wide */
+} else {
+
+    document.querySelector(".section_1").addEventListener("click", section_1_mobil);
+    document.querySelector(".section_2").addEventListener("click", section_2_mobil);
+
+
+
+
+
+  /* the viewport is less than 400 pixels wide */
+}
+}
+
+    function section_1_mobil(){
+
+            console.log("HEJ");
+
+    let a = document.querySelector(".show_1");
+
+    if (a.style.display === "none") {
+        a.style.display = "block";
+    } else {
+        a.style.display = "none";
+    }
+
+        };
+
+
+ function section_2_mobil(){
+
+            console.log("HEJ");
+
+    let a = document.querySelector(".show_2");
+
+    if (a.style.display === "none") {
+        a.style.display = "block";
+    } else {
+        a.style.display = "none";
+    }
+
+        };
+
+
