@@ -1,4 +1,8 @@
     document.addEventListener("DOMContentLoaded", getJson);
+
+
+
+
         let page;
 
         //henter json fil fra WP url
@@ -9,6 +13,7 @@
 
 
 post160Output();
+            sreenSize();
 
         }
 
@@ -43,4 +48,46 @@ function post160Output() {
 
 }
 
+// SCREEN LISTENER ÅBNER OG LUKKER ET ELEMENT
 
+function sreenSize(){
+    console.log("screeeen siiize");
+    if (window.matchMedia("(min-width: 1000px)").matches) {
+  /* the viewport is at least 400 pixels wide */
+} else {
+
+    document.querySelector(".section_1").addEventListener("click", section1_mobil);
+
+
+  /* the viewport is less than 400 pixels wide */
+}
+}
+
+    function section1_mobil(){
+
+            console.log("HEJ");
+
+    let a = document.querySelector(".show_1");
+
+    if (a.style.display === "none") {
+        a.style.display = "block";
+    } else {
+        a.style.display = "none";
+    }
+
+        };
+
+
+ function section2_mobil(){
+
+            console.log("HEJ");
+
+    let a = document.querySelector(".show_1");
+
+    if (a.style.display === "none") {
+        a.style.display = "block";
+    } else {
+        a.style.display = "none";
+    }
+
+        };
