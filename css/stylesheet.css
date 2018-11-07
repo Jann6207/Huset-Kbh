@@ -56,7 +56,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "logo logo logo . . . . . . . . ." "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar";
-    background-color: black;
+    background-color: #0f0f0f;
 }
 
 /* GRID TIL NAV END */
@@ -426,7 +426,7 @@ input[type="submit"]:hover {
     "a b . d . f . h j k l ."
     "a c c e e g g i j k l ."
     "a c c e e g g i . . . .";
-    background-color: black;
+    background-color: #0f0f0f;
     padding-bottom: 25px;
 
 
