@@ -31,7 +31,7 @@ function post215Output() {
             document.querySelector(".salon_k_content").innerHTML = post215.content.rendered;
 
             //Billede url
-            document.querySelector(".content_image").src = post215.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post215.acf.billede.url + "')";
             //alt tekst url
             document.querySelector(".content_image").alt = post215.acf.billede.alt;
             //title

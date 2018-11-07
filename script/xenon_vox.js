@@ -31,7 +31,7 @@ function post190Output() {
             document.querySelector(".xenon_vox_content").innerHTML = post190.content.rendered;
 
             //Billede url
-            document.querySelector(".content_image").src = post190.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post190.acf.billede.url + "')";
             //alt tekst url
             document.querySelector(".content_image").alt = post190.acf.billede.alt;
             //title

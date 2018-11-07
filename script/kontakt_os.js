@@ -32,7 +32,7 @@
         document.querySelector(".kontakt_os_content").innerHTML = post203.content.rendered;
 
         //Billede url
-        document.querySelector(".content_image").src = post203.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post203.acf.billede.url + "')";
         //alt tekst url
         document.querySelector(".content_image").alt = post203.acf.billede.alt;
         //title

@@ -31,7 +31,7 @@ function post191Output (){
             document.querySelector(".stardust_content").innerHTML = post191.content.rendered;
 
             //Billede url
-            document.querySelector(".content_image").src = post191.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post191.acf.billede.url + "')";
             //alt tekst url
             document.querySelector(".content_image").alt = post191.acf.billede.alt;
             //title

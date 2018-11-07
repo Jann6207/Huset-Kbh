@@ -30,7 +30,7 @@
         document.querySelector(".privat_arrangement_content").innerHTML = post179.content.rendered;
 
         //Billede url
-        document.querySelector(".content_image").src = post179.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post179.acf.billede.url + "')";
         //alt tekst url
         document.querySelector(".content_image").alt = post179.acf.billede.alt;
         //title

@@ -30,7 +30,7 @@ function post186Output (){
             document.querySelector(".evoo_street_kitchen_content").innerHTML = post186.content.rendered;
 
             //Billede url
-            document.querySelector(".content_image").src = post186.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post186.acf.billede.url + "')";
             //alt tekst url
             document.querySelector(".content_image").alt = post186.acf.billede.alt;
             //title

@@ -32,7 +32,7 @@ function post177Output() {
             document.querySelector(".offentligt_arrangement_content").innerHTML = post177.content.rendered;
 
             //Billede url
-            document.querySelector(".content_image").src = post177.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post177.acf.billede.url + "')";
             //alt tekst url
             document.querySelector(".content_image").alt = post177.acf.billede.alt;
             //title

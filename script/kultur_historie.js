@@ -36,7 +36,7 @@ function post196Output() {
             document.querySelector(".kultur_historie_content").innerHTML = post196.content.rendered;
 
             //Billede url
-            document.querySelector(".content_image").src = post196.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post196.acf.billede.url + "')";
             //alt tekst url
             document.querySelector(".content_image").alt = post196.acf.billede.alt;
             //title

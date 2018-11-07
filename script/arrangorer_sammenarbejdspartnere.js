@@ -32,7 +32,7 @@ function post202Output (){
             document.querySelector(".arrangore_sammenarbejdspartnere_content").innerHTML = post202.content.rendered;
 
             //Billede url
-            document.querySelector(".content_image").src = post202.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post202.acf.billede.url + "')";
             //alt tekst url
             document.querySelector(".content_image").alt = post202.acf.billede.alt;
             //title
