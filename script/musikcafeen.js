@@ -32,7 +32,7 @@
         document.querySelector(".musickafeen_wrapper_content").innerHTML = post187.content.rendered;
 
         //Billede url
-        document.querySelector(".content_image").src = post187.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post187.acf.billede.url + "')";
         //alt tekst url
         document.querySelector(".content_image").alt = post187.acf.billede.alt;
         //title
