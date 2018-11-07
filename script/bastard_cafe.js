@@ -24,7 +24,9 @@
         //indsætter content i valgt html class
         document.querySelector(".bastard_content").innerHTML = post172.content.rendered;
         //Billede url
-        document.querySelector(".content_image").src = post172.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post172.acf.billede.url + "')";
+
+
         //alt tekst url
         document.querySelector(".content_image").alt = post172.acf.billede.alt;
         //title
