@@ -1,5 +1,4 @@
     document.addEventListener("DOMContentLoaded", getJson);
-
         let page;
 
         //henter json fil fra WP url
@@ -41,4 +40,7 @@ function post160Output() {
 
             //Video
             document.querySelector(".video_container").innerHTML = post160.acf.video;
+
 }
+
+
