@@ -8,6 +8,20 @@ iframe{
     width: 100%;
 }
 
+.site_content_wrapper a{
+
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: darkred;
+    text-decoration: none;
+
+}
+
+.site_content_wrapper a:hover{
+
+    color: #b74040;
+}
 .site_content_wrapper{
 
     display: grid;
