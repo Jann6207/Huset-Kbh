@@ -1,0 +1,26 @@
+/*
+.section_1{
+
+    background-color: red;
+}
+.section_1:hover~.show_more{
+
+display: block;}
+
+.show_more{
+display: none;
+}
+
+.show_more:active{
+
+    display: block;
+}*/
+
+.show_more{
+
+    display: none;
+}
+
+.vis_indhold{
+ display: block;
+}

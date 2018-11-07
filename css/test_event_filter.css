@@ -271,7 +271,10 @@ font-family: "Avenir";
 
 }
 
-
+.event_con:hover {
+    cursor: pointer;
+    border: red solid 2px;
+}
 
 .event_image{
 
