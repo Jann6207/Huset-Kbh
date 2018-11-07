@@ -45,13 +45,6 @@
             document.querySelector(".section_2").addEventListener("click", section_2_mobil);
             document.querySelector(".section_3").addEventListener("click", section_3_mobil);
             document.querySelector(".section_4").addEventListener("click", section_4_mobil);
-            document.querySelector(".section_5").addEventListener("click", section_5_mobil);
-            document.querySelector(".section_6").addEventListener("click", section_6_mobil);
-            document.querySelector(".section_7").addEventListener("click", section_7_mobil);
-            document.querySelector(".section_8").addEventListener("click", section_8_mobil);
-            document.querySelector(".section_9").addEventListener("click", section_9_mobil);
-
-
             /* the viewport is less than 400 pixels wide */
         }
     }
@@ -94,62 +87,6 @@
         console.log("HEJ");
 
         let a = document.querySelector(".show_4");
-        if (a.style.display === "none") {
-            a.style.display = "block";
-        } else {
-            a.style.display = "none";
-        }
-    };
-
-    function section_5_mobil() {
-        console.log("HEJ");
-
-        let a = document.querySelector(".show_5");
-        if (a.style.display === "none") {
-            a.style.display = "block";
-        } else {
-            a.style.display = "none";
-        }
-    };
-
-    function section_6_mobil() {
-        console.log("HEJ");
-
-        let a = document.querySelector(".show_6");
-        if (a.style.display === "none") {
-            a.style.display = "block";
-        } else {
-            a.style.display = "none";
-        }
-
-    };
-
-    function section_7_mobil() {
-        console.log("HEJ");
-
-        let a = document.querySelector(".show_7");
-        if (a.style.display === "none") {
-            a.style.display = "block";
-        } else {
-            a.style.display = "none";
-        }
-    };
-
-    function section_8_mobil() {
-        console.log("HEJ");
-
-        let a = document.querySelector(".show_8");
-        if (a.style.display === "none") {
-            a.style.display = "block";
-        } else {
-            a.style.display = "none";
-        }
-    };
-
-    function section_9_mobil() {
-        console.log("HEJ");
-
-        let a = document.querySelector(".show_9");
         if (a.style.display === "none") {
             a.style.display = "block";
         } else {

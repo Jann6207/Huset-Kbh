@@ -1,12 +1,7 @@
 .show_1,
 .show_2,
 .show_3,
-.show_4,
-.show_5,
-.show_6,
-.show_7,
-.show_8,
-.show_9 {
+.show_4 {
     display: none;
 }
 
@@ -21,12 +16,7 @@
     .show_1,
     .show_2,
     .show_3,
-    .show_4,
-    .show_5,
-    .show_6,
-    .show_7,
-    .show_8,
-    .show_9 {
+    .show_4 {
         display: block;
     }
 
