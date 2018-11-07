@@ -1,29 +1,63 @@
 
 
+
+
+
 .splash_wrapper{
-    width: 100vw;
-    height: 100px;
-    overflow: hidden;
-    margin-bottom: 100px;
-
-}
-
-.header_tag_container{
-    position: relative;
-   z-index: 50;
     width: 100%;
+    height: 100px;
+    overflow: visible;
+    margin-bottom: 8vh;
 
 
-    justify-content: center;
+
+
 }
 
-.site_header, .tag_line{
+.header_tag_container {
+    position: relative;
+    z-index: 50;
+    border: solid;
+    border-color: white;
+   background:rgba(255,255,255, 0.2);
+    top: 20%;
+     margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
 
 
-   z-index: 50;
+
+
+
+
+}
+
+.site_header_container{
+    position: relative;
+    z-index: 50;
+
+    display: flex;
+    justify-content: center;
     color: white;
-    z-index: 10;
+    font-family: "Nunito";
+    text-transform: uppercase;
 
+
+
+}
+
+.tag_line {
+
+   display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 50;
+    color: white;
+    font-family: "Nunito";
+    text-transform: capitalize;
+    border-bottom: solid;
+    margin-left: 70px;
+    margin-right: 70px;
 
 
 }
