@@ -11,7 +11,7 @@
 
 @font-face {
 
-   font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -22,14 +22,13 @@
 
 body {
     margin: 0;
-/*    background-color: #121212;*/
-
-
+    /*    background-color: #121212;*/
 }
 
 
 
 /* STYLING AF CONTENT I P START (TEST)*/
+
 .content p {
 
     font: 4vw "husetregular";
@@ -40,13 +39,12 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 15%;
-     margin-bottom: 15%;
+    margin-bottom: 15%;
     color: white;
 
 }
 
 /* STYLING AF CONTENT I P END (TEST)*/
-
 
 /* GRID TIL NAV START */
 
@@ -72,6 +70,18 @@ body {
 
 }
 
+.logo b {
+    font: 100 15vh "HUSET";
+    font-family: 'HUSET';
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f50b26, 0 0 0.5em #f50b26, 0 0 0.1em #f50b26, 0 10px 3px #000;
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.21);
+}
 
 .logo span {
 
@@ -136,6 +146,7 @@ header p {
     color: white;
 
 }
+
 footer p {
 
     font-family: 'Nunito', sans-serif;
@@ -161,6 +172,7 @@ footer p {
     margin-right: 10%;
 
 }
+
 /* GRID FOR NAVBAR END */
 
 /* SOCIALE IKONER LINKER TIL SOCIALE MEDIER START*/
@@ -203,7 +215,6 @@ footer p {
 }
 
 /* VALG AF SPROG (ENGELSK FLAG) END*/
-
 
 /* SØGE FUNKTION DEKSTOP START */
 
@@ -287,7 +298,6 @@ input[type="submit"]:hover {
 }
 
 /* SØGE FUNKTION DESKTOP END */
-
 
 .dropdown {
 
@@ -421,11 +431,7 @@ input[type="submit"]:hover {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-    "a sociale_ikoner  sociale_ikoner . . . . . . . . ."
-    "a b . d . f . h j k l ."
-    "a c c e e g g i j k l ."
-    "a c c e e g g i . . . .";
+    grid-template-areas: "a sociale_ikoner  sociale_ikoner . . . . . . . . ." "a b . d . f . h j k l ." "a c c e e g g i j k l ." "a c c e e g g i . . . .";
     background-color: #0f0f0f;
     padding-bottom: 25px;
 
@@ -575,28 +581,32 @@ input[type="submit"]:hover {
 /* MEDIA QUERY SØRGER FOR AT DROPDOWN BRUGER MENU IKKE VISES VED WIDTH PÅ OVER 1025px START */
 
 @media only screen and (min-width: 1025px) {
-    .navbar2, .link_container, .dropdownbutton, .dropdown_content_mobile {
+    .navbar2,
+    .link_container,
+    .dropdownbutton,
+    .dropdown_content_mobile {
         display: none;
     }
 
 
 
 }
+
 /* MEDIA QUERY SØRGER FOR AT DROPDOWN BRUGER MENU IKKE VISES VED WIDTH PÅ OVER 1025px END */
 
 @media only screen and (max-width: 1140px) {
 
     header p {
 
-    font-family: 'Nunito', sans-serif;
-    font-size: 12px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 12px;
 
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: left;
-    color: white;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: left;
+        color: white;
 
-}
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -607,10 +617,7 @@ input[type="submit"]:hover {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-        "sprog . . . . logo logo . . . wrap1 burger"
-        "sprog . . . . logo logo . . . wrap1 burger"
-        "sprog . . . . logo logo . . . wrap1 burger";
+        grid-template-areas: "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger";
         background-color: black;
 
     }
@@ -622,7 +629,6 @@ input[type="submit"]:hover {
     }
 
     /* SOCIAL ICONS HAVE BEEN REMOVED IN NAV IN TABLET/MOBILE VERSION - SEE BENEATH */
-
     .sociale_ikoner {
         display: none;
         margin-left: 0px;
@@ -693,7 +699,7 @@ input[type="submit"]:hover {
         height: 40px;
         font-size: 12px;
         display: inline-block;
-         font-family: 'Nunito', sans-serif;
+        font-family: 'Nunito', sans-serif;
         text-transform: none;
         border: none;
         outline: none;
@@ -830,30 +836,30 @@ input[type="submit"]:hover {
         font-size: 20px;
     }
 
-i {
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-}
+    i {
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+    }
 
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
 
 
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
 
     .dropdown_content_mobile {
-       transition: visibility 0s, opacity 0.3s linear;
+        transition: visibility 0s, opacity 0.3s linear;
     }
 
-    .dropdown_content_mobile a{
-     display: none;
+    .dropdown_content_mobile a {
+        display: none;
 
 
 
@@ -861,9 +867,9 @@ i {
 
 
 
-   .dropdownbutton:hover .dropdown_content_mobile a{
+    .dropdownbutton:hover .dropdown_content_mobile a {
 
-       display: block;
+        display: block;
 
     }
 
@@ -871,7 +877,7 @@ i {
         font-size: 14px;
     }
 
-    .dropdown_content_mobile a:hover{
+    .dropdown_content_mobile a:hover {
         text-decoration: underline;
         color: rgba(255, 0, 0, 0.5);
 
@@ -880,24 +886,18 @@ i {
 
 
     /* BURGER MENU END */
-
     /*FOOTER TABLET START*/
     .footer_container {
 
-    display: grid;
-    height: 100%;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1px;
-    grid-template-areas:
-    ". . . sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner . . ."
-    " . b b . d d . f f . h h ."
-    ". c c . e e . g g . i i ."
-
-    ". . . . j . k . l . . . .";
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1px;
+        grid-template-areas: ". . . sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner . . ." " . b b . d d . f f . h h ." ". c c . e e . g g . i i ." ". . . . j . k . l . . . .";
 
 
-/*
+        /*
          ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ."
     ". . b b b . . . d d d ."
     ". . c c c . . . e e e ."
@@ -905,35 +905,37 @@ i {
     ". . . g g g . i i i . ."
     ". . . j j k k l l . . ."
 */
+        ;
 
-;
-
-    background-color: black;
-    padding-bottom: 25px;
-
+        background-color: black;
+        padding-bottom: 25px;
 
 
-}
 
+    }
 
 
 
 
 
 
-.footer_container p {
 
-    display: flex;
-    justify-content: space-between;
-    font-size: .9em;
+    .footer_container p {
 
-    text-align: left;
+        display: flex;
+        justify-content: space-between;
+        font-size: .9em;
+
+        text-align: left;
 
 
 
-}
+    }
 
-.c p, .e p, .g p, .i p{
+    .c p,
+    .e p,
+    .g p,
+    .i p {
 
 
         font-size: .8em;
@@ -944,33 +946,35 @@ i {
 
 
 
-.sociale_ikoner1 {
-margin-top: 5%;
-margin-bottom: 2%;
-    grid-area: sociale_ikoner;
-    width: 100%;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
+    .sociale_ikoner1 {
+        margin-top: 5%;
+        margin-bottom: 2%;
+        grid-area: sociale_ikoner;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
 
-}
-
-
+    }
 
 
-.sociale_ikoner1 img {
-
-    width: 5%;
-    margin-left: 2vw;
-    margin-right: 2vw;
-     align-self: center;
-    justify-self: center;
-    text-align: center;
-
-}
 
 
-    .j, .k, .l {
+    .sociale_ikoner1 img {
+
+        width: 5%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+
+    }
+
+
+    .j,
+    .k,
+    .l {
         margin-top: 20px;
         margin-bottom: 20px;
         width: 100%;
@@ -984,7 +988,9 @@ margin-bottom: 2%;
 
     }
 
-    .j img, .k img, .l img {
+    .j img,
+    .k img,
+    .l img {
 
         width: 140%;
         display: grid;
@@ -998,136 +1004,125 @@ margin-bottom: 2%;
 
     .logo {
 
-    width: auto;
+        width: auto;
 
 
-    margin-bottom: 10px;
-    margin-top: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
 
 
- .footer_container {
+    .footer_container {
 
-    display: grid;
-    height: 100%;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1px;
-    grid-template-areas:
-     ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ."
-    ". . . b b . . . d d . ."
-    ". . . c c c . . e e e ."
-    ". . . f f . . . h h . ."
-    ". . . g g g . . i i i ."
-    ". .  j j . k k . l l . .";
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1px;
+        grid-template-areas: ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ." ". . . b b . . . d d . ." ". . . c c c . . e e e ." ". . . f f . . . h h . ." ". . . g g g . . i i i ." ". .  j j . k k . l l . .";
 
-}
+    }
 
-.sociale_ikoner1 img {
+    .sociale_ikoner1 img {
 
-    width: 6%;
-    margin-left: 2vw;
-    margin-right: 2vw;
-     align-self: center;
-    justify-self: center;
-    text-align: center;
+        width: 6%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
 
-}
+    }
 
 
 
-  .j img, .k img, .l img {
+    .j img,
+    .k img,
+    .l img {
 
         width: 100%;
 
 
     }
 
-@media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
 
-     .footer_container {
+        .footer_container {
 
-    display: grid;
-    height: 100%;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1px;
-    grid-template-areas:
-     ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ."
-    ". . b b b . . d d d . ."
-    ". . c c c . . e e e . ."
-    ". . f f f . . h h h . ."
-    ". . g g g . . i i i . ."
-   ". .  j j . k k . l l . .";
+            display: grid;
+            height: 100%;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 1px;
+            grid-template-areas: ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ." ". . b b b . . d d d . ." ". . c c c . . e e e . ." ". . f f f . . h h h . ." ". . g g g . . i i i . ." ". .  j j . k k . l l . .";
 
-}
+        }
 
-.footer_container p {
+        .footer_container p {
 
-    display: flex;
-    justify-content: space-around;
-    font-size: .8em;
+            display: flex;
+            justify-content: space-around;
+            font-size: .8em;
 
-    text-align: center;
+            text-align: center;
 
 
 
-}
+        }
 
 
-.sociale_ikoner1 img {
+        .sociale_ikoner1 img {
 
-    width: 8%;
-    margin-left: 2vw;
-    margin-right: 2vw;
-     align-self: center;
-    justify-self: center;
-    text-align: center;
+            width: 8%;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            align-self: center;
+            justify-self: center;
+            text-align: center;
 
-}
-
-
- .j, .k, .l {
-        margin-top: 5px;
-        margin-bottom: 10px;
+        }
 
 
-    }
+        .j,
+        .k,
+        .l {
+            margin-top: 5px;
+            margin-bottom: 10px;
+
+
+        }
 
 
 
 
-    .sprog {
-        margin-right: -20px;
-        position: relative;
+        .sprog {
+            margin-right: -20px;
+            position: relative;
 
-    }
+        }
 
-    .menubutton {
-        margin-left: -20px;
-    }
+        .menubutton {
+            margin-left: -20px;
+        }
 
 
-    input[type="text"]:focus {
+        input[type="text"]:focus {
 
-    width: 80px;
+            width: 80px;
 
-    border-bottom: .5px solid #8E99A8;
-    cursor: text;
-}
+            border-bottom: .5px solid #8E99A8;
+            cursor: text;
+        }
 
-    .nav-container {
+        .nav-container {
 
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-        "sprog . . . . logo logo . . . wrap1 burger"
-        "sprog . . . . logo logo . . . wrap1 burger"
-        "sprog . . . . logo logo . . . wrap1 burger";
-        background-color: black;
-    }
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger";
+            background-color: black;
+        }
 
 
     }
