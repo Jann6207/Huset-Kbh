@@ -8,6 +8,13 @@
 
 }
 
+
+@font-face {
+
+   font-family: 'Nunito', sans-serif;
+
+}
+
 * {
 
     box-sizing: border-box;
@@ -120,9 +127,9 @@ body {
 
 header p {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: left;
     color: white;
@@ -130,7 +137,7 @@ header p {
 }
 footer p {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
@@ -221,7 +228,7 @@ input[type="text"] {
     height: 40px;
     font-size: 12px;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-transform: none;
     border: none;
     outline: none;
@@ -668,7 +675,7 @@ input[type="submit"]:hover {
         height: 40px;
         font-size: 12px;
         display: inline-block;
-        font-family: 'Roboto', sans-serif;
+         font-family: 'Nunito', sans-serif;
         text-transform: none;
         border: none;
         outline: none;
