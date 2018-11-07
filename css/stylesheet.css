@@ -129,6 +129,7 @@ header p {
 
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
+
     font-weight: 400;
     text-transform: uppercase;
     text-align: left;
@@ -578,8 +579,25 @@ input[type="submit"]:hover {
         display: none;
     }
 
+
+
 }
 /* MEDIA QUERY SØRGER FOR AT DROPDOWN BRUGER MENU IKKE VISES VED WIDTH PÅ OVER 1025px END */
+
+@media only screen and (max-width: 1140px) {
+
+    header p {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+
+}
+}
 
 @media only screen and (max-width: 1024px) {
 
