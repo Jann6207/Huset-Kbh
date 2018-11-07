@@ -16,7 +16,7 @@ display: none;
     display: block;
 }*/
 
-.show_1, .show_2, .show_3, .show_4, .show_5{
+.show_1, .show_2, .show_3, .show_4, .show_5, .show_6, .show_7, .show_8, .show_9{
 
     display: none;
 }
@@ -31,7 +31,7 @@ display: none;
 
 @media screen and (min-width: 1000px){
 
-    .show_1, .show_2, .show_3, .show_4, .show_5{
+    .show_1, .show_2, .show_3, .show_4, .show_5, .show_6, .show_7, .show_8, .show_9{
 
     display: block;
 }
