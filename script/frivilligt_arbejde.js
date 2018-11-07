@@ -32,8 +32,8 @@
         document.querySelector(".frivilligt_arbejde_content").innerHTML = post160.content.rendered;
 
         //Billede url
-        document.querySelector(".content_image").src = post160
-            .acf.billede.url;
+              document.querySelector(".content_image").style.backgroundImage = "url('" +  post160.acf.billede.url + "')";
+
         //alt tekst url
         document.querySelector(".content_image").alt = post160.acf.billede.alt;
         //title

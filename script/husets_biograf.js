@@ -31,7 +31,7 @@
         document.querySelector(".husets_biograf_content").innerHTML = post113.content.rendered;
 
         //Billede url
-        document.querySelector(".content_image").src = post113.acf.billede.url;
+        document.querySelector(".content_image").style.backgroundImage = "url('" +  post113.acf.billede.url + "')";
         //alt tekst url
         document.querySelector(".content_image").alt = post113.acf.billede.alt;
         //title
