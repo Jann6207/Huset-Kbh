@@ -1,3 +1,10 @@
+.splash_wrapper{
+    width: 100vw;
+    height: 100px;
+    overflow: hidden;
+
+}
+
 .content_image{
 
     width: 100%;
@@ -8,6 +15,20 @@ iframe{
     width: 100%;
 }
 
+.site_content_wrapper a{
+
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: darkred;
+    text-decoration: none;
+
+}
+
+.site_content_wrapper a:hover{
+
+    color: #b74040;
+}
 .site_content_wrapper{
 
     display: grid;
