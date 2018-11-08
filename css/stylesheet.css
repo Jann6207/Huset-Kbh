@@ -178,8 +178,16 @@ footer p {
 
 .sociale_ikoner img {
 
+    opacity: 0.7;
+
     width: 20px;
     margin-right: 5px;
+
+}
+
+.sociale_ikoner img:hover {
+
+    opacity: 1;
 
 }
 
