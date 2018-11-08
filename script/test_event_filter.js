@@ -6,7 +6,10 @@
     let eventTarget = document.querySelector(".event_template");
     let eventOutPut = document.querySelector(".event_kalender");
 
-    eventFilter = "alle";
+    let eventGenre = "alle";
+    let eventVenue = "alle";
+
+
 
 
     //henter json fil fra WP url
@@ -25,23 +28,46 @@
     }
 
     //Her laver vi eventlisteneres på alle buttons, som så kalder funktionen filtrering ved click.
-    document.querySelectorAll(".event_item").forEach(knap => {
-        knap.addEventListener("click", filtrering)
+//genre
+    document.querySelectorAll(".event_genre").forEach(knap => {
+
+        knap.addEventListener("click", filtrering_genre)
     });
 
+//venues
+    document.querySelectorAll(".event_venue").forEach(knap => {
+
+        knap.addEventListener("click", filtrering_venue)
+    });
 
     // Denne funktion henter data-værdien, kategori på button med class menu
     // Dette giver variablen retFilter
 
-    function filtrering() {
+    function filtrering_genre() {
 
-        console.log("filter");
+        console.log("mauuu er" + " " + eventGenre + "-" + eventVenue);
             document.querySelector(".genre_block").style.display = "none";
             document.querySelector(".venues_block").style.display = "none";
 
 
         eventOutPut.textContent = "";
-        eventFilter = this.getAttribute("data-kategori");
+        eventGenre = this.getAttribute("data-genre");
+
+        visEvents();
+
+
+    }
+
+  function filtrering_venue() {
+
+        console.log("mauuu er" + " " + eventGenre + "-" + eventVenue);
+            document.querySelector(".genre_block").style.display = "none";
+            document.querySelector(".venues_block").style.display = "none";
+
+
+        eventOutPut.textContent = "";
+        eventVenue = this.getAttribute("data-venue");
+
         visEvents();
 
 
@@ -49,34 +75,55 @@
 
 
     function visEvents() {
-        console.log("Vis Events Aktiveret");
+        console.log(eventGenre + eventVenue);
 
 
         allEvents.forEach(event => {
 
             console.log("test");
 
+if (eventGenre == "alle" && eventVenue == "alle") {
 
-            if (event.acf.genre == eventFilter) {
+    udSkrivEvent();
+
+    }else if(eventGenre == event.acf.genre && eventVenue == event.acf.venue){
+
+           udSkrivEvent();
+             }
 
 
-                udSkrivEvent();
-            } else if (eventFilter == "alle") {
+        else if(eventGenre == event.acf.genre && eventVenue == "alle"){
 
-                console.log("HEJ JEG HEDEDER BRIEAAN");
-                udSkrivEvent();
-            }
+        udSkrivEvent();
 
-            else if (event.acf.venue == eventFilter) {
+    }else if(eventVenue == event.acf.venue && eventGenre == "alle"){
 
-                udSkrivEvent();
-            }
+                     udSkrivEvent();
+
+             }
+
+
+
+//            if (event.acf.genre == eventGenre ) {
+//
+//
+//                udSkrivEvent();
+//            } else if (eventFilter == "alle") {
+//
+//                console.log("HEJ JEG HEDEDER BRIEAAN");
+//                udSkrivEvent();
+//            }
+//
+//            else if (event.acf.venue == eventFilter) {
+//
+//                udSkrivEvent();
+//            }
 
 
 
             function udSkrivEvent() {
 
-                console.log(eventFilter);
+                console.log(eventGenre + " " + eventVenue);
 
                 let klon = eventTarget.cloneNode(true).content;
 
