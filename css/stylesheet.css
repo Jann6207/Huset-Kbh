@@ -1,11 +1,8 @@
 @font-face {
+            font-family: "Huset";
+            src: url("Huset-Kbh/fonts/huset.otf");
 
-    font-family: 'husetregular';
-    src: url("../fonts/huset.otf");
-    font-weight: normal;
-    font-style: normal;
-
-}
+        }
 
 
 
@@ -31,8 +28,8 @@ body {
 
 .content p {
 
-    font: 4vw "husetregular";
-    font-family: 'husetregular';
+    font: 4vw "Huset";
+    font-family: 'Huset';
     color: #fee;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f50b26, 0 0 0.5em #f50b26, 0 0 0.1em #f50b26, 0 10px 3px #000;
     display: flex;
