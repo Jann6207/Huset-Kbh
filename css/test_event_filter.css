@@ -19,8 +19,18 @@ img {
 
 .main_content {
 
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard
+/*
+
+    background-image: url(../images/bricks.jpg);
+    background-repeat: repeat;
+    background-size:100%;
+*/
+
     padding: 50px 0px 100px 0px;
-    background-color: antiquewhite;
+
+    color: aliceblue;
 }
 
 .overskrift_events {
@@ -47,6 +57,8 @@ img {
 .filter_wrapper {
     border-top: solid black 1px;
     border-bottom: solid black 5px;
+    background-color: white;
+    color: black;
     z-index: 2;
     width: 100vw;
     display: grid;
