@@ -1,30 +1,39 @@
-:root{
+:root {
 
     font-size: 60%;
 }
 
 
-body{
-
-}
+body {}
 
 img {
 
-    width:100%;
+    width: 100%;
 }
 
-*{
-/*    border: solid red 1px;*/
+* {
+    /*    border: solid red 1px;*/
 }
 
 /*EVENT STYLE*/
-.main_content{
+
+.main_content {
+
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard
+/*
+
+    background-image: url(../images/bricks.jpg);
+    background-repeat: repeat;
+    background-size:100%;
+*/
 
     padding: 50px 0px 100px 0px;
-    background-color: white;
+
+    color: aliceblue;
 }
 
-.overskrift_events{
+.overskrift_events {
     font-family: "Huset";
     text-transform: uppercase;
     font-size: 6em;
@@ -43,13 +52,13 @@ img {
 }
 */
 
-
-
 /*FILTER*/
 
-.filter_wrapper{
-border-top: solid black 1px;
-border-bottom: solid black 5px;
+.filter_wrapper {
+    border-top: solid black 1px;
+    border-bottom: solid black 5px;
+    background-color: white;
+    color: black;
     z-index: 2;
     width: 100vw;
     display: grid;
@@ -57,16 +66,16 @@ border-bottom: solid black 5px;
     grid-template-areas: ". filter ."
 }
 
-.filter_con{
+.filter_con {
     grid-area: filter;
 
-   display: flex;
+    display: flex;
     justify-content: space-around;
-    flex-direction:row;
+    flex-direction: row;
 
 }
 
-.filter_title{
+.filter_title {
     text-align: center;
     font-family: "Huset";
     text-transform: uppercase;
@@ -76,7 +85,13 @@ border-bottom: solid black 5px;
 
 }
 
-.filter_pil{
+.knap:hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.filter_pil {
     background-image: url(../svg/huset_pil.svg);
     background-size: 100% 100%;
     width: 10px;
@@ -84,17 +99,21 @@ border-bottom: solid black 5px;
 }
 
 /*SUB FILTER GENRE*/
-.tema{
+
+.tema {
 
     background-color: #ebebeb;
-    border-bottom: 1px solid black;
+    border: solid rgba(0, 0, 0, 0.04) .1px;
+box-shadow: 1px 1px 1px grey; ;
+
     padding: 5px;
 }
 
-.tema:hover{
+.tema:hover {
     cursor: pointer;
 }
-.genre_block{
+
+.genre_block {
     display: none;
     position: absolute;
     z-index: 2;
@@ -107,31 +126,31 @@ border-bottom: solid black 5px;
 }
 
 
-.genre_block ul{
+.genre_block ul {
     list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.genre_block ul li{
+.genre_block ul li {
     font-family: "AvenirNext";
     font-size: .4em;
     padding: 5px 0px 5px 0px;
 }
 
-.genre_block ul li:nth-child(even){
+.genre_block ul li:nth-child(even) {
 
     background-color: #f8f8f8;
 }
 
 
-.genre_block ul li:nth-child(odd){
+.genre_block ul li:nth-child(odd) {
 
     background-color: white;
 }
 
-.tema_pil{
+.tema_pil {
 
     float: left;
     background-image: url(../svg/huset_pil.svg);
@@ -142,16 +161,21 @@ border-bottom: solid black 5px;
 }
 
 /*genre sub filter */
-.musik_filter, .film_filter, .ord_filter, .scenekunst_filter, .andet_filter{
+
+.musik_filter,
+.film_filter,
+.ord_filter,
+.scenekunst_filter,
+.andet_filter {
 
     display: none;
 }
+
 /*musik knap*/
 
-
-
 /* VENUES sUB FILTER */
-.venues_block{
+
+.venues_block {
 
     display: none;
     position: absolute;
@@ -164,37 +188,39 @@ border-bottom: solid black 5px;
 
 
 }
-.venues_block ul{
+
+.venues_block ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.venues_block ul li:nth-child(even){
+.venues_block ul li:nth-child(even) {
     background-color: white;
 }
 
 
-.venues_block ul li:nth-child(odd){
+.venues_block ul li:nth-child(odd) {
 
     background-color: #f8f8f8;
 }
 
 
 
-.venues_block ul li{
+.venues_block ul li {
 
     padding: 5px;
 
 }
 
 
-.show{
+.show {
     display: block;
 }
 
 /*EVENT KALENDER*/
-.event_kalender{
+
+.event_kalender {
 
 
     display: grid;
@@ -205,29 +231,19 @@ border-bottom: solid black 5px;
 
 }
 
-.event_con{
+.event_con {
 
     background-color: black;
- width: 100vw;
-height: 100vw;
-color: white;
+    width: 100vw;
+    height: 100vw;
+    color: white;
     border: solid 2px;
     border-color: rgba(252, 229, 241, 0.0);
-font-family: "Avenir";
+    font-family: "Avenir";
     display: grid;
     grid-template-columns: 10px repeat(6, 1fr) 10px;
     grid-template-rows: 10px repeat(6, 1fr) 10px;
-    grid-template-areas:
-
-         ". . . . . . . ."
-         ". . . . . . . ."
-         ". . . . . . . ."
-         ". . . . . . . ."
-         ". . . . . . . ."
-         ". . . . . . . ."
-         ". . . . . . . ."
-         ". . . . . . . ."
-
+    grid-template-areas: ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ."
 }
 
 .event_con:hover {
@@ -236,15 +252,16 @@ font-family: "Avenir";
 }
 
 
-.event_image{
+.event_image {
 
     grid-column: 1/9;
     grid-row: 1/9;
 
 }
-.grey_bg{
 
-  background-image: linear-gradient(to bottom, #241717, #000000);
+.grey_bg {
+
+    background-image: linear-gradient(to bottom, #241717, #000000);
     opacity: 0.5;
     grid-column: 1/9;
     grid-row: 1/9;
@@ -252,48 +269,50 @@ font-family: "Avenir";
 
 }
 
-.event_con:hover > .grey_bg{
-        opacity: 0.9;
+.event_con:hover > .grey_bg {
+    opacity: 0.9;
 
 
 }
 
-.dato_con{
+.dato_con {
 
     grid-column: 2/4;
-    grid-row: 2/3 ;
+    grid-row: 2/3;
 
     display: flex;
     z-index: 1;
 }
 
-.dag{
+.dag {
     text-align: left;
     font-family: "HUSET";
-    font-size:6rem;
-     z-index: 1;
+    font-size: 6rem;
+    z-index: 1;
 
 }
-.maaned{
 
-    align-self:flex-end;
+.maaned {
+
+    align-self: flex-end;
     font-size: 2rem;
-     z-index: 1;
+    z-index: 1;
 
 
 }
-.tid{
-    text-align:right;
+
+.tid {
+    text-align: right;
     align-self: flex-end;
     text-transform: capitalize;
     font-size: 2rem;
     grid-column: 6/8;
-    grid-row: 2/3 ;
-     z-index: 1;
+    grid-row: 2/3;
+    z-index: 1;
 }
 
 
-.genre{
+.genre {
     text-align: left;
     z-index: 1;
     font-size: 1rem;
@@ -303,7 +322,7 @@ font-family: "Avenir";
 
 }
 
-.event_navn{
+.event_navn {
 
     font-family: "Nunito";
     align-self: center;
@@ -314,18 +333,19 @@ font-family: "Avenir";
     grid-column: 2/8;
     grid-row: 4/6;
 
-     z-index: 1;
+    z-index: 1;
 }
 
 
-.venue{
+.venue {
     text-align: right;
-   font-size: 1rem;
+    font-size: 1rem;
     grid-column: 5/8;
     grid-row: 3/4;
-     z-index: 1;
+    z-index: 1;
 }
-.se_mere{
+
+.se_mere {
 
     text-align: left;
     align-self: flex-end;
@@ -334,25 +354,27 @@ font-family: "Avenir";
     grid-column: 2/8;
     grid-row: 6/7;
 
-     z-index: 1;
+    z-index: 1;
 
 }
 
-.pris{
+.pris {
     text-align: left;
     align-self: flex-end;
     font-size: 2rem;
     grid-column: 2/4;
     grid-row: 7/8;
-     z-index: 1;
+    z-index: 1;
 }
-.knap_link{
+
+.knap_link {
     z-index: 1;
     grid-column: 6/8;
     grid-row: 7/8;
 
 }
-.kob_knap{
+
+.kob_knap {
 
     border-radius: px;
     border: solid 1px white;
@@ -368,7 +390,7 @@ font-family: "Avenir";
 
 }
 
-.kob_knap:hover{
+.kob_knap:hover {
     border: solid 1px white;
 
     background-color: rgba(221, 7, 42, 0.68);
@@ -390,17 +412,14 @@ font-family: "Avenir";
 @media screen and (min-width: 700px) {
 
 
-    :root{
+    :root {}
 
-
-    }
-
-    .event_kalender{
+    .event_kalender {
         overflow: visible;
 
         grid-template-columns: 1fr 1fr;
     }
-    .event_con{
+    .event_con {
 
         width: 50vw;
         height: 50vw;
@@ -412,17 +431,14 @@ font-family: "Avenir";
 @media screen and (min-width: 1000px) {
 
 
-    :root{
+    :root {}
 
-
-    }
-
-    .event_kalender{
+    .event_kalender {
         padding: 50px 0px;
         overflow: visible;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .event_con{
+    .event_con {
 
         width: 33.3vw;
         height: 33.3vw;
@@ -432,23 +448,23 @@ font-family: "Avenir";
 
 @media screen and (min-width: 1200px) {
 
-    .kalender_container{
+    .kalender_container {
 
         width: 100%;
-         display: grid;
-        grid-template-columns:  1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
 
 
     }
 
 
-    :root{
+    :root {
 
         font-size: 50%;
     }
 
-    .event_kalender{
+    .event_kalender {
 
 
         grid-column: 2/3;
@@ -460,11 +476,105 @@ font-family: "Avenir";
 
 
     }
-    .event_con{
+
+
+    .event_con {
 
         width: 310px;
         height: 310px;
     }
+
+    /*     Dektop på sub menu*/
+    .sub_filter {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr 1240px 1fr;
+        grid-template-areas: ". subfilter .";
+
+    }
+
+
+    .genre_block {
+
+        grid-area: subfilter;
+        position: static;
+        z-index: 2;
+        width: 1240px;
+        font-family: "Huset";
+        text-transform: uppercase;
+        font-size: 3em;
+        text-align: center;
+        display: none;
+
+
+
+    }
+    .genre_block_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    .genre_block ul {
+        z-index: -5;
+        border-left: solid 1px black;
+        border-right: solid 1px black;
+        border-bottom: solid 1px black;
+        position: absolute;
+        width: 248px;
+
+    }
+    .genre_block ul li {
+        padding-top: 22px;
+        display: flex;
+    }
+
+    .genre_block ul li .event_item {
+
+        align-items: flex-start;
+        padding-left: 10px;
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+
+
+    .genre_block ul {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .genre_block ul li {
+        font-family: "AvenirNext";
+        font-size: .4em;
+        padding: 5px 0px 5px 0px;
+    }
+
+    .genre_block ul li:hover {
+
+        background-color: #4a4141;
+        cursor: pointer;
+        color: white;
+
+    }
+    .tema {
+        padding: 10px 0px 10px 0px;
+        margin-top: 20px;
+    }
+
+    .tema:hover {
+
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .genre_block ul li:nth-child(even) {}
+
+
+    .genre_block ul li:nth-child(odd) {}
+
 
 }
 
