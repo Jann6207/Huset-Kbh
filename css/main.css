@@ -29,33 +29,42 @@ position: absolute;
 overflow: hidden;
 
     display: grid;
-    grid-template-columns: 1fr minmax(200px, 800px) 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr minmax(50px, 800px) 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         ". . ."
         ". head ."
         ". . ." ;
 
-        padding: 0px 10px 0px 10px ;
 }
 
 .header_wrapper{
     grid-area: head;
+
     border: white solid 1px;
     background-color: rgba(255, 255, 255, 0.16);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+
+        "head"
+        "head"
+        "tag"
 }
 
 .site_header{
-    margin-bottom: 0;
+    grid-area: head;
     font-family: "Nunito";
     text-align: center;
     text-transform: uppercase;
     z-index: 90;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .tag_line{
+    grid-area: tag;
     font-family: "Nunito";
     text-transform: capitalize;
     text-decoration: underline;
@@ -139,6 +148,17 @@ hr{
     .splash_wrapper{
     margin-bottom: 25vh;
 
+}
+
+    .site_header{
+
+    font-size: 2.4em;
+}
+
+.tag_line{
+
+
+    font-size: 1.5em;
 }
 
 
