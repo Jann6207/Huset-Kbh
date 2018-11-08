@@ -460,11 +460,104 @@ font-family: "Avenir";
 
 
     }
+
+
     .event_con{
 
         width: 310px;
         height: 310px;
     }
+
+/*     Dektop på sub menu*/
+
+    .sub_filter{
+        border: solid red 1px;
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr 1240px 1fr;
+        grid-template-areas: ". subfilter .";
+
+    }
+
+
+    .genre_block{
+
+    border: blue solid 1px;
+    grid-area: subfilter;
+    position: static;
+    z-index: 2;
+    width: 1240px;
+    font-family: "Huset";
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    display: none;
+
+
+
+}
+    .genre_block_wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    .genre_block ul{
+
+        top: 409px;
+        border: solid 1px black;
+        position: absolute;
+        width: 248px;
+
+    }
+    .genre_block ul li{
+        padding-top: 22px;
+        display: flex;
+    }
+
+    .genre_block ul li .event_item{
+        align-items: center;
+        padding-left: 10px;
+        font-size: 1.3em;
+    }
+
+
+
+.genre_block ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.genre_block ul li{
+    font-family: "AvenirNext";
+    font-size: .4em;
+    padding: 5px 0px 5px 0px;
+}
+
+.genre_block ul li:hover{
+
+    background-color: #4a4141;
+    cursor: pointer;
+    color: white;
+
+}
+    .tema{
+        padding: 0;
+    }
+
+    .tema:hover{
+
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+.genre_block ul li:nth-child(even){}
+
+
+.genre_block ul li:nth-child(odd){}
+
 
 }
 
