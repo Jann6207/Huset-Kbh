@@ -2,36 +2,130 @@
 
 
 
-function showSubFilter(){
-    console.log("CLICK PÅ KNAP");
+    function showSubFilter() {
+        console.log("CLICK PÅ KNAP");
 
 
 
-    document.querySelector(".genre_tekst").addEventListener("click", showMusikMenu);
-    document.querySelector(".venues_tekst").addEventListener("click", showVenuesMenu);
+        document.querySelector(".genre_tekst").addEventListener("click", showMusikMenu);
+        document.querySelector(".venues_tekst").addEventListener("click", showVenuesMenu);
 
+        //sub filter
 
-}
-
-function showMusikMenu(){
-
-    console.log("Hvis musik menu");
-    document.querySelector(".genre_block").classList.add("show");
-
-        document.querySelector(".venues_block").classList.remove("show");
-
-
-
-}
-
-
-function showVenuesMenu(){
-
-    console.log("Hvis venues menu");
-        document.querySelector(".genre_block").classList.remove("show");
-
-    document.querySelector(".venues_block").classList.add("show");
+        document.querySelector(".tema_musik").addEventListener("click", show_sub_musik);
+        document.querySelector(".tema_film").addEventListener("click", show_sub_film);
+        document.querySelector(".tema_ord").addEventListener("click", show_sub_ord);
+        document.querySelector(".tema_scenekunst").addEventListener("click", show_sub_scenekunst);
+        document.querySelector(".tema_andet").addEventListener("click", show_sub_andet);
 
 
 
-}
+
+    }
+
+    function showMusikMenu() {
+
+        console.log("Hvis musik menu");
+
+                    document.querySelector(".venues_block").style.display = "none";
+
+
+  let a = document.querySelector(".genre_block");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+
+
+    }
+
+
+
+    function showVenuesMenu() {
+
+        console.log("Hvis venues menu");
+
+            document.querySelector(".genre_block").style.display = "none";
+
+
+          let a = document.querySelector(".venues_block");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+
+
+
+    }
+
+
+    function show_sub_musik() {
+
+
+        console.log("show musik sub");
+
+        let a = document.querySelector(".musik_filter");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+
+    }
+
+function show_sub_film() {
+
+
+        console.log("show film sub");
+
+        let a = document.querySelector(".film_filter");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+
+    }
+function show_sub_ord() {
+
+
+        console.log("show ord sub");
+
+        let a = document.querySelector(".ord_filter");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+
+    }
+
+function show_sub_scenekunst() {
+
+
+        console.log("show scenekunst sub");
+
+        let a = document.querySelector(".scenekunst_filter");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+
+    }
+
+function show_sub_andet() {
+
+
+        console.log("show andet sub");
+
+        let a = document.querySelector(".andet_filter");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+
+    }

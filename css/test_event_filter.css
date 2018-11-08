@@ -61,6 +61,7 @@ border-bottom: solid black 5px;
     grid-area: filter;
 
    display: flex;
+    justify-content: space-around;
     flex-direction:row;
 
 }
@@ -146,50 +147,6 @@ border-bottom: solid black 5px;
     display: none;
 }
 /*musik knap*/
-.tema_musik:hover~.musik_filter{
-
-display: block;
-}
-
-.musik_filter:hover{
-    display: block;
-}
-
-/*Film knap*/
-.tema_film:hover~.film_filter{
-
-display: block;
-}
-.film_filter:hover{
-    display: block;
-}
-
-/*Ord knap*/
-.tema_ord:hover~.ord_filter{
-
-display: block;
-}
-.ord_filter:hover{
-    display: block;
-}
-
-/*Scenekunst knap*/
-.tema_scenekunst:hover~.scenekunst_filter{
-
-display: block;
-}
-.scenekunst_filter:hover{
-    display: block;
-}
-
-/*Andet knap*/
-.tema_andet:hover~.andet_filter{
-
-display: block;
-}
-.andet_filter:hover{
-    display: block;
-}
 
 
 
