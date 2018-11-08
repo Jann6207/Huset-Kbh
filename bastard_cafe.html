@@ -385,6 +385,9 @@
             <div class="kontakt_formular">her skal der være en kontakt formular</div>
         </div>
     </section>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
     <!--       FOOTER START-->
     <footer>
         <div class="footer_container">
@@ -487,6 +490,21 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="script/script.js"></script>
     <script src="script/bastard_cafe.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#scroll').fadeIn();
+        }else{
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+</script>
 
 </body>
 
