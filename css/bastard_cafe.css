@@ -12,7 +12,9 @@
     height: 10px;
 }
 
-/* BackToTop button css */
+
+
+/* TILBAGE TIL TOP KNAP START */
 #scroll {
 
     position:fixed;
@@ -58,6 +60,9 @@
     filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
 }
+
+
+/* TILBAGE TIL TOP KNAP SLUT */
 
 @media screen and (min-width: 1000px) {
     .show_1,
