@@ -6,61 +6,12 @@
 .splash_wrapper{
     width: 100%;
     height: 100px;
-    overflow: visible;
+    overflow: hidden;
     margin-bottom: 8vh;
 
 
-
-
 }
 
-.header_tag_container {
-    position: relative;
-    z-index: 50;
-    border: solid;
-    border-color: white;
-   background:rgba(255,255,255, 0.2);
-    top: 20%;
-     margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 5%;
-
-
-
-
-
-
-}
-
-.site_header_container{
-    position: relative;
-    z-index: 50;
-
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: "Nunito";
-    text-transform: uppercase;
-
-
-
-}
-
-.tag_line {
-
-   display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 50;
-    color: white;
-    font-family: "Nunito";
-    text-transform: capitalize;
-    border-bottom: solid;
-    margin-left: 70px;
-    margin-right: 70px;
-
-
-}
 
 .content_image{
 
@@ -75,9 +26,46 @@
     background-repeat: no-repeat;
     background-size: cover;
 position: absolute;
+overflow: hidden;
 
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas:
+        ". . ."
+        ". head ."
+        ". . ." ;
 
+        padding: 0px 10px 0px 10px ;
 }
+
+.header_wrapper{
+    grid-area: head;
+    border: white solid 1px;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.site_header{
+    margin-bottom: 0;
+    font-family: "Nunito";
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 90;
+    color: white;
+    font-size: 2em;
+}
+
+.tag_line{
+    font-family: "Nunito";
+    text-transform: capitalize;
+    text-decoration: underline;
+    z-index: 89;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+
 
 iframe{
     width: 100%;
@@ -101,6 +89,8 @@ iframe{
 
     display: grid;
     grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+
+    padding-top: 20px;
 
 }
 
@@ -129,25 +119,7 @@ hr{
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-@media screen and (min-width: 1025px) {
 
-    .content_image{
-
-
-    width: 100%;
-    height: 300px;
-
-    z-index: 2;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-position: absolute;
-
-
-}
-}
 
 @media screen and (min-width: 1000px) {
 
@@ -155,6 +127,17 @@ position: absolute;
 
     display: grid;
     grid-template-columns: 1fr 800px 1fr;
+
+}
+
+    .content_image{
+
+    height: 300px;
+
+    }
+
+    .splash_wrapper{
+    margin-bottom: 25vh;
 
 }
 
