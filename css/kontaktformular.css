@@ -131,7 +131,7 @@
     }
     #newsletter_container input[type=submit]:hover {
         background-color: #aa021e;
-        border: solid 2px #aa021e;
+
     }
     #newsletter_container a {
         color: black;
