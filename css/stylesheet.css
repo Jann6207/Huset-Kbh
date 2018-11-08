@@ -197,7 +197,7 @@ footer p {
     text-align: center;
     width: 30px;
     height: auto;
-    background: url(/Img-Bank/engelsk-flag.png) center center no-repeat;
+    background: url(../Img-Bank/engelsk-flag.png) center center no-repeat;
     background-size: contain;
     margin-right: 110px;
 
@@ -272,7 +272,7 @@ input[type="submit"] {
     display: inline-block;
     color: white;
     float: right;
-    background: url(/Ikon-Bank/huset-search-ikon.png) center center no-repeat;
+    background: url(../Ikon-Bank/huset-search-ikon.png) center center no-repeat;
     background-size: contain;
     text-indent: -10000px;
     border: none;
@@ -731,7 +731,7 @@ z-index: 30;
         display: inline-block;
         color: white;
         float: right;
-        background: url(/Ikon-Bank/huset-search-ikon.png) center center no-repeat;
+        background: url(../Ikon-Bank/huset-search-ikon.png) center center no-repeat;
         background-size: contain;
         text-indent: -10000px;
         border: none;
