@@ -15,7 +15,17 @@ function trykPaaMenubutton() {
 
 }
 
-
+ $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#scroll').fadeIn();
+        }else{
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
 /*
 function trykPaaDropdownbutton() {
     console.log("Tryk paa dropdown_mobile");
