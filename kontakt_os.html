@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
+    <link rel="stylesheet" href="css/kontaktformular.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
     <!--    style sheets-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/kontakt_os.css">
+
 
     <!--   nav icons-->
     <link rel="apple-touch-icon" sizes="180x180" href="ikon.png">
@@ -375,7 +377,20 @@
 
             <!--her indsættes kontakt formular-->
 
-            <div class="kontakt_formular">her skal der være en kontakt formular</div>
+<div id="newsletter_container">
+  <div id="image_newsletter_con">
+   <img class="image_newsletter" src="Assets/huset_news.jpg" alt="newsletter picture">
+  </div>
+<form>
+   <h3>HUSET</h3>
+   <p>Tilmeld dig vores nyhedsbrev og gå ikke glip af spændende oplevelser!</p>
+    <input id="navn" class="navn_box" type="text" placeholder="Dit navn" required>
+    <input id="email" class="email_box" type="email" placeholder="Din email" required>
+     <input class="send" type="submit" value="Sign Up"><span id="response"></span>
+     <a href="tel:20662811">Eller ring til os hvis du har spørgsmål.</a>
+</form>
+</div>
+
         </div>
 
     </section>
@@ -481,6 +496,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="script/script.js"></script>
     <script src="script/kontakt_os.js"></script>
+    <script src="script/besked.js"></script>
 
 </body>
 

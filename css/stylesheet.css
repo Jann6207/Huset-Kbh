@@ -226,7 +226,7 @@ footer p {
     position: relative;
 }
 
-input[type="text"] {
+header input[type="text"] {
 
     height: 40px;
     font-size: 12px;
@@ -248,12 +248,12 @@ input[type="text"] {
     cursor: pointer;
 }
 
-input[type="text"]:focus:hover {
+header input[type="text"]:focus:hover {
 
     border-bottom: .5px solid #8E99A8;
 }
 
-input[type="text"]:focus {
+header input[type="text"]:focus {
 
     width: 200px;
     z-index: 1;
@@ -261,7 +261,7 @@ input[type="text"]:focus {
     cursor: text;
 }
 
-input[type="submit"] {
+header input[type="submit"] {
 
     height: 37px;
     width: 23px;
@@ -283,7 +283,7 @@ input[type="submit"] {
 
 }
 
-input[type="submit"]:hover {
+header input[type="submit"]:hover {
 
     opacity: 1;
 }
@@ -685,7 +685,7 @@ z-index: 30;
     }
 
 
-    input[type="text"] {
+    header input[type="text"] {
 
         height: 40px;
         font-size: 12px;
@@ -707,12 +707,12 @@ z-index: 30;
         cursor: pointer;
     }
 
-    input[type="text"]:focus:hover {
+    header input[type="text"]:focus:hover {
 
         border-bottom: .5px solid #8E99A8;
     }
 
-    input[type="text"]:focus {
+    header input[type="text"]:focus {
 
         width: 20vw;
         z-index: 30;
@@ -720,7 +720,7 @@ z-index: 30;
         cursor: text;
     }
 
-    input[type="submit"] {
+    header input[type="submit"] {
 
         height: 37px;
         width: 23px;
@@ -742,7 +742,7 @@ z-index: 30;
 
     }
 
-    input[type="submit"]:hover {
+    header input[type="submit"]:hover {
 
         opacity: 1;
     }
@@ -1098,7 +1098,7 @@ z-index: 30;
         }
 
 
-        input[type="text"]:focus {
+        header input[type="text"]:focus {
 
             width: 80px;
 

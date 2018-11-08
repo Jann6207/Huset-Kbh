@@ -1,0 +1,151 @@
+    @font-face {
+            font-family: "Huset";
+            src:url(fonts/huset.otf);
+        }
+
+
+
+
+
+    #newsletter_container{
+        width: 100%;
+        background-color: lightgray;
+        display: grid;
+        grid-template-columns: 20px 1fr 1fr 20px;
+        grid-template-rows: 20px 1fr 1fr 20px;
+        grid-template-areas:
+
+            ". . . ."
+            ". image image ."
+            ". form form ."
+            ". . . .";
+
+
+
+    }
+    @media only screen and (min-width: 1000px) {
+            #newsletter_container{
+        grid-template-areas:
+
+            ". . . ."
+            ". image form ."
+            ". image form ."
+            ". . . .";
+
+
+
+    }
+        #newsletter_container form {
+
+            grid-template-rows: 20px repeat(6, 1fr) 20px;
+
+        }
+
+}
+#image_newsletter_con {
+    grid-area: image;
+    width: 100%;
+}
+    .image_newsletter {
+        width: 100%;
+    }
+
+    #newsletter_container form {
+        width: 100%;
+        height: 100%;
+        background-color: whitesmoke;
+ /*       display: grid;*/
+        grid-area: form;
+
+/*        grid-template-columns: 2px 1fr 1fr 5px 5px 1fr 1fr 2px;
+        grid-template-rows: 2px repeat(5, 1fr) 2px;
+        grid-template-areas:
+
+            ". . . . . . . ."
+            ". title title title title title title ."
+            ". tekst tekst tekst tekst tekst tekst ."
+            ". navn navn . . email email ."
+            ". send send send send send send ."
+            ". links links links links links links ."
+            ". . . . . . . .";
+
+        */
+    }
+
+
+
+   #newsletter_container input {
+        border: none;
+        border-bottom: 1px solid black;
+        color: grey;
+        padding: 0;
+        font-size: 1.2em;
+        font-family: sans-serif;
+       width: 100%;
+
+
+    }
+
+    #newsletter_container .navn_box  {
+        grid-area: navn;
+    }
+    #newsletter_container .email_box {
+        grid-area: email;
+    }
+
+    #newsletter_container .send {
+        color: white;
+        grid-area: send;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #newsletter_container h3 {
+        grid-area: title;
+        font-family: "huset";
+        font-size: 2.5em;
+    }
+    #newsletter_container p {
+        grid-area: tekst;
+        font-size: 1.4em;
+    }
+
+
+    #newsletter_container input[type=submit] {
+    background-color: black; color: antiquewhite;
+        cursor: pointer;
+        border: #d3072a;
+    }
+    #newsletter_container input[type=email]:focus { color: black;}
+    #newsletter_container input[type=text]:focus { color: black;}
+
+
+    #newsletter_container input[type=email]:hover { color: grey;}
+    #newsletter_container input[type=text]:hover { color: grey;}
+
+
+    #newsletter_container input[type=text] {
+        background-color: whitesmoke;
+    }
+    #newsletter_container input[type=email] {
+        background-color: whitesmoke;
+    }
+    #newsletter_container input[type=submit]:hover {
+        background-color: #aa021e;
+        border: solid 2px #aa021e;
+    }
+    #newsletter_container a {
+        color: black;
+        text-decoration: none;
+
+        font-family: "Avenir";
+        grid-area: links;
+        font-size: 0.8em;
+
+    }
+   #newsletter_container a:hover {
+        color: grey;
+    }
+        #newsletter_container a[href^="tel:"]:before {
+  content: "\1F4F1";
+}
+
