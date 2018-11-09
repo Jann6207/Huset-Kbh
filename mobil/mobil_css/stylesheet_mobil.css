@@ -48,12 +48,15 @@ header {
 /* GRID TIL NAV START */
 
 .nav-container {
-    z-index: 30;
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr) 5px;
-    grid-template-areas: "logo logo logo . . . . . . . . ." "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar"
-        "bar bar bar bar bar  bar bar bar bar bar bar bar";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "logo logo logo . . . . . . . . ."
+        "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+        "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar";
+
     background-color: #0f0f0f;
 }
 
@@ -61,8 +64,8 @@ header {
 /*Progress bar */
 
 .header {
-    grid-area: bar;
-  z-index: 1;
+position: fixed;
+  z-index: 31;
   width: 100%;
   background-color: black;
 }
