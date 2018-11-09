@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- For loader screen -->
+     <link rel="stylesheet" href="mobil_css/loader.css">
+
+
     <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
     <link rel="stylesheet" type="text/css" href="mobil_css/stylesheet_mobil.css">
 
@@ -36,6 +40,8 @@
 </head>
 
 <body>
+    <div id="loader"></div>
+    <div id="content" class="animate-bottom">
 
     <header>
         <div class="nav-container">
@@ -475,8 +481,9 @@
         </div>
 
     </footer>
+    </div>
     <!--       FOOTER END-->
-
+   <script src="mobil_script/loader.js"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="mobil_script/mobil_script.js"></script>
