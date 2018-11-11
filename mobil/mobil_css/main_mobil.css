@@ -1,7 +1,19 @@
 .content_image{
 
     width: 100%;
+    background-size: cover;
+    height: 125px;
     border: solid 1px black;
+}
+.content_image h2 {
+    color: white;
+    font-family: Nunito;
+    text-transform: uppercase;
+}
+.tag_line {
+    color: white;
+    font-family: Nunito;
+    text-decoration: underline;
 }
 
 iframe{
