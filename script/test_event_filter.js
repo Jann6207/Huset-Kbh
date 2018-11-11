@@ -231,6 +231,7 @@ function visModal(event){
 
     modal.classList.remove("skjul_modal");
     modal.querySelector(".luk span").style.display = "block";
+
     modal.classList.add("vis_modal");
 
 
@@ -273,5 +274,6 @@ function skjulModal(retter){
 
     console.log("remove vis")
 
+    modal.querySelector(".luk span").style.display = "none";
 }
 
