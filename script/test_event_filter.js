@@ -8,6 +8,7 @@
 
     let eventGenre = "alle";
     let eventVenue = "alle";
+    document.querySelector(".genre_text_2").textContent = eventGenre;
 
 
 
@@ -29,13 +30,30 @@
 
     }
 
-    document.querySelector(".event_vis_alle").addEventListener("click", resetAlle);
+
+  document.querySelectorAll(".event_vis_alle").forEach(knap => {
+
+        knap.addEventListener("click", resetAlle)
+    });
+
+
 
 function resetAlle (){
+
+    console.log("reset aæææeæeæe");
+
+      document.querySelectorAll(".event_venue").forEach(venue => {
+
+      venue.classList.remove("when_clicked");
+     venue.parentElement.style.backgroundColor = "lightgray";
+
+    });
 
     eventGenre = "alle";
     eventVenue = "alle";
     eventOutPut.textContent = "";
+
+
 
 
     visEvents();
@@ -53,7 +71,9 @@ function resetAlle (){
 //venues
     document.querySelectorAll(".event_venue").forEach(knap => {
 
-        knap.addEventListener("click", filtrering_venue)
+        knap.addEventListener("click", filtrering_venue);
+
+
     });
 
     // Denne funktion henter data-værdien, kategori på button med class menu
@@ -76,9 +96,21 @@ function resetAlle (){
 
         console.log("mauuu er" + " " + eventGenre + "-" + eventVenue);
 
+           document.querySelectorAll(".event_venue").forEach(knap => {
+
+        knap.classList.remove("when_clicked");
+        knap.parentElement.style.backgroundColor = "lightgray";
+
+
+
+    });
 
         eventOutPut.textContent = "";
         eventVenue = this.getAttribute("data-venue");
+        this.classList.add("when_clicked");
+        this.parentElement.style.backgroundColor = "black";
+
+
 
         visEvents();
 
@@ -92,6 +124,7 @@ function resetAlle (){
 
         allEvents.forEach(event => {
 
+        document.querySelector(".genre_text_2").textContent = eventGenre;
             console.log("test");
 
 if (eventGenre == "alle" && eventVenue == "alle") {
@@ -136,6 +169,18 @@ if (eventGenre == "alle" && eventVenue == "alle") {
             function udSkrivEvent() {
 
                 console.log(eventGenre + " " + eventVenue);
+
+
+
+                if(eventGenre == "alle"){
+
+                document.querySelector(".genre_text_2").textContent = "Alle";
+
+                }else {
+
+                document.querySelector(".genre_text_2").textContent =  eventGenre;
+
+                };
 
                 let klon = eventTarget.cloneNode(true).content;
 

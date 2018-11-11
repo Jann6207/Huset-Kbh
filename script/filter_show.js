@@ -6,7 +6,7 @@
         console.log("CLICK PÅ KNAP");
 
 
-        if (window.innerWidth <= 999){
+        if (window.innerWidth <= 1239){
 
             console.log("jeg hedder EDAMAMAMA")
         document.querySelector(".genre_tekst").addEventListener("click", showMusikMenu);
