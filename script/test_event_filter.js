@@ -229,7 +229,10 @@ if (eventGenre == "alle" && eventVenue == "alle") {
 function visModal(event){
     console.log("vis modal");
 
+    modal.classList.remove("skjul_modal");
     modal.classList.add("vis_modal");
+    modal.querySelector(".luk span").style.display = "block";
+
 
 //    modal.classList.add("vis");
 
@@ -265,6 +268,11 @@ function visModal(event){
 
 function skjulModal(retter){
      modal.classList.remove("vis_modal");
+
+    modal.classList.add("skjul_modal");
+
     console.log("remove vis")
 
+    modal.querySelector(".luk span").style.display = "none";
 }
+

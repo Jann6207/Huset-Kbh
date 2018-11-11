@@ -439,6 +439,7 @@ cursor: pointer
     display: none;
     background-image: linear-gradient(rgb(34, 34, 34), rgb(98, 85, 100));
     position: fixed;
+    left: -100vw;
     top: 0;
     width: 100vw;
     overflow: scroll;
@@ -450,6 +451,29 @@ cursor: pointer
 .vis_modal{
 
     display: block;
+
+    animation: modal_in .2s ease-in-out forwards ;
+}
+
+@keyframes modal_in {
+    from {    left: -100vw;
+}
+    to {    left: 0vw;
+}
+}
+
+.skjul_modal{
+
+
+    animation: modal_out .2s ease-in-out forwards ;
+}
+
+@keyframes modal_out {
+    from {    left: 0vw;
+}
+    to {    left: -100vw;
+
+}
 }
 
 .modal_container{
@@ -537,6 +561,18 @@ display: block;
     background-color: rgba(196, 180, 183, 0.33);
     text-align: center;
     border: solid 1px black;
+}
+
+.luk span{
+    position: fixed;
+    background-image: url(../svg/huset_pil.svg);
+    background-size: 100% 100%;
+    transform: rotate(90deg);
+    width: 30px;
+    height: 30px;
+    left: 1px;
+    top: 50vh;
+
 }
 
 /*dato  -------*/
