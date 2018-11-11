@@ -37,6 +37,7 @@
 
     // SCREEN LISTENER ÅBNER OG LUKKER ET ELEMENT
 
+
     function sreenSize() {
         console.log("screeeen siiize");
         if (window.matchMedia("(min-width: 1000px)").matches) {
@@ -52,7 +53,7 @@
     }
 
     function section_1_mobil() {
-        console.log("HEJ");
+        console.log(event.target.classList);
 
         let a = document.querySelector(".show_1");
         if (a.style.display === "none") {
@@ -64,11 +65,12 @@
 
 
     function section_2_mobil() {
-        console.log("HEJ");
+        console.log("første");
 
         let a = document.querySelector(".show_2");
         if (a.style.display === "none") {
             a.style.display = "block";
+              console.log("HEJ");
         } else {
             a.style.display = "none";
         }

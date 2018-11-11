@@ -22,10 +22,24 @@
 
         console.log(allEvents);
 
+
         visEvents();
 
 
+
     }
+
+    document.querySelector(".event_vis_alle").addEventListener("click", resetAlle);
+
+function resetAlle (){
+
+    eventGenre = "alle";
+    eventVenue = "alle";
+
+    visEvents
+
+
+}
 
     //Her laver vi eventlisteneres på alle buttons, som så kalder funktionen filtrering ved click.
 //genre
