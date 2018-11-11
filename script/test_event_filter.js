@@ -35,8 +35,10 @@ function resetAlle (){
 
     eventGenre = "alle";
     eventVenue = "alle";
+    eventOutPut.textContent = "";
 
-    visEvents
+
+    visEvents();
 
 
 }
@@ -60,8 +62,6 @@ function resetAlle (){
     function filtrering_genre() {
 
         console.log("mauuu er" + " " + eventGenre + "-" + eventVenue);
-            document.querySelector(".genre_block").style.display = "none";
-            document.querySelector(".venues_block").style.display = "none";
 
 
         eventOutPut.textContent = "";
@@ -75,8 +75,6 @@ function resetAlle (){
   function filtrering_venue() {
 
         console.log("mauuu er" + " " + eventGenre + "-" + eventVenue);
-            document.querySelector(".genre_block").style.display = "none";
-            document.querySelector(".venues_block").style.display = "none";
 
 
         eventOutPut.textContent = "";

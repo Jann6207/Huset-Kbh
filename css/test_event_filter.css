@@ -19,8 +19,6 @@ img {
 
 .main_content {
 
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard
 /*
 
     background-image: url(../images/bricks.jpg);
@@ -30,7 +28,6 @@ img {
 
     padding: 50px 0px 100px 0px;
 
-    color: aliceblue;
 }
 
 .overskrift_events {
@@ -62,8 +59,14 @@ img {
     z-index: 2;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: ". filter ."
+    grid-template-columns: 1fr minmax(200px, 1240px) 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        ". filter ."
+        ". subfilter ."
+
+        ;
+
 }
 
 .filter_con {
@@ -75,12 +78,22 @@ img {
 
 }
 
+.filter_knap_2{
+
+    display: none;
+}
+
+.sub_filter{
+            grid-area: subfilter;
+
+}
+
 .filter_title {
     text-align: center;
     font-family: "Huset";
     text-transform: uppercase;
     font-size: 3em;
-    margin: 10px;
+    padding: 10px;
     display: flex;
 
 }
@@ -113,11 +126,13 @@ box-shadow: 1px 1px 1px grey; ;
     cursor: pointer;
 }
 
+
+
 .genre_block {
     display: none;
     position: absolute;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     font-family: "Huset";
     text-transform: uppercase;
     font-size: 3em;
@@ -150,6 +165,10 @@ box-shadow: 1px 1px 1px grey; ;
     background-color: white;
 }
 
+.event_genre{
+    width: 100%;
+}
+
 .tema_pil {
 
     float: left;
@@ -180,7 +199,7 @@ box-shadow: 1px 1px 1px grey; ;
     display: none;
     position: absolute;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     font-family: "AvenirNext";
     text-transform: uppercase;
     font-size: 1.5em;
@@ -190,7 +209,6 @@ box-shadow: 1px 1px 1px grey; ;
 }
 
 .venues_block ul {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -213,10 +231,13 @@ box-shadow: 1px 1px 1px grey; ;
 
 }
 
+.venues_block ul li:hover {
 
-.show {
-    display: block;
+cursor: pointer
+
 }
+
+
 
 /*EVENT KALENDER*/
 
@@ -444,6 +465,19 @@ box-shadow: 1px 1px 1px grey; ;
         height: 33.3vw;
     }
 
+    .filter_con{
+        display: none;
+    }
+
+    .filter_knap_2{
+
+    display: block;
+    font-family: "huset";
+    font-size: 30px;
+    text-align: left;
+
+}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -487,7 +521,7 @@ box-shadow: 1px 1px 1px grey; ;
     /*     Dektop på sub menu*/
     .sub_filter {
         display: grid;
-        width: 100vw;
+        width: 100%;
         grid-template-columns: 1fr 1240px 1fr;
         grid-template-areas: ". subfilter .";
 
@@ -496,7 +530,7 @@ box-shadow: 1px 1px 1px grey; ;
 
     .genre_block {
 
-        grid-area: subfilter;
+        grid-area: genreSub;
         position: static;
         z-index: 2;
         width: 1240px;
@@ -504,7 +538,7 @@ box-shadow: 1px 1px 1px grey; ;
         text-transform: uppercase;
         font-size: 3em;
         text-align: center;
-        display: none;
+        display: block;
 
 
 
@@ -570,10 +604,39 @@ box-shadow: 1px 1px 1px grey; ;
         text-decoration: underline;
     }
 
-    .genre_block ul li:nth-child(even) {}
 
 
-    .genre_block ul li:nth-child(odd) {}
+    .venues_block{
+        grid-area: venuesSub;
+        display: block;
+        position: static;
+
+    }
+
+    .venues_block ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .venues_block ul li{
+        list-style: none;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .sub_filter {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+
+        ". venuesSub ."
+
+        ". genreSub ."
+            ;
+
+    }
 
 
 }
