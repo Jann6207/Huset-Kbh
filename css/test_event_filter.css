@@ -13,6 +13,7 @@ img {
 
 * {
     /*    border: solid red 1px;*/
+    box-sizing: border-box;
 }
 
 /*EVENT STYLE*/
@@ -431,7 +432,182 @@ cursor: pointer
 
 
 
+/*MODAL VINUE --------------------------------------------------------------------------------------------------------------------------------------------*/
 
+.modal_wrapper{
+
+    display: none;
+    background-image: linear-gradient(rgb(34, 34, 34), rgb(98, 85, 100));
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    overflow: scroll;
+    height: 100vh;
+    z-index: 9999999;
+
+}
+
+.vis_modal{
+
+    display: block;
+}
+
+.modal_container{
+    overflow: scroll;
+    font-family: "AvenirNext";
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1f 1fr 1fr 1fr;
+    grid-template-areas:
+
+        "x . . . . . . . . "
+        "x . . . . . . . . "
+        "x . i i i i i i . "
+        "x . g g g v v v . "
+        "x . d d d . k k . "
+        "x . p p p . l l . "
+        "x . . . . . . . . "
+        "x . t t t t t t . "
+        "x . . . . . . . . "
+        "x . b b b b b b . "
+        "x . b b b b b b . "
+        "x . b b b b b b . "
+        "x . . . . . . . . "
+
+    ;
+grid-gap: 10px;
+
+}
+
+.modal_title{
+    font-size: 5em;
+    grid-area: t;
+}
+
+.modal_genre{
+    font-size: 1.5em;
+    text-align: left;
+    align-self: flex-end;
+        grid-area: g;
+
+}
+
+.modal_venue{
+    font-size: 1.5em;
+    text-align: right;
+     align-self: flex-end;
+
+        grid-area: v;
+
+}
+
+/*images modal vidue*/
+.modal_image_com{
+
+/*
+grid-column: 1/9;
+grid-row: 1/9;
+*/
+
+        grid-area: i;
+display: block;
+    border: 3px solid white;
+    background-color: white;
+
+}
+
+
+.modal_image_con img{
+
+    width: 100%;
+    border: 1px solid black;
+    }
+
+/*------------*/
+.luk{
+
+        grid-area: x;
+
+    font-family: "huset";
+    text-transform: uppercase;
+    font-size: 4em;
+    background-color: rgba(196, 180, 183, 0.33);
+    text-align: center;
+    border: solid 1px black;
+}
+
+/*dato  -------*/
+.modal_dato_con{
+    display: flex;
+    grid-area: d;
+     font-size: 2em;
+    text-align: left;
+
+
+}
+.modal_dag{
+
+
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+.modal_maaned{
+
+}
+/*-------------*/
+
+.modal_tid{
+    font-size: 2em;
+    text-align: right;
+        grid-area: k;
+
+}
+.modal_pris{
+
+        grid-area: p;
+    font-size: 2em;
+    text-align: left;
+    align-self: flex-end;
+}
+
+/*--------*/
+.modal_langbeskrivelse{
+
+        grid-area: b;
+font-family: "Roboto";
+
+
+    font-size: 2em;
+}
+/*-------------*/
+.modal_knap_link{
+
+    grid-area: l;
+    float: right;
+    align-self: flex-end;
+    position: sticky;
+
+}
+._modal_kob_knap{
+
+    width: 100%;
+    height: 40px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px white;
+
+    background-color: rgba(221, 7, 42, 0.68);
+    color: white;
+    cursor: pointer;
+}
+/*----------*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
