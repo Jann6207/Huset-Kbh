@@ -25,20 +25,7 @@ body {
 
 /* STYLING AF CONTENT I P START (TEST)*/
 
-.content p {
 
-    font: 4vw "Huset";
-    font-family: 'Huset';
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f50b26, 0 0 0.5em #f50b26, 0 0 0.1em #f50b26, 0 10px 3px #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    color: white;
-
-}
 
 /* STYLING AF CONTENT I P END (TEST)*/
 
