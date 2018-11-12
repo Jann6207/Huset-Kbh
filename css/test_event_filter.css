@@ -464,6 +464,7 @@ cursor: pointer
 
 .skjul_modal{
 
+    display: block;
     animation: modal_out .2s ease-in-out forwards ;
 }
 
@@ -506,7 +507,7 @@ grid-gap: 10px;
 }
 
 .modal_title{
-    font-size: 5em;
+    font-size: 3em;
     grid-area: t;
 }
 
@@ -569,7 +570,7 @@ display: block;
     transform: rotate(90deg);
     width: 30px;
     height: 30px;
-    left: 1px;
+    left: 0px;
     top: 50vh;
 
 }
@@ -578,7 +579,7 @@ display: block;
 .modal_dato_con{
     display: flex;
     grid-area: d;
-     font-size: 2em;
+     font-size: 1.5em;
     text-align: left;
 
 
@@ -595,7 +596,7 @@ display: block;
 /*-------------*/
 
 .modal_tid{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: right;
         grid-area: k;
 
@@ -615,7 +616,8 @@ display: block;
 font-family: "Roboto";
 
 
-    font-size: 2em;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 /*-------------*/
 .modal_knap_link{
@@ -684,6 +686,279 @@ font-family: "Roboto";
         height: 33.3vw;
     }
 
+
+/*MODAL VINUE --------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.modal_wrapper{
+
+    display: block;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.61);
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x:hidden;
+
+    height: 100vh;
+    z-index: -9999999;
+    opacity: 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 20px 1fr 20px;
+
+}
+
+
+
+.vis_modal{
+
+    display: grid;
+
+    animation: modal_in .1s ease-in-out forwards ;
+}
+
+@keyframes modal_in {
+    from {    left: 0;
+                opacity: 0;
+                    transform: scale(0);
+                z-index: -9999999;
+
+}
+    to {    left: 0;
+            opacity: 1;
+            z-index: 9999999;
+                transform: scale(1);
+
+
+}
+}
+
+.skjul_modal{
+
+    display: grid;
+    animation: modal_out .1s ease-in-out forwards ;
+}
+
+@keyframes modal_out {
+    from {    left: 0;
+            opacity: 1;
+            z-index: 9999999;
+                        transform: scale(1);
+
+
+
+}
+    to {    left: 0;
+            opacity: 0;
+            z-index: -9999999;
+                        transform: scale(0);
+
+
+
+
+}
+}
+
+.modal_container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: "AvenirNext";
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 20px;
+    grid-template-rows: 20px auto auto auto auto auto auto auto auto auto auto auto 20px;
+    grid-template-areas:
+
+        "x . . . . . . . . ."
+        "x . d d d d i i i ."
+        "x . k k k k i i i ."
+        "x . k k k k i i i ."
+        "x . t t t t g v v ."
+        "x . t t t t p p p ."
+        "x . t t t t l l l ."
+        "x . b b b b b b b ."
+        "x . b b b b b b b ."
+        "x . b b b b b b b ."
+        "x . b b b b b b b ."
+        "x . b b b b b b b ."
+        "x . . . . . . . . ."
+
+    ;
+grid-gap: 10px;
+
+}
+
+.modal_title{
+    font-size: 3em;
+    grid-area: t;
+    align-self: flex-end;
+    }
+
+.modal_genre{
+    font-size: 1.5em;
+    text-align: left;
+    align-self: flex-start;
+    grid-area: g;
+
+}
+
+.modal_venue{
+    font-size: 1.5em;
+    text-align: right;
+     align-self: flex-start;
+
+        grid-area: v;
+
+}
+
+/*images modal vidue*/
+.modal_image_com{
+
+/*
+grid-column: 1/9;
+grid-row: 1/9;
+*/
+
+        grid-area: i;
+display: block;
+    border: 3px solid white;
+    background-color: white;
+
+}
+
+
+.modal_image_con img{
+
+    width: 100%;
+    border: 1px solid black;
+    }
+
+/*------------*/
+.luk{
+
+        grid-area: x;
+
+    font-family: "huset";
+    text-transform: uppercase;
+    font-size: 4em;
+    background-color: rgba(196, 180, 183, 0.33);
+    text-align: center;
+    border: solid 1px black;
+}
+
+    .luk:hover{
+        cursor: pointer;
+            background-color: rgba(255, 251, 252, 0.43);
+
+    }
+
+.luk span{
+    position: relative;
+    background-image: url(../svg/huset_pil.svg);
+    background-size: 100% 100%;
+    transform: rotate(90deg);
+    width: 50px;
+    height: 50px;
+    top: 50vh;
+
+}
+
+/*dato  -------*/
+.modal_dato_con{
+    display: flex;
+    align-self: flex-start;
+    grid-area: d;
+    font-size: 6em;
+    text-align: left;
+
+
+}
+.modal_dag{
+
+
+    text-transform: uppercase;
+    margin-right: 5px;
+    font-size: 2em;
+    align-self: flex-start;
+    font-family: "huset";
+    align-items: flex-start;
+    line-height: 60%;
+    margin: 0;
+    padding: 0;
+}
+.modal_maaned{
+        line-height: 80%;
+
+    align-self: flex-start;
+    font-size: .5em;
+
+
+
+}
+/*-------------*/
+
+.modal_tid{
+    font-size: 5em;
+    letter-spacing: .15em;
+    text-align: left;
+        grid-area: k;
+    align-self: flex-end;
+    text-transform: uppercase;
+
+}
+.modal_pris{
+
+        grid-area: p;
+    font-size: 2em;
+    text-align: left;
+    align-self: flex-end;
+}
+
+/*--------*/
+.modal_langbeskrivelse{
+
+        grid-area: b;
+font-family: "Roboto";
+
+
+    font-size: 2em;
+    line-height: 1.5em;
+}
+/*-------------*/
+.modal_knap_link{
+
+    grid-area: l;
+    float: right;
+    align-self: flex-end;
+    position: sticky;
+
+}
+._modal_kob_knap{
+
+    width: 100%;
+    height: 40px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px white;
+
+    background-color: rgba(221, 7, 42, 0.68);
+    color: white;
+    cursor: pointer;
+}
+/*----------*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
