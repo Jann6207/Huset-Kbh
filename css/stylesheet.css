@@ -629,6 +629,71 @@ z-index: 30;
 
 }
 
+@media only screen and (max-width:
+    1475px) {
+        /* TILBAGE TIL TOP KNAP START */
+#scroll {
+
+    position:fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color: rgba(222, 222, 222, 0.6);
+
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+
+    background-image: url(/Ikon-Bank/top_button/scroll_button_normalArtboard%201.png);
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .3s;
+
+
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+#scroll span {
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    transition: .3s;
+/*
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+*/
+}
+#scroll:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(/Ikon-Bank/top_button/scroll_button_hoverArtboard%201.png);
+
+
+/*    background-color:#e74c3c;*/
+    opacity:1;
+    filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+
+/* TILBAGE TIL TOP KNAP SLUT */
+
+}
+
 /* MEDIA QUERY SØRGER FOR AT DROPDOWN BRUGER MENU IKKE VISES VED WIDTH PÅ OVER 1025px END */
 
 @media only screen and (max-width: 1140px) {
