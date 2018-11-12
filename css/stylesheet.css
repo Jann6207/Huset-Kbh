@@ -588,7 +588,7 @@ z-index: 30;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
-     background-image: url(/Img-Bank/top_knap_logo_2.png);
+     background-image: url(/Ikon-Bank/top_button/top_black.png);
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -610,7 +610,7 @@ z-index: 30;
 */
 }
 #scroll:hover {
-    background-image: url(/Img-Bank/top_knap_logo_hover2.png);
+    background-image: url(/Ikon-Bank/top_button/hover_top.png);
 
 
 /*    background-color:#e74c3c;*/
