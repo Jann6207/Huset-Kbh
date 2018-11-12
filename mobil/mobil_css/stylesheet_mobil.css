@@ -166,17 +166,6 @@ header p {
 
 }
 
-footer p {
-
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: left;
-    color: white;
-
-}
-
 /* STYLING AF P END */
 
 /* GRID FOR NAVBAR START */
@@ -453,152 +442,77 @@ z-index: 30;
 
 /*FOOTER START*/
 
-.footer_container {
+footer {
+    z-index: 100;
+    height: 10.5%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "a sociale_ikoner  sociale_ikoner . . . . . . . . ." "a b . d . f . h j k l ." "a c c e e g g i j k l ." "a c c e e g g i . . . .";
-    background-color: #0f0f0f;
-    padding-bottom: 25px;
-
-
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        ". news calendar calendar search .";
 }
 
-.footer_container p {
-
-    font-size: 0.9vw;
-}
-
-.sociale_ikoner1 {
-
-    grid-area: sociale_ikoner;
-    width: 100%;
+.kalender_icon {
+    grid-area: calendar;
     align-self: center;
-    justify-self: center;
-
-}
-
-
-
-.sociale_ikoner1 img {
-
-    width: 20px;
-    margin-right: 5px;
-
-}
-
-
-.a {
-
-    grid-area: a;
-
-}
-
-
-
-.b {
-
-    grid-area: b;
-    align-self: flex-end;
-
-}
-
-.c {
-
-    grid-area: c;
-    align-self: center;
-}
-
-
-.d {
-
-    grid-area: d;
-    align-self: flex-end;
-}
-
-.e {
-
-    grid-area: e;
-
-}
-
-
-.f {
-
-    grid-area: f;
-    align-self: flex-end;
-}
-
-.g {
-
-    grid-area: g;
-}
-
-.h {
-
-    grid-area: h;
-    align-self: flex-end;
-}
-
-.i {
-
-    grid-area: i;
-}
-
-.j {
-
-    grid-area: j;
-    width: 100%;
-    align-self: flex-end;
-}
-
-.j img {
-
-    width: 100%;
-}
-
-.k {
-
-    grid-area: k;
-    width: 100%;
     text-align: center;
-    align-self: flex-end;
+}
+.kalender_icon img {
+    width: 50px;
 }
 
-.k img {
-
-    width: 80%;
+.nyheder_icon {
+     grid-area: news;
+    align-self: center;
+}
+.nyheder_icon img {
+    width: 40px;
+}
+#search_mobile_con {
+    grid-area: search;
+    align-self: center;
+    text-align: center;
 }
 
-.l {
 
-    grid-area: l;
+.search_mobile {
+    background: url("../mobil_Ikon-Bank/huset-search-ikon.png");
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    z-index: 100;
+}
+
+#dropdown_search {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
     width: 100%;
-    align-self: flex-end;
+
 }
 
-.l img {
+#search_bar {
     width: 100%;
+    display: none;
+    background-color: black;
+    border: none;
+    color: white;
+    height: 30px;
+    font-size: 1.4em;
 }
-
-
-.i p,
-.g p,
-.e p,
-.c p {
-
-    text-transform: capitalize;
+.show_search_mobile {
+    opacity: 1;
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
 }
-
-.i a,
-.g a,
-.e a,
-.c a {
-
-    text-decoration: none;
-}
-
 
 /* FOOTER END /*
 
