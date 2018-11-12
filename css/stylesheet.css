@@ -564,10 +564,10 @@ z-index: 30;
 
     position:fixed;
     right:30px;
-    bottom:50px;
+    bottom:10px;
     cursor:pointer;
-    width:65px;
-    height:150px;
+    width:60px;
+    height:80px;
   /*  background-color: rgba(252, 229, 241, 0.9);
       background-color: rgba(36, 25, 93, 0.8);*/
     text-indent:-9999px;
