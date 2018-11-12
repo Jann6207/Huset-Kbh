@@ -66,6 +66,7 @@ function post229Output (){
             document.querySelector(".section_12").addEventListener("click", section_12_mobil);
             document.querySelector(".section_13").addEventListener("click", section_13_mobil);
             document.querySelector(".section_14").addEventListener("click", section_14_mobil);
+                 document.getElementById("search_button").addEventListener("click", search_mobil);
 
 
             /* the viewport is less than 400 pixels wide */
@@ -226,3 +227,15 @@ function post229Output (){
             a.style.display = "none";
         }
     };
+
+    function search_mobil() {
+        console.log("HEJ");
+
+        let a = document.getElementById("search_bar");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+    };
+
