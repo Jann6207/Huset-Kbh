@@ -166,17 +166,6 @@ header p {
 
 }
 
-footer p {
-
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: left;
-    color: white;
-
-}
-
 /* STYLING AF P END */
 
 /* GRID FOR NAVBAR START */
@@ -454,6 +443,7 @@ z-index: 30;
 /*FOOTER START*/
 
 footer {
+    z-index: 100;
     height: 10.5%;
     width: 100%;
     background-color: black;
@@ -514,7 +504,7 @@ footer {
     border: none;
     color: white;
     height: 30px;
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 .show_search_mobile {
     opacity: 1;

@@ -20,6 +20,7 @@
         console.log(allEvents);
 
         visEvents();
+                        document.getElementById("search_button").addEventListener("click", search_mobil);
 
 
     }
@@ -108,3 +109,15 @@
         });
 
     }
+
+    function search_mobil() {
+        console.log("HEJ");
+
+        let a = document.getElementById("search_bar");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+    };
+
