@@ -1,44 +1,29 @@
-
-
-
-
-
-.splash_wrapper{
+.splash_wrapper {
     width: 100%;
     height: 100px;
     overflow: hidden;
     margin-bottom: 8vh;
-
-
 }
 
-
-.content_image{
-
-
+.content_image {
     width: 100%;
     height: 160px;
-
     z-index: 2;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-position: absolute;
-overflow: hidden;
+    position: absolute;
+    overflow: hidden;
 
     display: grid;
     grid-template-columns: 1fr minmax(50px, 800px) 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        ". . ."
-        ". head ."
-        ". . ." ;
+    grid-template-areas: ". . ." ". head ." ". . .";
 
 }
 
-.header_wrapper{
+.header_wrapper {
     grid-area: head;
 
     border: white solid 1px;
@@ -46,14 +31,10 @@ overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-
-        "head"
-        "head"
-        "tag"
+    grid-template-areas: "head" "head" "tag"
 }
 
-.site_header{
+.site_header {
     grid-area: head;
     font-family: "Nunito";
     text-align: center;
@@ -63,7 +44,7 @@ overflow: hidden;
     font-size: 1.5em;
 }
 
-.tag_line{
+.tag_line {
     grid-area: tag;
     font-family: "Nunito";
     text-transform: capitalize;
@@ -76,11 +57,11 @@ overflow: hidden;
 
 
 
-iframe{
+iframe {
     width: 100%;
 }
 
-.site_content_wrapper a{
+.site_content_wrapper a {
 
     font-family: sans-serif;
     text-transform: uppercase;
@@ -90,11 +71,12 @@ iframe{
 
 }
 
-.site_content_wrapper a:hover{
+.site_content_wrapper a:hover {
 
     color: #b74040;
 }
-.site_content_wrapper{
+
+.site_content_wrapper {
 
     display: grid;
     grid-template-columns: 1fr minmax(200px, 800px) 1fr;
@@ -103,7 +85,7 @@ iframe{
 
 }
 
-.site_content_container{
+.site_content_container {
 
     grid-column: 2/3;
 
@@ -111,18 +93,18 @@ iframe{
 
 }
 
-h3{
+h3 {
     font-family: sans-serif;
 }
 
-p{
+p {
     font-family: 'Roboto';
 
 }
 
-hr{
+hr {
 
-        border: 0;
+    border: 0;
     height: 1px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
@@ -132,36 +114,35 @@ hr{
 
 @media screen and (min-width: 1000px) {
 
-    .site_content_wrapper{
+    .site_content_wrapper {
 
-    display: grid;
-    grid-template-columns: 1fr 800px 1fr;
-
-}
-
-    .content_image{
-
-    height: 300px;
+        display: grid;
+        grid-template-columns: 1fr 800px 1fr;
 
     }
 
-    .splash_wrapper{
-    margin-bottom: 25vh;
+    .content_image {
+
+        height: 300px;
+
+    }
+
+    .splash_wrapper {
+        margin-bottom: 25vh;
+
+    }
+
+    .site_header {
+
+        font-size: 2.4em;
+    }
+
+    .tag_line {
+
+
+        font-size: 1.5em;
+    }
+
+
 
 }
-
-    .site_header{
-
-    font-size: 2.4em;
-}
-
-.tag_line{
-
-
-    font-size: 1.5em;
-}
-
-
-
-}
-
