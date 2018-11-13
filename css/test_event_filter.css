@@ -774,8 +774,8 @@ font-family: "Roboto";
     height: 100%;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 20px;
-    grid-template-rows: 20px auto auto auto auto auto auto auto auto auto auto auto 20px;
+    grid-template-columns: 1fr 20px 1fr 1fr 1fr 1fr 50px 50px 50px 20px;
+    grid-template-rows: 20px 50px 50px 50px 50px 50px 50px auto auto auto auto auto 20px;
     grid-template-areas:
 
         "x . . . . . . . . ."
@@ -804,7 +804,7 @@ grid-gap: 10px;
     }
 
 .modal_genre{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: left;
     align-self: flex-start;
     grid-area: g;
@@ -812,7 +812,7 @@ grid-gap: 10px;
 }
 
 .modal_venue{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: right;
      align-self: flex-start;
 
@@ -910,8 +910,9 @@ display: block;
     font-size: 5em;
     letter-spacing: .15em;
     text-align: left;
-        grid-area: k;
+    grid-area: k;
     align-self: flex-end;
+    line-height:  30px;
     text-transform: uppercase;
 
 }
