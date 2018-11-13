@@ -255,7 +255,7 @@ cursor: pointer
 
     display: grid;
     grid-gap: 1px;
-    height: 1000px;
+    height: 100%;
     text-align: center;
 
 
