@@ -301,19 +301,11 @@
     </header>
     <!--       CONTENT SKAL IND HER START-->
 
-    <section id="forside_wrapper" class="site_content_wrapper">
-        <!--her indsættes url til billede -->
-
-        <div class="site_content_container">
-
-            <!-- Slideshow container -->
-
 <section class="slideshow">
             <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade mySlide_con">
-                    <div class="numbertext">1 / 3</div>
                     <div class="slide_content_con">
 
                        <div class="gradient_fade"></div>
@@ -329,7 +321,6 @@
                 </div>
 
                 <div class="mySlides fade mySlide_con">
-                    <div class="numbertext">2 / 3</div>
                     <div class="slide_content_con">
                         <div class="gradient_fade"></div>
                        <div class="slide_img_con">
@@ -346,7 +337,6 @@
                   </div>
 
                 <div class="mySlides fade mySlide_con">
-                    <div class="numbertext">3 / 3</div>
                     <div class="slide_content_con">
                         <div class="gradient_fade"></div>
                         <div class="slide_img_con">
@@ -366,15 +356,26 @@
             <br>
 
             <!-- The dots/circles -->
+<!--
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
+-->
 
 
     </div>
 </section>
+
+    <section id="forside_wrapper" class="site_content_wrapper">
+        <!--her indsættes url til billede -->
+
+        <div class="site_content_container">
+
+            <!-- Slideshow container -->
+
+
 
 
                     <!-- Next and previous buttons -->
@@ -386,14 +387,16 @@
 
             <section class="kommende_events">
                 <div class="kommende_events_con">
-                    <div class="kommende_events_header">
-                        Se kommende events
-
-                    </div>
-                    <main class="kalender_container">
+                    <div class="kommende_events_header">kommende events</div>
+                    <a class="kommende_event_knap"href="test_event_filter.html"><button> Gå til Event Kalender
+                    </button>                    <div class="event_pil_right"></div>
+</a>
+                    <div class="kalender_wrapper">
+                    <div class="kalender_container">
                         <section class="event_kalender">
                         </section>
-                    </main>
+                    </div>
+                </div>
                 </div>
             </section>
                             </div>
