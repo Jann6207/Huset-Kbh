@@ -478,6 +478,7 @@ header input[type="submit"]:hover {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 #scroll span {
@@ -501,6 +502,7 @@ header input[type="submit"]:hover {
     opacity: 1;
     filter: "alpha(opacity=100)";
     -ms-filter: "alpha(opacity=100)";
+
 }
 
 /* TILBAGE TIL TOP KNAP SLUT */
@@ -527,11 +529,11 @@ header input[type="submit"]:hover {
         display: flex;
         text-align: center;
         justify-content: center;
-        bottom: 10px;
+        bottom: 0px;
         cursor: pointer;
-        width: 50px;
-        height: 50px;
-        background-color: rgba(222, 222, 222, 0.6);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(222, 222, 222, 0.4);
         text-indent: -9999px;
         display: none;
         -webkit-border-radius: 50%;
@@ -545,10 +547,16 @@ header input[type="submit"]:hover {
         z-index: 90;
         left: 50%;
         transform: translate(-50%, -50%);
+
+/*
+        border: solid .5px;
+        border-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+*/
     }
     #scroll span {
         position: absolute;
-        top: 50%;
+        top: 80%;
         left: 50%;
         margin-left: -8px;
         margin-top: -12px;
@@ -561,12 +569,14 @@ header input[type="submit"]:hover {
 */
     }
     #scroll:hover {
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.4);
         background-image: url(/Ikon-Bank/top_button/scroll_button_hoverArtboard%201.png);
         /*    background-color:#e74c3c;*/
         opacity: 1;
         filter: "alpha(opacity=100)";
         -ms-filter: "alpha(opacity=100)";
+
+
     }
     /* TILBAGE TIL TOP KNAP SLUT */
 }
