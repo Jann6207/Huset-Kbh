@@ -41,6 +41,8 @@ function showSlides() {
 
         document.querySelector(".slide_header_1").textContent = post395.acf.header;
 
+        document.querySelector(".tagline_1").textContent = post395.acf.tag_line;
+
         document.querySelector(".slide_image_1").src = post395.acf.billede.url;
 
 
@@ -55,6 +57,8 @@ function showSlides() {
 
         document.querySelector(".slide_header_2").textContent = post393.acf.header;
 
+        document.querySelector(".tagline_2").textContent = post393.acf.tag_line;
+
         document.querySelector(".slide_image_2").src = post393.acf.billede.url;
 
         //---------------------------------------------------
@@ -68,6 +72,8 @@ function showSlides() {
         document.querySelector(".slide_text_3").innerHTML = post392.content.rendered;
 
         document.querySelector(".slide_header_3").textContent = post392.acf.header;
+
+        document.querySelector(".tagline_3").textContent = post392.acf.tag_line;
 
         document.querySelector(".slide_image_3").src = post392.acf.billede.url;
 

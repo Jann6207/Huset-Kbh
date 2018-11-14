@@ -1,16 +1,20 @@
 * {box-sizing:border-box}
 
+body{
+
+    background-color: #262121;
+
+}
 
 .slideshow{
 
-    border: black solid 1px;
 }
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
-}
+  margin: 0;
+}1
 
 /* Hide the images by default */
 .mySlides {
@@ -23,28 +27,152 @@
 
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr;
+    height:70vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+
+
+        "t t t t t t t t"
+        ". . . . . t t t"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+
+
+        ;
 }
 
+.gradient_fade{
+
+grid-column: 1/9 ;
+grid-row: 6/13 ;
+z-index: 2;
+background-image: linear-gradient(rgba(255, 0, 0, 0), #262121);
+
+}
 .slide_img_con{
 
+    z-index: 1;
+
+grid-column: 1/9 ;
+grid-row: 1/10;
+
     width: 100%;
     height: 100%;
 
 }
-/*slide tekst--------------------------------*/
+/*slide tekst-------------------------------------------------*/
 
 .text_con{
+  z-index: 3;
+  background-image: linear-gradient(rgba(255, 0, 0, 0), #262121);
+
+grid-column: 1/9 ;
+grid-row: 6/13 ;
+    background-color: rgba(0, 0, 0, 0.72);
+    color: white;
     width: 100%;
     height: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+
+        "t t t t t t t t"
+        "l l l l l l l l"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        ". . . . . . . ."
+        ". . . . . b b b"
+
 }
 
 .slide_txt{
-
-    font-size: .5em;
-    font-family: sans-serif;
+    grid-area: p;
+    font-size: .8em;
+    letter-spacing: .3px;
+    line-height: 16px;
+    font-family: "Nunito", sans-serif;
     padding-top: 10px;
+    padding: 0;
+    margin: 0;
+    align-self: flex-start;
+
+
 }
+.slide_txt p{
+    border-top: 1px white slid;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-family: "AvenirNext", sans-serif;
+
+}
+.slide_header{
+    grid-area: t;
+    font-family: "AvenirNext", sans-serif;
+    text-transform: uppercase;
+    color: #b74040;
+    text-align: left;
+    font-size: 1.6em;
+}
+
+.slide_tagline{
+
+    font-family: "AvenirNext", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    grid-area: l;
+    color: white;
+
+}
+
+.slide_knap{
+
+    grid-area: b;
+    background-color: rgb(252, 229, 241, 0.8);
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+
+
+
+}
+
+.slide_knap:hover{
+
+ cursor: pointer;
+    background-color: rgb(221, 7, 42, 0.68);
+}
+
+.slide_knap button{
+
+
+    color: white;
+    text-transform: capitalize;
+}
+
+
+
 
 .slide_tekst_1{}
 .slide_tekst_2{}
@@ -99,10 +227,10 @@
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
-  background-color: #8d6060;
+  background-color: rgba(111, 47, 47, 0.45);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -133,8 +261,22 @@
 
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------KOMMENDE EVENTS--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.kommende_events{}
+.kommende_events{
 
+
+}
+.kommende_events_header{
+
+    font-family: "AvenirNext", sans-serif;
+    text-transform: uppercase;
+    color: #b74040;
+    text-align: left;
+    font-size: 1.2em;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
 .kommende_events_con{}
 ::-webkit-scrollbar{
 
@@ -438,6 +580,7 @@ font-weight: 600;
 
 
 
+/*
 
 @media screen and (min-width: 1000px) {
 
@@ -464,6 +607,7 @@ border: solid 1px blue;
         border: solid 10px green;
         padding: 20px;
     }
+*/
 
 
 
