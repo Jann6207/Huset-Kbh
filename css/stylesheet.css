@@ -41,11 +41,7 @@ body {
     display: grid;
     align-self: center;
     justify-self: center;
-
 }
-
-
-
 
 .logo a {
     text-decoration: none;
@@ -53,7 +49,6 @@ body {
 }
 
 .logo span {
-
     font: 8.5vw "huset";
     font-family: 'huset';
     color: #fee;
@@ -62,7 +57,6 @@ body {
 
 
 .logo span {
-
     animation: blink linear infinite 3s;
 }
 
@@ -105,26 +99,21 @@ body {
 /* STYLING AF P START */
 
 header p {
-
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
-
     font-weight: 400;
     text-transform: uppercase;
     text-align: left;
     color: white;
-
 }
 
 footer p {
-
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
     text-align: left;
     color: white;
-
 }
 
 /* STYLING AF P END */
@@ -139,7 +128,6 @@ footer p {
     display: flex;
     justify-content: space-between;
     margin-right: 10%;
-
 }
 
 /* GRID FOR NAVBAR END */
@@ -147,26 +135,19 @@ footer p {
 /* SOCIALE IKONER LINKER TIL SOCIALE MEDIER START*/
 
 .sociale_ikoner {
-
     grid-area: ikoner;
     text-align: left;
     width: 100%;
-
 }
 
 .sociale_ikoner img {
-
     opacity: 0.7;
-
     width: 20px;
     margin-right: 5px;
-
 }
 
 .sociale_ikoner img:hover {
-
     opacity: 1;
-
 }
 
 /* SOCIALE IKONER LINKER TIL SOCIALE MEDIER END*/
@@ -174,7 +155,6 @@ footer p {
 /* VALG AF SPROG (ENGELSK FLAG) START*/
 
 .sprog {
-
     grid-area: sprog;
     text-align: center;
     width: 30px;
@@ -182,12 +162,9 @@ footer p {
     background: url(../Img-Bank/engelsk-flag.png) center center no-repeat;
     background-size: contain;
     margin-right: 110px;
-
 }
 
-
 .sprog img {
-
     width: 40%;
 }
 
@@ -198,7 +175,6 @@ footer p {
 #wrap {
     grid-area: wrap1;
 }
-
 
 #wrap {
     margin: 00px 30px;
@@ -300,7 +276,6 @@ header input[type="submit"]:hover {
     left: -95px;
 }
 
-
 .dropdown-content2 {
     min-width: 200px;
     left: -42px;
@@ -347,7 +322,6 @@ header input[type="submit"]:hover {
     color: grey;
 }
 
-
 .dropdown .dropdown-content::after {
     content: " ";
     position: absolute;
@@ -358,7 +332,6 @@ header input[type="submit"]:hover {
     border-style: solid;
     border-color: transparent transparent white transparent;
 }
-
 
 #wrap2 {
     display: none;
@@ -530,11 +503,9 @@ header input[type="submit"]:hover {
     -ms-filter: "alpha(opacity=100)";
 }
 
-
 /* TILBAGE TIL TOP KNAP SLUT */
 
 /* FOOTER END /*
-
 
 /* MEDIA QUERY START */
 

@@ -1,55 +1,42 @@
     document.addEventListener("DOMContentLoaded", getJson);
+    let page;
 
-        let page;
+    //henter json fil fra WP url
+    async function getJson() {
+        let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/arrangorer_samarbejd");
+        page = await jsonObject.json();
 
-        //henter json fil fra WP url
-        async function getJson() {
+        post202Output();
+        sreenSize();
+    }
 
-            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/arrangorer_samarbejd");
-            page = await jsonObject.json();
+    function post202Output() {
 
-
-post202Output();
-            sreenSize();
-
-        }
-
-function post202Output (){
-
-         //post med id 209
-            let post202 = page.find(x => x.id == '202');
-
+        //post med id 209
+        let post202 = page.find(x => x.id == '202');
         //indsæt header info
+        document.querySelector(".site_header").textContent = post202.acf.header;
+        //indsæt tag-line info
+        document.querySelector(".tag_line").textContent = post202.acf.tagline;
+        //indsætter content i valgt html class
+        document.querySelector(".arrangore_sammenarbejdspartnere_content").innerHTML = post202.content.rendered;
+        //Billede url
+        document.querySelector(".content_image").style.backgroundImage = "url('" + post202.acf.billede.url + "')";
+        //alt tekst url
+        document.querySelector(".content_image").alt = post202.acf.billede.alt;
+        //title
+        document.querySelector(".content_image").title = post202.acf.billede.title;
+        //Video
+        document.querySelector(".video_container").innerHTML = post202.acf.video;
+    }
 
-            document.querySelector(".site_header").textContent = post202.acf.header;
-
-            //indsæt tag-line info
-
-            document.querySelector(".tag_line").textContent = post202.acf.tagline;
-
-            //indsætter content i valgt html class
-
-            document.querySelector(".arrangore_sammenarbejdspartnere_content").innerHTML = post202.content.rendered;
-
-            //Billede url
-        document.querySelector(".content_image").style.backgroundImage = "url('" +  post202.acf.billede.url + "')";
-            //alt tekst url
-            document.querySelector(".content_image").alt = post202.acf.billede.alt;
-            //title
-            document.querySelector(".content_image").title = post202.acf.billede.title;
-
-            //Video
-            document.querySelector(".video_container").innerHTML = post202.acf.video;
-}
-
-// SCREEN LISTENER ÅBNER OG LUKKER ET ELEMENT
+    // SCREEN LISTENER ÅBNER OG LUKKER ET ELEMENT
 
     function sreenSize() {
         console.log("screeeen siiize");
         if (window.matchMedia("(min-width: 1000px)").matches) {
             /* the viewport is at least 400 pixels wide */
         } else {
-
             document.querySelector(".section_1").addEventListener("click", section_1_mobil);
             document.querySelector(".section_2").addEventListener("click", section_2_mobil);
             document.querySelector(".section_3").addEventListener("click", section_3_mobil);
@@ -83,7 +70,6 @@ function post202Output (){
             a.style.display = "none";
         }
     };
-
 
     function section_2_mobil() {
         console.log("HEJ");
@@ -173,7 +159,7 @@ function post202Output (){
         }
     };
 
-  function section_10_mobil() {
+    function section_10_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_10");
@@ -184,7 +170,7 @@ function post202Output (){
         }
     };
 
-  function section_11_mobil() {
+    function section_11_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_11");
@@ -195,7 +181,7 @@ function post202Output (){
         }
     };
 
-  function section_12_mobil() {
+    function section_12_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_12");
@@ -206,7 +192,7 @@ function post202Output (){
         }
     };
 
-  function section_13_mobil() {
+    function section_13_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_13");
@@ -217,7 +203,7 @@ function post202Output (){
         }
     };
 
-  function section_14_mobil() {
+    function section_14_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_14");
@@ -228,7 +214,7 @@ function post202Output (){
         }
     };
 
-  function section_15_mobil() {
+    function section_15_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_15");
@@ -239,7 +225,7 @@ function post202Output (){
         }
     };
 
-  function section_16_mobil() {
+    function section_16_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_16");
@@ -249,7 +235,8 @@ function post202Output (){
             a.style.display = "none";
         }
     };
-  function section_17_mobil() {
+
+    function section_17_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_17");
@@ -259,7 +246,8 @@ function post202Output (){
             a.style.display = "none";
         }
     };
-  function section_18_mobil() {
+
+    function section_18_mobil() {
         console.log("HEJ");
 
         let a = document.querySelector(".show_18");
