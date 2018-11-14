@@ -10,11 +10,11 @@ body{
 }
 
 .site_content_wrapper {
-    padding-top: 0px;
+    padding: 0px;
 }
 .site_content_container{
 
-    padding-top: 0px;
+    padding: 0px;
 }
 .slideshow{
 
@@ -24,7 +24,7 @@ body{
   max-width: 1000px;
   position: relative;
   margin: 0;
-}1
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -37,7 +37,7 @@ body{
 
     display: grid;
     width: 100vw;;
-    height:70vh;
+    height:100vh;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -88,13 +88,13 @@ grid-row: 1/13;
 
 .text_con{
   z-index: 3;
-
+border-bottom: 1px solid rgba(128, 128, 128, 0.1);
 grid-column: 2/3 ;
 grid-row: 6/13 ;
     color: white;
     width: 100%;
     height: 100%;
-    padding: 5px;
+    padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -114,12 +114,11 @@ grid-row: 6/13 ;
 
 .slide_txt{
     grid-area: p;
-    font-size: .8em;
+    font-size: .9em;
     letter-spacing: .3px;
-    line-height: 16px;
+    line-height: 20px;
     font-family: "Nunito", sans-serif;
-    padding-top: 10px;
-    padding: 0;
+    padding: 10px 30px 10px 30px;
     margin: 0;
     align-self: flex-start;
 
@@ -272,6 +271,9 @@ grid-row: 6/13 ;
 /*-----------------------------------------------------------------------------------------------------------------------------------------KOMMENDE EVENTS--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .kommende_events{
 
+margin-top: 50px;
+background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(252, 223, 236, 0.37));
+
 
 }
 .kommende_events_header{
@@ -280,11 +282,30 @@ grid-row: 6/13 ;
     text-transform: uppercase;
     color: #b74040;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.5em;
 
-    margin-bottom: 10px;
+    margin-left: 15px;
     margin-top: 10px;
 
+}
+
+.kommende_events_tagline{
+
+    font-family: "AvenirNext", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+     margin-left: 15px;
+    font-size: 1em;
+}
+
+.kommende_events_text p{
+        font-family: "AvenirNext", sans-serif;
+    line-height: 20px;
+
+      font-size: 1em;
+    padding: 20px 30px;
+    color: white;
 }
 .kommende_event_knap{
 
@@ -293,11 +314,13 @@ grid-row: 6/13 ;
     color: white;
     border: 1px solid white;
     text-align: center;
-    width: 100%;
     text-align: left;
-    height: 100%;
     float: right;
-    padding: 5px;
+
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-right: 15px;
 
 
 
@@ -497,6 +520,75 @@ font-weight: 600;
 .grey_bg{}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------KOMMENDE SLUT-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------FRIVILLIGT ARBEJD-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.frivilligt_arbejde{
+
+    font-family: "AvenirNext", sans-serif;
+    color: white;
+    padding: 50px 0px 0px 0px ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(14, 95, 42, 0.72));
+
+}
+
+.f_a_con{}
+
+.f_a_header{
+        color: #b74040;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+}
+
+.f_a_tagline{
+    text-transform: uppercase;
+      padding-left: 15px;
+    padding-right: 15px;
+}
+
+.f_a_text p{
+    font-size: 1em;
+    padding: 10px 30px;
+        line-height: 20px;
+
+}
+
+.f_a_knap{
+
+  background-color: rgb(252, 229, 241, 0.8);
+    border: 1px solid white;
+    text-align: center;
+    float: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.f_a_knap button{
+        font-family: "AvenirNext", sans-serif;
+    color: black;;
+    font-size: 1em;
+
+}
+
+.f_a_video iframe{
+
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 @media screen and (min-width: 800px) {
 
