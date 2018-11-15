@@ -67,15 +67,22 @@ main p {
     font-size: 1.5em;
 
 }
+
+.f_knap:hover{
+
+    background-color: rgba(165, 155, 155, 0.35);
+
+}
+
 .event_pil_right {
 
-    background-image: url(../svg/h);
+    background-image: url(../svg/huset_pil_hvid.svg);
     background-size: 100% 100%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 30px;
     float: right;
     transform: rotate(-90deg);
-    margin-left: 5px;
+
 }
 
 .site_content_wrapper {
@@ -334,9 +341,6 @@ main p {
 
 .kommende_event_knap {
 
-    ;
-
-
 
 }
 
@@ -349,6 +353,29 @@ main p {
 
 
 .kommende_events_con {}
+
+
+.kalender_txt{
+
+    margin-top: 30px;
+    color: white;
+    font-family: "", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    margin-bottom: 5px;
+
+
+}
+.event_pil_ned{
+    float: right;
+     background-image: url(../svg/huset_pil_hvid.svg);
+    background-size: 100% 100%;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
 
 ::-webkit-scrollbar {
 
@@ -527,6 +554,18 @@ main p {
 .f_a_knap {}
 
 .f_a_knap button {}
+
+.f_a_txt{
+
+        margin-top: 30px;
+    color: white;
+    font-family: "", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
 
 .f_a_video iframe {
 
