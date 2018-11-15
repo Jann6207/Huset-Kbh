@@ -6,9 +6,12 @@
 
 body {
 
-    background-color: #262121;
+    background-color: #951b1b;
     overflow-x: hidden;
     overflow-y: scroll;
+    background-image: url(../images/teksture_1.png);
+    background-size: repeat;
+
 
 
 }
