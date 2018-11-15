@@ -7,7 +7,7 @@ function sidenVises() {
 
 function trykPaaMenubutton() {
     console.log("Tryk paa menubutton");
-    $("nav").slideToggle (".navbar2");
+    $("nav").slideToggle(".navbar2");
     $(".menubutton").toggleClass("kryds");
 
 
@@ -18,14 +18,14 @@ function trykPaaMenubutton() {
 
 /* POP UP START */
 
- function ShowNewsletter() {
-        setTimeout(function () {
-            document.getElementById("newsletter_container").style.visibility = "visible";
-        }, 5000);
-    }
+function ShowNewsletter() {
+    setTimeout(function () {
+        document.getElementById("newsletter_container").style.visibility = "visible";
+    }, 5000);
+}
 
-$(document).ready(function(){
-    $("button").click(function(){
+$(document).ready(function () {
+    $("button").click(function () {
         $("#newsletter_container").remove();
     });
 });
@@ -35,17 +35,19 @@ $(document).ready(function(){
 /* TILBAGE TIL TOP KNAP START */
 
 
- $(window).scroll(function(){
-        if($(this).scrollTop() > 100){
-            $('#scroll').fadeIn();
-        }else{
-            $('#scroll').fadeOut();
-        }
-    });
-    $('#scroll').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-    });
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        $('#scroll').fadeIn();
+    } else {
+        $('#scroll').fadeOut();
+    }
+});
+$('#scroll').click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
 
 /* TILBAGE TIL TOP KNAP SLUT */
 
