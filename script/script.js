@@ -21,7 +21,7 @@ function trykPaaMenubutton() {
  function ShowNewsletter() {
         setTimeout(function () {
             document.getElementById("newsletter_container").style.visibility = "visible";
-        }, 2000);
+        }, 5000);
     }
 
 $(document).ready(function(){
