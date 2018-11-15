@@ -5,43 +5,87 @@
 
 
 
-
+/* CONTAINER START*/
 
     #newsletter_container{
+        background-image: url(/Assets/img_newsletter.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
-        background-color: lightgray;
+        background-color: grey;
         display: grid;
         grid-template-columns: 20px 1fr 1fr 20px;
-        grid-template-rows: 20px 1fr 1fr 20px;
+        grid-template-rows:  20px 1fr 1fr 20px;
         grid-template-areas:
 
             ". . . ."
-            ". image image ."
+            ". form form ."
             ". form form ."
             ". . . .";
 
+       margin-bottom: 20px;
 
 
     }
-    @media only screen and (min-width: 1000px) {
+
+/* CONTAINER SLUT*/
+
+
+
+/* TILMELDINGS MENU GRID START*/
+
+  #newsletter_container form {
+            background-image: url(/Assets/blur-bar-png-2.png);
+
+            padding: 15px;
+            border: solid .5px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+
+            grid-template-rows: 20px repeat(6, 1fr) 20px;
+
+        }
+
+/* TILMELDINGS MENU GRID SLUT*/
+
+/* MEDIA QUERY START*/
+
+
+    @media only screen and (min-width: 740px) {
+
+   /* CONTAINER RESPONSIV START*/
+
             #newsletter_container{
+                  grid-template-columns: 40px 1.2fr 1fr 40px;
+        grid-template-rows: 40px 1fr 1fr 40px;
         grid-template-areas:
 
             ". . . ."
-            ". image form ."
-            ". image form ."
+            ". form . ."
+            ". form . ."
             ". . . .";
 
 
 
     }
+
+ /* CONTAINER RESPONSIV SLUT*/
+
+ /* TILMELDNINGS MENU RESPONSIV START*/
         #newsletter_container form {
+            background-image: url(/Assets/blur-bar-png-2.png);
+
+            padding: 15px;
+            border: solid .5px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
 
             grid-template-rows: 20px repeat(6, 1fr) 20px;
 
         }
 
 }
+/*
 #image_newsletter_con {
     grid-area: image;
     width: 100%;
@@ -49,11 +93,14 @@
     .image_newsletter {
         width: 100%;
     }
+*/
+
 
     #newsletter_container form {
         width: 100%;
         height: 100%;
-        background-color: whitesmoke;
+
+
  /*       display: grid;*/
         grid-area: form;
 
@@ -70,9 +117,13 @@
             ". . . . . . . .";
 
         */
+
+
     }
 
+ /* TILMELDNINGS MENU RESPONSIV SLUT*/
 
+/* CONTENT I TILMELDNINGS MENU RESPONSIV START*/
 
    #newsletter_container input {
         border: none;
@@ -80,14 +131,17 @@
         color: grey;
         padding: 0;
         font-size: 1.2em;
-        font-family: sans-serif;
-       width: 100%;
+        font-family: "Nunito", sans-serif;
+        width: 100%;
+
 
 
     }
 
     #newsletter_container .navn_box  {
+
         grid-area: navn;
+
     }
     #newsletter_container .email_box {
         grid-area: email;
@@ -99,14 +153,32 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
     #newsletter_container h3 {
         grid-area: title;
         font-family: "huset";
+        font-weight: 300;
         font-size: 2.5em;
+        color: #fee;
+        text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em #f50b26, 0 0 0.5em #f50b26, 0 0 0.1em #f50b26, 0 5px 3px #000;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+
     }
+
+
+
     #newsletter_container p {
         grid-area: tekst;
-        font-size: 1.4em;
+        font-size: 1em;
+        font-family: "Nunito", sans-serif;
+
+        color: white;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
 
@@ -137,7 +209,7 @@
         color: black;
         text-decoration: none;
 
-        font-family: "Avenir";
+        font-family: "Nunito";
         grid-area: links;
         font-size: 0.8em;
 
@@ -145,7 +217,12 @@
    #newsletter_container a:hover {
         color: grey;
     }
+
+
         #newsletter_container a[href^="tel:"]:before {
   content: "\1F4F1";
 }
 
+/* CONTENT I TILMELDNINGS MENU RESPONSIV SLUT*/
+
+/* MEDIA QUERY SLUT*/
