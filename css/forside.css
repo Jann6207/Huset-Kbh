@@ -1,5 +1,46 @@
 * {box-sizing:border-box}
 
+
+h3{
+
+color: #b74040;
+font-family: "", sans-serif;
+font-weight: 900;
+text-transform: uppercase;
+font-size: 1.5em;
+padding-left: 15px;
+margin: 0;
+
+}
+
+h4{
+
+color: white;
+font-family: sans-serif;
+font-weight: 200;
+text-transform: uppercase;
+font-size: 1em;
+padding-left: 15px;
+margin: 0;
+
+}
+
+main p{
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 20px;
+
+
+}
+
+
+
 body{
 
     background-color: #262121;
@@ -36,7 +77,7 @@ body{
 .slide_content_con{
 
     display: grid;
-    width: 100vw;;
+    width: 100vw;
     height:100vh;
     overflow: hidden;
     padding: 0;
@@ -114,39 +155,20 @@ grid-row: 6/13 ;
 
 .slide_txt{
     grid-area: p;
-    font-size: .9em;
-    letter-spacing: .3px;
-    line-height: 20px;
-    font-family: "Nunito", sans-serif;
-    padding: 10px 30px 10px 30px;
-    margin: 0;
-    align-self: flex-start;
 
 
 }
 .slide_txt p{
-    border-top: 1px white slid;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-family: "AvenirNext", sans-serif;
 
 }
 .slide_header{
     grid-area: t;
-    font-family: "AvenirNext", sans-serif;
-    text-transform: uppercase;
-    color: #b74040;
-    text-align: left;
-    font-size: 1.6em;
+    align-self: flex-end;
 }
 
 .slide_tagline{
 
-    font-family: "AvenirNext", sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
     grid-area: l;
-    color: white;
 
 }
 
@@ -172,8 +194,7 @@ grid-row: 6/13 ;
     text-align: center;
     color: white;
     text-transform: capitalize;
-      font-family: "Nunito", sans-serif;
-    font-weight: 600;
+    font-family: "AvenirNext";
 }
 
 
@@ -278,34 +299,17 @@ background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(252, 223, 236, 0.37));
 }
 .kommende_events_header{
 
-    font-family: "AvenirNext", sans-serif;
-    text-transform: uppercase;
-    color: #b74040;
-    text-align: left;
-    font-size: 1.5em;
 
-    margin-left: 15px;
-    margin-top: 10px;
 
 }
 
 .kommende_events_tagline{
 
-    font-family: "AvenirNext", sans-serif;
-    text-transform: uppercase;
-    color: white;
-    text-align: left;
-     margin-left: 15px;
-    font-size: 1em;
+
 }
 
 .kommende_events_text p{
-        font-family: "AvenirNext", sans-serif;
-    line-height: 20px;
 
-      font-size: 1em;
-    padding: 20px 30px;
-    color: white;
 }
 .kommende_event_knap{
 
@@ -525,7 +529,7 @@ font-weight: 600;
 
 .frivilligt_arbejde{
 
-    font-family: "AvenirNext", sans-serif;
+    font-family: "", sans-serif;
     color: white;
     padding: 50px 0px 0px 0px ;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(14, 95, 42, 0.72));
@@ -535,25 +539,14 @@ font-weight: 600;
 .f_a_con{}
 
 .f_a_header{
-        color: #b74040;
 
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 1.5em;
-    text-transform: uppercase;
 
 }
 
 .f_a_tagline{
-    text-transform: uppercase;
-      padding-left: 15px;
-    padding-right: 15px;
 }
 
 .f_a_text p{
-    font-size: 1em;
-    padding: 10px 30px;
-        line-height: 20px;
 
 }
 
