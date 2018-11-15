@@ -1,13 +1,12 @@
     @font-face {
-            font-family: "Huset";
-            src:url(fonts/huset.otf);
-        }
+        font-family: "Huset";
+        src: url(fonts/huset.otf);
+    }
 
 
+    /* CONTAINER START*/
 
-/* CONTAINER START*/
-
-    #newsletter_container{
+    #newsletter_container {
         background-image: url(/Assets/img_newsletter.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -15,77 +14,56 @@
         background-color: grey;
         display: grid;
         grid-template-columns: 20px 1fr 1fr 20px;
-        grid-template-rows:  20px 1fr 1fr 20px;
-        grid-template-areas:
-
-            ". . . ."
-            ". form form ."
-            ". form form ."
-            ". . . .";
-
-       margin-bottom: 20px;
-
+        grid-template-rows: 20px 1fr 1fr 20px;
+        grid-template-areas: ". . . ." ". form form ." ". form form ." ". . . .";
+        margin-bottom: 20px;
 
     }
 
-/* CONTAINER SLUT*/
+    /* CONTAINER SLUT*/
 
+    /* TILMELDINGS MENU GRID START*/
 
+    #newsletter_container form {
+        background-image: url(/Assets/blur-bar-png-2.png);
+        padding: 15px;
+        border: solid .5px;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        grid-template-rows: 20px repeat(6, 1fr) 20px;
 
-/* TILMELDINGS MENU GRID START*/
+    }
 
-  #newsletter_container form {
-            background-image: url(/Assets/blur-bar-png-2.png);
+    /* TILMELDINGS MENU GRID SLUT*/
 
-            padding: 15px;
-            border: solid .5px;
-            background-color: rgba(0, 0, 0, 0.2);
-            color: white;
-
-            grid-template-rows: 20px repeat(6, 1fr) 20px;
-
-        }
-
-/* TILMELDINGS MENU GRID SLUT*/
-
-/* MEDIA QUERY START*/
-
+    /* MEDIA QUERY START*/
 
     @media only screen and (min-width: 740px) {
 
-   /* CONTAINER RESPONSIV START*/
+        /* CONTAINER RESPONSIV START*/
+        #newsletter_container {
+            grid-template-columns: 50px 1.2fr 1fr 50px;
+            grid-template-rows: 50px 1fr 1fr 50px;
+            grid-template-areas: ". . nyhed ." ". form . ." ". form . ." ". . . .";
+        }
 
-            #newsletter_container{
-                  grid-template-columns: 40px 1.2fr 1fr 40px;
-        grid-template-rows: 40px 1fr 1fr 40px;
-        grid-template-areas:
-
-            ". . . ."
-            ". form . ."
-            ". form . ."
-            ". . . .";
-
-
-
-    }
-
- /* CONTAINER RESPONSIV SLUT*/
-
- /* TILMELDNINGS MENU RESPONSIV START*/
+        /* CONTAINER RESPONSIV SLUT*/
+        /* TILMELDNINGS MENU RESPONSIV START*/
         #newsletter_container form {
             background-image: url(/Assets/blur-bar-png-2.png);
-
             padding: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
             border: solid .5px;
             background-color: rgba(0, 0, 0, 0.2);
             color: white;
-
             grid-template-rows: 20px repeat(6, 1fr) 20px;
 
         }
 
-}
-/*
+    }
+
+    /*
 #image_newsletter_con {
     grid-area: image;
     width: 100%;
@@ -95,16 +73,15 @@
     }
 */
 
-
     #newsletter_container form {
         width: 100%;
         height: 100%;
-
-
- /*       display: grid;*/
         grid-area: form;
 
-/*        grid-template-columns: 2px 1fr 1fr 5px 5px 1fr 1fr 2px;
+        /*       display: grid;*/
+
+
+        /*        grid-template-columns: 2px 1fr 1fr 5px 5px 1fr 1fr 2px;
         grid-template-rows: 2px repeat(5, 1fr) 2px;
         grid-template-areas:
 
@@ -117,20 +94,18 @@
             ". . . . . . . .";
 
         */
-
-
     }
 
- /* TILMELDNINGS MENU RESPONSIV SLUT*/
+    /* TILMELDNINGS MENU RESPONSIV SLUT*/
 
-/* CONTENT I TILMELDNINGS MENU RESPONSIV START*/
+    /* CONTENT I TILMELDNINGS MENU RESPONSIV START*/
 
-   #newsletter_container input {
+    #newsletter_container input {
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #efeded;
         color: grey;
         padding: 0;
-        font-size: 1.2em;
+        font-size: 1em;
         font-family: "Nunito", sans-serif;
         width: 100%;
 
@@ -138,91 +113,150 @@
 
     }
 
-    #newsletter_container .navn_box  {
-
+    #newsletter_container .navn_box {
+        width: 100%;
         grid-area: navn;
+        margin-bottom: 5px;
 
     }
+
     #newsletter_container .email_box {
+        width: 100%;
         grid-area: email;
+        margin-top: 5px;
+
     }
 
     #newsletter_container .send {
+        font-family: "huset", sans-serif;
         color: white;
         grid-area: send;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        width: 80%;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        transition: .3s;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: 300;
+        border-radius: 20px;
+        box-shadow: 0px 3px 2px rgba(222, 222, 222, 0.2);
+
+        /*        box-shadow: 0px 3px 2px rgba(222, 222, 222, 0.2);*/
     }
 
     #newsletter_container h3 {
+
         grid-area: title;
         font-family: "huset";
         font-weight: 300;
         font-size: 2.5em;
         color: #fee;
         text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em #f50b26, 0 0 0.5em #f50b26, 0 0 0.1em #f50b26, 0 5px 3px #000;
-
         margin-top: 5px;
         margin-bottom: 5px;
 
-
     }
-
-
 
     #newsletter_container p {
         grid-area: tekst;
-        font-size: 1em;
+        font-size: 0.8em;
         font-family: "Nunito", sans-serif;
-
-        color: white;
-
-        margin-top: 5px;
+        text-transform: uppercase;
+        color: #efeded;
+        font-weight: 600;
+        margin-top: 15px;
         margin-bottom: 5px;
-    }
+        line-height: 25px;
 
+
+    }
 
     #newsletter_container input[type=submit] {
-    background-color: black; color: antiquewhite;
+        display: grid;
+        margin-left: 10%;
+        background-color: black;
         cursor: pointer;
-        border: #d3072a;
+        border: none;
+
     }
-    #newsletter_container input[type=email]:focus { color: black;}
-    #newsletter_container input[type=text]:focus { color: black;}
 
 
-    #newsletter_container input[type=email]:hover { color: grey;}
-    #newsletter_container input[type=text]:hover { color: grey;}
+    #newsletter_container input[type=email]:focus {
+        color: black;
+    }
+
+    #newsletter_container input[type=text]:focus {
+        color: black;
+    }
+
+    #newsletter_container input[type=email]:hover {
+        color: grey;
+    }
+
+    #newsletter_container input[type=text]:hover {
+        color: grey;
+    }
 
 
     #newsletter_container input[type=text] {
         background-color: whitesmoke;
     }
+
     #newsletter_container input[type=email] {
         background-color: whitesmoke;
     }
+
     #newsletter_container input[type=submit]:hover {
+        width: 100%;
+        border-radius: 20px;
+        color: #fff;
         background-color: #aa021e;
+        transform: translateY(.5px);
+        box-shadow: 0px 3px 2px rgba(222, 222, 222, 0.2);
+        text-shadow: 0 -0px 0px, 0 0 2px, 0 0 .1em #f50b26, 0 0 .01em #f50b26, 0 0 0.1em #f50b26, 0 2px 2px #fff;
+        margin-left: 0%;
+        letter-spacing: 2px;
+
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+
 
     }
+
     #newsletter_container a {
         color: black;
         text-decoration: none;
-
         font-family: "Nunito";
         grid-area: links;
         font-size: 0.8em;
 
     }
-   #newsletter_container a:hover {
+
+    #newsletter_container a:hover {
         color: grey;
     }
 
+    #newsletter_container input[type="text"],
+    #newsletter_container input[type="email"] {
 
-        #newsletter_container a[href^="tel:"]:before {
-  content: "\1F4F1";
-}
+        background-color: transparent;
 
-/* CONTENT I TILMELDNINGS MENU RESPONSIV SLUT*/
+    }
 
-/* MEDIA QUERY SLUT*/
+    input::placeholder {
+        color: #292929;
+        font-style: italic;
+        font-size: 0.8em;
+        font-weight: 600;
+
+    }
+
+    #newsletter_container a[href^="tel:"]:before {
+        content: "\1F4F1";
+    }
+
+    /* CONTENT I TILMELDNINGS MENU RESPONSIV SLUT*/
+
+    /* MEDIA QUERY SLUT*/
