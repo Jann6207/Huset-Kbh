@@ -27,7 +27,7 @@
 @keyframes News_fadeIn {
     0% {
         transform: translateY(200px);
-        opacity: 0.8;
+        opacity: 0.5;
 
     }
     50% {
