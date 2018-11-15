@@ -13,6 +13,17 @@ body {
 
 }
 
+section{
+
+
+}
+
+button{
+
+    background-color: transparent;
+    border: 0px;
+
+}
 
 h3 {
 
@@ -54,33 +65,38 @@ main p {
 
 .f_knap{
     border: solid 1px white;
-    float: right;
     padding: 10px;
     margin: 20px;
+    float: right;
 }
 
 .f_knap button{
-
     color: white;
     font-family: "huset";
     text-transform: uppercase;
     font-size: 1.5em;
+        float: left;
+
 
 }
 
 .f_knap:hover{
 
+    cursor: pointer;
     background-color: rgba(165, 155, 155, 0.35);
 
 }
 
 .event_pil_right {
 
+
+    float: right;
+
     background-image: url(../svg/huset_pil_hvid.svg);
     background-size: 100% 100%;
     width: 25px;
     height: 30px;
-    float: right;
+    flex: right;
     transform: rotate(-90deg);
 
 }
@@ -327,8 +343,8 @@ main p {
 
 .kommende_events {
 
-    margin-top: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(252, 223, 236, 0.37));
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(27, 19, 100, 0.48));
 
 
 }
@@ -581,134 +597,63 @@ main p {
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 800px) {
+.skab_arrangement {
+    float: left;
+width: 100%;
 
-    .kalender_container {
+    font-family: "", sans-serif;
+    color: white;
+    padding: 50px 0px 0px 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(215, 23, 52, 0.29));
 
-        width: 100%;
-        height: 622px;
-        overflow: scroll;
-    }
-
-    .event_kalender {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .event_con {
-        border: solid #373737 1px;
-        display: grid;
-        grid-template-columns: 200px 3fr;
-        grid-template-rows: 200px;
-
-        grid-template-areas: "img txt"
-    }
-    .event_info_con {
-
-        color: white;
-        background-color: #0f0f0f;
-        grid-area: txt;
-        width: 100%;
-
-        font-size: 1em;
-        font-family: "Nunito", sans-serif;
-
-        display: grid;
-        grid-template-columns: 5px repeat(10, 1fr) 5px;
-        grid-template-rows: 5px repeat(10, 1fr) 5px;
-        grid-template-areas: ". . . . . . . . . . . ." ". d d d d d . k k k k ." ". d d d d d . k k k k ." ". g g g g g . v v v v ." ". . . . . . . . . . . ." ". t t t t t . . . . . ." ". t t t t t . . . . . ." ". t t t t t . p p p p ." ". t t t t t . z z z z ." ". t t t t t . z z z z ." ". t t t t t . z z z z ." ". . . . . . . . . . . .";
-
-
-    }
-
-    .event_image_con {
-        grid-area: img;
-
-    }
-
-    .dato_con {
-        grid-area: d;
-        display: flex;
-    }
-
-    .dag {
-
-        font-family: "huset";
-        font-size: 1em;
-    }
-    .maaned {
-        font-weight: 600;
-        font-size: .8em;
-        margin-left: 2px;
-
-    }
-
-    .tid {
-
-        grid-area: k;
-        text-align: right;
-    }
-
-    .genre {
-
-        grid-area: g;
-        font-size: .5em;
-
-    }
-    .venue {
-        font-size: .5em;
-        text-align: right;
-
-        grid-area: v;
-    }
-    .event_navn {
-        grid-area: t;
-        font-size: .9em;
-        align-self: flex-end;
-        line-height: 1em;
-        font-weight: 600;
-
-
-    }
-
-    .se_mere {}
-
-
-
-    .pris {
-        grid-area: p;
-
-        text-align: right;
-    }
-
-    .knap_link {
-        grid-area: z;
-
-    }
-
-    .kob_knap {
-        background-color: rgb(252, 229, 241, 0.8);
-        color: white;
-        border: 1px solid white;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .kob_knap:hover {
-
-        cursor: pointer;
-        background-color: rgb(221, 7, 42, 0.68);
-    }
-
-    .event_image {
-        width: 100%;
-    }
-
-    .grey_bg {}
 
 }
 
+.s_a_con {
+
+
+width: 100%;
+}
+
+.s_a_header {}
+
+.s_a_tagline {}
+
+.s_a_text p {}
+
+.s_a_knap {}
+
+.s_a_knap button {
+
+}
+
+.s_a_txt{
+
+
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------SKAB ET ARRANGE MENT--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------SKAB ARRANGEMENT --------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (min-width: 800px) {
+
+
+
+
+}
 
 
 
