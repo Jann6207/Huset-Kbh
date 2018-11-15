@@ -7,6 +7,7 @@
 
     <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+            <link rel="stylesheet" href="css/kontaktformular_v2.css">
 
     <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
@@ -329,7 +330,18 @@
 
             <!--her indsættes kontakt formular-->
 
-            <div class="kontakt_formular">her skal der være en kontakt formular</div>
+            <div id="kontaktformular_container">
+                <form>
+                    <h3>HUSET</h3>
+                    <p>Ønsker du at kontakte os med spørgsmål, så er i meget velkommen til at skrive en besked og vi vil svare tilbage indenfor et par dage.</p>
+                    <input id="navn" class="navn_box" type="text" placeholder="Dit navn" required>
+                    <input id="email" class="email_box" type="email" placeholder="Din email" required>
+
+                    <textarea id="besked" type="text" placeholder="Din besked" required></textarea>
+                    <input class="send" type="submit" value="Send"><span id="response"></span>
+                    <a href="tel:20662811">&#x2771; Eller ring til os hvis du har spørgsmål.</a>
+                </form>
+            </div>
         </div>
 
     </section>
