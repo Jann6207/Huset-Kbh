@@ -15,6 +15,23 @@ function trykPaaMenubutton() {
 
 }
 
+
+/* POP UP START */
+
+ function ShowNewsletter() {
+        setTimeout(function () {
+            document.getElementById("newsletter_container").style.visibility = "visible";
+        }, 2000);
+    }
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#newsletter_container").remove();
+    });
+});
+
+/* POP UP SLUT */
+
 /* TILBAGE TIL TOP KNAP START */
 
 
