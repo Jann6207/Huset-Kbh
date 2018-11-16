@@ -1058,9 +1058,10 @@ main p {
 
     width: 100%;
 
-    border: 1px solid black;
+    border: 0px solid black;
     height: 738px;
     overflow: hidden;
+    border-radius: 1%;
 
 
 }
