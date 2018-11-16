@@ -22,6 +22,7 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/forside.css">
+    <link rel="stylesheet" type="text/css" href="css/news_pop_up.css">
 
     <!--   Favicon   -->
     <link rel="apple-touch-icon" sizes="180x180" href="/Ikon-Bank/favicon/apple-touch-icon.png">
@@ -34,7 +35,7 @@
     <title>Huset-KBH</title>
 </head>
 
-<body>
+<body onload="ShowNewsletter()">
     <header>
         <div class="nav-container">
             <!--         LOGO HUSET BLINK FUNCTION START-->
@@ -301,6 +302,27 @@
     </header>
     <!--       CONTENT SKAL IND HER START-->
     <main>
+
+        <!--     POP UP NYHEDSBREV START -->
+
+        <div id="newsletter_container">
+
+
+
+            <form class="newsletter_content">
+                <h3>NYHEDSBREV</h3>
+                <p>Tilmeld dig nu <br> Gå ikke glip af de nyeste events!</p>
+
+                <input id="navn" class="navn_box" type="text" placeholder="Navn" required>
+                <input id="email" class="email_box" type="email" placeholder="Email" required>
+                <input class="send" type="submit" value="sign up"><span id="response"></span>
+
+            </form>
+            <button id="newsletter_close">X</button>
+        </div>
+
+        <!--     POP UP NYHEDSBREV SLUT -->
+
         <section class="slideshow">
             <div class="slideshow-container">
 
@@ -650,6 +672,3 @@
 </body>
 
 </html>
-
-
-
