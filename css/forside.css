@@ -568,10 +568,11 @@ float: left;
 }
 
 .grey_bg {}
+.grey_bg {}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------KOMMENDE SLUT-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .find_vej{
-
+padding-top: 50px;
      float: left;
     width: 100%;
     font-family: "", sans-serif;
@@ -583,14 +584,18 @@ float: left;
 
 }
 
+.find_vej a{
+
+}
 
 
 .find_vej_svg{
  float: left;
+
     width: 100%;
     font-family: "", sans-serif;
     color: white;
-    padding: 50px 20px 50px 20px;
+    padding: 10px 30px 50px 30px;
 
 
  display: grid;
@@ -603,8 +608,8 @@ float: left;
 svg:hover {
 padding: 1px;
 
-    filter: drop-shadow(5px 20px 2px rgba(221, 219, 219, 0.67));
-        filter: drop-shadow(5px 20px 2px rgba(221, 219, 219, 0.67));
+    filter: drop-shadow(5px 20px 2px rgba(221, 219, 219, 0.42));
+        filter: drop-shadow(5px 20px 2px rgba(145, 145, 145, 0.67));
 
 
 
