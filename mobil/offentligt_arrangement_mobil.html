@@ -9,6 +9,7 @@
     <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
     <link rel="stylesheet" type="text/css" href="mobil_css/stylesheet_mobil.css">
         <link rel="stylesheet" href="css/kontaktformular_v2.css">
+             <link rel="stylesheet" href="mobil_css/loader.css">
 
     <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
     <link rel="stylesheet" type="text/css" href="mobil_css/kontaktformular_v2_mobil.css">
@@ -141,10 +142,10 @@
                         </a>
 
                         <div class="dropdown_content_mobile">
-                            <a href="offentligt_arrangement.html">
+                            <a href="offentligt_arrangement_mobil.html">
                                 <p>Offentligt Arrangement</p>
                             </a>
-                            <a href="privat_arrangement.html">
+                            <a href="privat_arrangement_mobil.html">
                                 <p>Privat Arrangement</p>
                             </a>
 
@@ -344,7 +345,15 @@
             </div>
         </div>
         <!--       DEKSTOP NAVBAR END-->
+                                <div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
     </header>
+
+              <div id="loader"></div>
+    <div id="content" class="animate-bottom">
 
     <section class="splash_wrapper">
 
@@ -397,6 +406,8 @@
 
     </section>
 
+    </div>
+
     <!--    TILBAGE TIL TOP KNAP START -->
 
     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
@@ -417,6 +428,7 @@
 
 </footer>
 
+        <script src="mobil_script/loader.js"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="mobil_script/mobil_script.js"></script>
