@@ -576,10 +576,14 @@ float: left;
     width: 100%;
     font-family: "", sans-serif;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(12, 83, 37, 0.72));
+      background-image: url(../images/texture_noise.png);
+    background-repeat: repeat;
+
 
 
 }
+
+
 
 .find_vej_svg{
  float: left;
@@ -587,10 +591,10 @@ float: left;
     font-family: "", sans-serif;
     color: white;
     padding: 50px 20px 50px 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(12, 83, 37, 0.72));
+
 
  display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
 }
 
 .find_vej_svg a:hover{
@@ -599,7 +603,9 @@ float: left;
 svg:hover {
 padding: 1px;
 
-    filter: drop-shadow(5px 20px 2px rgba(0, 0, 0, 0.67));
+    filter: drop-shadow(5px 20px 2px rgba(221, 219, 219, 0.67));
+        filter: drop-shadow(5px 20px 2px rgba(221, 219, 219, 0.67));
+
 
 
 }
