@@ -5,16 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- For loader screen -->
-     <link rel="stylesheet" href="mobil_css/loader.css">
-
 
     <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
     <link rel="stylesheet" type="text/css" href="mobil_css/stylesheet_mobil.css">
+        <link rel="stylesheet" href="css/kontaktformular_v2.css">
+             <link rel="stylesheet" href="mobil_css/loader.css">
+
+    <!--   style sheets OBS STYLESHEET.CSS SKAL LIGGE ØVERST-->
+    <link rel="stylesheet" type="text/css" href="mobil_css/kontaktformular_v2_mobil.css">
+
 
     <!--    style sheets-->
     <link rel="stylesheet" href="mobil_css/main_mobil.css">
-    <link rel="stylesheet" href="mobil_css/bliv_en_del_af_huset_mobil.css">
+    <link rel="stylesheet" href="mobil_css/offentligt_arrangement_mobil.css">
 
     <!--   nav icons-->
     <link rel="apple-touch-icon" sizes="180x180" href="ikon.png">
@@ -36,16 +39,16 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Bliv en del af huset</title>
+    <title>Offentligt Arrangement</title>
+
 </head>
 
 <body>
 
-
     <header>
         <div class="nav-container">
             <!--         LOGO HUSET BLINK FUNCTION START-->
-            <div class="logo"><b><span>HUSET</span></b>
+            <div class="logo"><a href="index.html"><b><span>HUSET</span></b></a>
 
             </div>
             <!--         LOGO HUSET BLINK FUNCTION END-->
@@ -68,6 +71,11 @@
                 </form>
             </div>
 
+            <div id="wrap2">
+                <form action="" autocomplete="off">
+                    <input id="search" name="search" type="text" placeholder="Søg..."><input id="search_submit" value="Rechercher" type="submit">
+                </form>
+            </div>
             <!--        SØGEFUNTION END -->
             <!--        BURGER MENU MOBILE START-->
 
@@ -82,14 +90,13 @@
 
             <nav class="navbar2">
                 <div class="link_container">
-<!--
-                    <a href="index.html">
+
+<!--                    <a href="index.html">
                         <p>Nyheder</p>
                     </a>
-                    <a href="events.html">
+                    <a href="test_event_filter.html">
                         <p>Kalender</p>
-                    </a>-->
-<!--
+                    </a>
                     <div class="dropdownbutton">
                         <a href="#">
                             <p>Venues &amp; Places <i class="arrow down"></i></p>
@@ -125,12 +132,11 @@
                             </a>
                         </div>
 
-                    </div>
-
--->
+                    </div>-->
 
 
-                   <div class="dropdownbutton">
+
+                    <div class="dropdownbutton">
                         <a href="#">
                             <p>Skab Arrangement <i class="arrow down"></i></p>
                         </a>
@@ -172,13 +178,13 @@
                             <p>Kontakt <i class="arrow down"></i></p>
                         </a>
                         <div class="dropdown_content_mobile">
-                            <a href="kontakt_os_mobil.html">
+                            <a href="kontakt_os.html">
                                 <p>Kontakt Os</p>
                             </a>
-                            <a href="bliv_en_del_af_huset_mobil.html">
+                            <a href="bliv_en_del_af_huset.html">
                                 <p>Bliv en del af Huset</p>
                             </a>
-                            <a href="generelle_sporgsmaal_mobil.html">
+                            <a href="generelle_sporgsmaal.html">
                                 <p>FAQ</p>
                             </a>
 
@@ -338,23 +344,21 @@
 
             </div>
         </div>
-
-                <div class="header">
+        <!--       DEKSTOP NAVBAR END-->
+                                <div class="header">
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>
 </div>
-
-        <!--       DEKSTOP NAVBAR END-->
     </header>
 
-        <div id="loader"></div>
+              <div id="loader"></div>
     <div id="content" class="animate-bottom">
-
 
     <section class="splash_wrapper">
 
-        <div class="bliv_en_del_af_huset_image">
+        <div class="offentligt_arrangement_image">
+
             <div class="content_image">
                 <div class="header_wrapper">
                     <h2 class="site_header"></h2>
@@ -368,9 +372,10 @@
 
     </section>
 
-    <section id="bliv_en_del_af_huset_wrapper" class="site_content_wrapper">
+    <section id="offentligt_arrangement_wrapper" class="site_content_wrapper">
         <!--her indsættes url til billede -->
         <div class="site_content_container">
+
 
 
             <!--        her indsættes video iframe fra json-->
@@ -378,19 +383,36 @@
             <div class="video_container"></div>
 
             <!--       her indsættes content til side-->
+            <article class="offentligt_arrangement_content"></article>
 
-
-            <article class="bliv_en_del_af_huset_content"></article>
 
 
             <!--her indsættes kontakt formular-->
 
-            <div class="kontakt_formular">her skal der være en kontakt formular</div>
+
+            <div id="kontaktformular_container">
+                <form>
+                    <h3>HUSET</h3>
+                    <p>Ønsker du at kontakte os med spørgsmål, så er i meget velkommen til at skrive en besked og vi vil svare tilbage indenfor et par dage.</p>
+                    <input id="navn" class="navn_box" type="text" placeholder="Dit navn" required>
+                    <input id="email" class="email_box" type="email" placeholder="Din email" required>
+
+                    <textarea id="besked" type="text" placeholder="Din besked" required></textarea>
+                    <input class="send" type="submit" value="Send"><span id="response"></span>
+                    <a href="tel:20662811">&#x2771; Eller ring til os hvis du har spørgsmål.</a>
+                </form>
+            </div>
         </div>
 
     </section>
+
     </div>
 
+    <!--    TILBAGE TIL TOP KNAP START -->
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+    <!--     TILBAGE TIL TOP KNAP SLUT -->
 <footer>
 <a class="kalender_icon" href="events.html"><img src="mobil_assets/if_icon-calendar_211633-01.png" alt="calendar"></a>
 <a class="nyheder_icon" href="nyheder_mobil.html"><img src="mobil_assets/News-Icon.png" alt="news"></a>
@@ -406,12 +428,11 @@
 
 </footer>
 
-    <!--       FOOTER END-->
-   <script src="mobil_script/loader.js"></script>
+        <script src="mobil_script/loader.js"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="mobil_script/mobil_script.js"></script>
-    <script src="mobil_script/bliv_en_del_af_huset_mobil.js"></script>
+    <script src="mobil_script/offentligt_arrangement_mobil.js"></script>
 
 </body>
 
