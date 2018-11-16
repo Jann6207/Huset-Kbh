@@ -10,6 +10,7 @@
     box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.8);
 
 
+
 }
 
 #newsletter_close {
@@ -20,8 +21,14 @@
     cursor: pointer;
 
     grid-area: newsclose;
+    transition: .3s;
 
 
+}
+
+#newsletter_close:hover {
+    color: grey;
+    transform: scale(1.2);
 }
 
 @keyframes News_fadeIn {
