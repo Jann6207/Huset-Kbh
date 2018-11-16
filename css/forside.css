@@ -9,9 +9,9 @@ body {
     background-color: rgb(5, 3, 3);
     overflow-x: hidden;
     overflow-y: scroll;
-    background-size: repeat;
 
-
+  background-image: url(../images/texture_noise.png);
+    background-repeat: repeat;
 
 }
 
@@ -577,8 +577,10 @@ padding-top: 50px;
     width: 100%;
     font-family: "", sans-serif;
     color: white;
+/*
       background-image: url(../images/texture_noise.png);
     background-repeat: repeat;
+*/
 
 
 
