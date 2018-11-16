@@ -603,8 +603,39 @@ padding-top: 50px;
 }
 
 .find_vej_svg a:hover{
+    cursor: pointer;
+    position: relative;
+    transform: scale(1.25);
+
 
 }
+
+svg {
+padding: 0px;
+
+    filter: drop-shadow(10px 15px 2px rgba(221, 219, 219, 0.42));
+        filter: drop-shadow(10px 15px 2px rgba(145, 145, 145, 0.67));
+
+animation: shadow 4s infinite alternate-reverse ease;
+
+}
+
+@keyframes shadow{
+
+    from{
+
+          filter: drop-shadow(10px 15px 2px rgba(221, 219, 219, 0.42));
+        filter: drop-shadow(10px 15px 2px rgba(145, 145, 145, 0.67));
+    }
+
+    to{
+
+          filter: drop-shadow(10px 5px 2px rgba(221, 219, 219, 0.15));
+        filter: drop-shadow(10px 5px 2px rgba(77, 77, 77, 0.36));
+    }
+}
+
+
 svg:hover {
 padding: 1px;
 
