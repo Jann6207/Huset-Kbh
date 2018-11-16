@@ -113,12 +113,6 @@ iframe {
 
 
 }
-#_9:hover{
-
-    cursor: pointer;
-
-background-color: red;
-}
 .site_content_container {
     grid-column: 2/3;
     padding: 10px;
