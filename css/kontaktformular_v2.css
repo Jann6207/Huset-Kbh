@@ -8,8 +8,10 @@
 
 
     #kontaktformular_container{
-        width: 800px;
+        width: 100%;
         background-color: lightgray;
+        border: solid 1px grey;
+        margin: 0px;
 
     }
 
@@ -32,7 +34,7 @@
             ". besked besked besked ."
             ". besked besked besked ."
             ". besked besked besked ."
-            ". . send . ."
+            ". send send send ."
             ". links links links ."
             ". . . . ."
             ". . . . ."
@@ -51,7 +53,7 @@
         padding: 0;
         font-size: 1.2em;
         font-family: sans-serif;
-       width: 100%;
+        width: 100%;
 
 
     }
@@ -80,6 +82,7 @@
         font-size: 3em;
         align-self: center;
         text-align: center;
+        font-weight: 300;
     }
     #kontaktformular_container p {
         grid-area: tekst;
@@ -89,9 +92,9 @@
 
 
     #kontaktformular_container input[type=submit] {
-    background-color: black; color: antiquewhite;
+        background-color: black;
+        color: antiquewhite;
         cursor: pointer;
-/*        border-radius: 15px;*/
         border: 3px solid #434343;
 
     }
@@ -153,7 +156,7 @@
             ". navn . email ."
             ". besked besked besked ."
             ". besked besked besked ."
-            ". . send . ."
+            ". send send send ."
             ". links links links ."
             ". . . . ."
             ". . . . ."
