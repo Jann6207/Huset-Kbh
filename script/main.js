@@ -46,6 +46,8 @@ function showSlides() {
         document.querySelector(".tagline_1").textContent = post395.acf.tag_line;
 
         document.querySelector(".slide_image_1").src = post395.acf.billede.url;
+        document.querySelector(".slide_image_1").alt = post395.acf.billede.alt;
+        document.querySelector(".slide_image_1").title = post395.acf.billede.title;
 
 
         //---------------------------------------------------
@@ -62,6 +64,8 @@ function showSlides() {
         document.querySelector(".tagline_2").textContent = post393.acf.tag_line;
 
         document.querySelector(".slide_image_2").src = post393.acf.billede.url;
+        document.querySelector(".slide_image_2").alt = post393.acf.billede.alt;
+        document.querySelector(".slide_image_2").title = post393.acf.billede.title;
 
         //---------------------------------------------------
 
@@ -78,6 +82,9 @@ function showSlides() {
         document.querySelector(".tagline_3").textContent = post392.acf.tag_line;
 
         document.querySelector(".slide_image_3").src = post392.acf.billede.url;
+        document.querySelector(".slide_image_3").alt = post392.acf.billede.alt;
+        document.querySelector(".slide_image_3").title = post392.acf.billede.title;
+
 
         //---------------------------------------------------
 

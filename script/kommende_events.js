@@ -38,6 +38,11 @@
                 let klon = eventTarget.cloneNode(true).content;
 
                 klon.querySelector(".event_image").src = event.acf.billede.url;
+                klon.querySelector(".event_image").alt = event.acf.billede.alt;
+                klon.querySelector(".event_image").title = event.acf.billede.title;
+
+
+
                 klon.querySelector(".genre").textContent = event.acf.genre;
                 klon.querySelector(".venue").textContent = event.acf.venue;
                 klon.querySelector(".pris").textContent = "Pris" + " " + event.acf.pris + "kr.";
