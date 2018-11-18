@@ -376,15 +376,18 @@ header input[type="submit"]:hover {
 
 .adresse hr {
     color: white;
+    height: 1px;
 
 }
 
 .hrfirst {
     margin-bottom: -6px;
+     height: 1px;
 }
 
 .hrsecond {
     margin-top: -6px;
+     height: 1px;
 }
 
 .footer_container p {
