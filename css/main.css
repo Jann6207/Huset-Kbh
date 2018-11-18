@@ -59,33 +59,57 @@ body{
 
 .header_wrapper {
     grid-area: head;
-    border: white solid 1px;
+    border: white solid .5px;
     background-color: rgba(255, 255, 255, 0.16);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "head" "head" "tag"
+    grid-template-areas: "head" "head" "tag";
+
 }
 
 .site_header {
     grid-area: head;
-    font-family: "Nunito";
+
     text-align: center;
     text-transform: uppercase;
     z-index: 90;
-    color: white;
+
     font-size: 1.5em;
+
+/*
+    font-family: "Huset";
+
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0 -10px 200px, 0 0 .1px, 0 0 5em #fff, 0 0 .03em #fff;
+*/
+
+
+
+      text-decoration: none;
+     text-transform: uppercase;
+     color: #b74040;
+    font-family: "", sans-serif;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+
 }
 
 .tag_line {
     grid-area: tag;
-    font-family: "Nunito";
-    text-transform: capitalize;
-    text-decoration: underline;
     z-index: 89;
     color: white;
     text-align: center;
     font-size: 1em;
+    text-decoration: none;
+    color: #fee;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+
 }
 
 iframe {
@@ -126,6 +150,68 @@ p {
     font-family: 'Roboto';
 }
 
+/*
+.content_image h2 {
+    font-family: "Huset";
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.content_image .tag_line {
+    text-decoration: none;
+     text-transform: uppercase;
+     color: #b74040;
+    font-family: "", sans-serif;
+    font-weight: 900;
+    font-size:
+}
+*/
+
+.bastard_content p,
+.husets_biograf_content p,
+.musickafeen_wrapper_content p,
+.bib_bib_bar_content p,
+.evoo_street_kitchen_content p,
+.xenon_vox_content p,
+.stardust_content p,
+.salon_k_content p,
+.balsalen_content p,
+.offentligt_arrangement_content p,
+.privat_arrangement_content p,
+.frivilligt_arbejde_content p,
+.kultur_historie_content p,
+.arrangore_sammenarbejdspartnere_content p,
+.kontakt_os_content p,
+.bliv_en_del_af_huset_content p, .generelle_sporgsmaal_content p {
+    font-family: "Nunito", sans-serif;
+}
+
+.bastard_content h3,
+.husets_biograf_content h3,
+.musickafeen_wrapper_content h3,
+.bib_bib_bar_content h3,
+.evoo_street_kitchen_content h3,
+.xenon_vox_content h3,
+.stardust_content h3,
+.salon_k_content h3,
+.balsalen_content h3,
+.offentligt_arrangement_content h3,
+.privat_arrangement_content h3,
+.frivilligt_arbejde_content h3,
+.kultur_historie_content h3,
+.arrangore_sammenarbejdspartnere_content h3,
+.kontakt_os_content h3,
+.bliv_en_del_af_huset_content h3,
+.generelle_sporgsmaal_content h3 {
+
+    text-transform: uppercase;
+     color: #b74040;
+    font-family: "", sans-serif;
+    font-weight: 900;
+
+}
+
 hr {
     border: 0;
     height: 1px;
@@ -148,12 +234,20 @@ hr {
     }
 
     .site_header {
-        font-size: 2.4em;
+        font-size: 2.8em;
+        margin-bottom: 25px;
     }
 
     .tag_line {
         font-size: 1.5em;
+         padding-bottom: 15px;
+
+
+
+
     }
+
+
 }
 
 
