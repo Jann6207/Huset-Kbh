@@ -350,10 +350,41 @@ header input[type="submit"]:hover {
 .footer_container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "a sociale_ikoner  sociale_ikoner . . . . . . . . ." "a b . d . f . h j k l ." "a c c e e g g i j k l ." "a c c e e g g i . . . .";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "a sociale_ikoner  sociale_ikoner . . . . . . . . ."
+    "a b . d . f . h j k l ." "a c c e e g g i j k l ."
+    "a c c e e g g i . . . ."
+    "m m m m m m m m m m m m";
     background-color: #0f0f0f;
     padding-bottom: 25px;
+}
+
+.adresse {
+    grid-area: m;
+    text-transform: none;
+    color: white;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: -20px;
+}
+
+.adresse p {
+     text-transform: none;
+    color: white;
+}
+
+.adresse hr {
+    color: white;
+
+}
+
+.hrfirst {
+    margin-bottom: -6px;
+}
+
+.hrsecond {
+    margin-top: -6px;
 }
 
 .footer_container p {
@@ -371,6 +402,7 @@ header input[type="submit"]:hover {
     width: 20px;
     margin-right: 5px;
 }
+
 
 .a {
     grid-area: a;
@@ -839,7 +871,12 @@ header input[type="submit"]:hover {
         grid-template-columns: repeat(13, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1px;
-        grid-template-areas: ". . . sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner . . ." " . b b . d d . f f . h h ." ". c c . e e . g g . i i ." ". . . . j . k . l . . . .";
+        grid-template-areas:
+". . . sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner . . ."
+" . b b . d d . f f . h h ."
+ ". c c . e e . g g . i i ."
+". . . . j . k . l . . . ."
+"m m m m m m m m m m m m"  ;
         /*
          ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ."
     ". . b b b . . . d d d ."
@@ -921,7 +958,8 @@ header input[type="submit"]:hover {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1px;
-        grid-template-areas: ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ." ". . . b b . . . d d . ." ". . . c c c . . e e e ." ". . . f f . . . h h . ." ". . . g g g . . i i i ." ". .  j j . k k . l l . .";
+        grid-template-areas: ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ." ". . . b b . . . d d . ." ". . . c c c . . e e e ." ". . . f f . . . h h . ." ". . . g g g . . i i i ." ". . j j . k k . l l . ."
+        "m m m m m m m m m m m m"    ;
     }
 
     .sociale_ikoner1 img {
@@ -946,7 +984,8 @@ header input[type="submit"]:hover {
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-gap: 1px;
-            grid-template-areas: ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ." ". . b b b . . d d d . ." ". . c c c . . e e e . ." ". . f f f . . h h h . ." ". . g g g . . i i i . ." ". .  j j . k k . l l . .";
+            grid-template-areas: ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ." ". . b b b . . d d d . ." ". . c c c . . e e e . ." ". . f f f . . h h h . ." ". . g g g . . i i i . ." ". .  j j . k k . l l . ."
+            "m m m m m m m m m m m m"    ;
         }
 
         .footer_container p {
