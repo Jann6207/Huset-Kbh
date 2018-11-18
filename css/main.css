@@ -30,7 +30,9 @@
 
 body{
 
+
 }
+
 
 
 .splash_wrapper {
@@ -132,6 +134,7 @@ iframe {
 .site_content_wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+
     padding-top: 20px;
 
 
@@ -140,6 +143,7 @@ iframe {
 .site_content_container {
     grid-column: 2/3;
     padding: 10px;
+
 }
 
 h3 {
