@@ -176,6 +176,7 @@
     width: 100%;
     grid-area: navn;
     margin-bottom: 5px;
+    margin-top: 10px;
 
 }
 
@@ -215,12 +216,12 @@
     text-shadow: 0 -20px 200px, 0 0 .1px, 0 0 50em #fff, 0 0 .1em #fff;
     /*        text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em #f50b26, 0 0 0.5em #f50b26, 0 0 0.1em #f50b26, 0 5px 3px #000;*/
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding-left: 0;
 
 }
 
-#newsletter_container p {
+#newsletter_container span {
     grid-area: tekst;
     font-size: 0.8em;
     font-family: "Nunito", sans-serif;
