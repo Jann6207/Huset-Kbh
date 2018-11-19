@@ -65,7 +65,7 @@
 /* CONTAINER START*/
 
 #newsletter_container {
-    background-image: url(/Assets/red_news.jpg);
+    background-image: url(../Assets/red_news.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
