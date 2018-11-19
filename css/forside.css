@@ -5,38 +5,28 @@
 }
 
 body {
-
     background-color: rgb(5, 3, 3);
     overflow-x: hidden;
     overflow-y: scroll;
-
-  background-image: url(../images/texture_noise.png);
+    background-image: url(../images/texture_noise.png);
     background-repeat: repeat;
     background-color: #070202;
-
-
-
 }
 
-section{
+section {}
 
-
-}
-
-button{
-
+button {
     background-color: transparent;
     border: 0px;
-
 }
-    h3, h4, main p {
 
+h3,
+h4,
+main p {
     text-shadow: 10px 10px 10px black;
-
 }
 
 h3 {
-
     color: #b74040;
     font-family: "", sans-serif;
     font-weight: 900;
@@ -44,11 +34,9 @@ h3 {
     font-size: 1.5em;
     padding-left: 15px;
     margin: 0;
-
 }
 
 h4 {
-
     color: white;
     font-family: sans-serif;
     font-weight: 200;
@@ -56,11 +44,9 @@ h4 {
     font-size: 1em;
     padding-left: 15px;
     margin: 0;
-
 }
 
 main p {
-
     font-family: "Nunito", sans-serif;
     font-weight: 300;
     padding-left: 30px;
@@ -69,62 +55,47 @@ main p {
     margin-bottom: 20px;
     color: white;
     line-height: 20px;
-
-
 }
 
-.f_knap{
+.f_knap {
     border: solid 1px white;
     padding: 10px;
     margin: 20px;
     float: right;
-        box-shadow: 10px 10px 20px black;
-
+    box-shadow: 10px 10px 20px black;
 }
 
-.f_knap button{
+.f_knap button {
     color: white;
     font-family: "huset";
     text-transform: uppercase;
     font-size: 1.5em;
-        float: left;
-
-
-
+    float: left;
 }
 
-.f_knap:hover{
-
+.f_knap:hover {
     cursor: pointer;
     background-color: rgb(221, 7, 42, 0.68);
     transition: .4s;
     box-shadow: 20px 20px 20px black;
     transform: scale(1.1);
-
 }
 
 .event_pil_right {
-
-
     float: right;
-
     background-image: url(../svg/huset_pil_hvid.svg);
     background-size: 100% 100%;
     width: 25px;
     height: 30px;
     flex: right;
     transform: rotate(-90deg);
-
 }
-
-
 
 .site_content_wrapper {
     padding: 0px;
 }
 
 .site_content_container {
-
     padding: 0px;
 }
 
@@ -149,7 +120,6 @@ main p {
 /*Slide content------------------------------*/
 
 .slide_content_con {
-
     display: grid;
     width: 100vw;
     height: 100vh;
@@ -159,29 +129,22 @@ main p {
     grid-template-columns: 1fr minmax(50px, 800px) 1fr;
     ;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
     grid-template-areas: "t t t t t t t t" ". . . . . t t t" ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . .";
 }
 
 .gradient_fade {
-
     grid-column: 1/4;
     grid-row: 5/13;
     z-index: 2;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), #262121);
-
 }
 
 .slide_img_con {
-
     z-index: 1;
-
     grid-column: 1/4;
     grid-row: 1/13;
-
     width: 100%;
     height: 100%;
-
 }
 
 /*slide tekst-------------------------------------------------*/
@@ -198,22 +161,11 @@ main p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "t t t t t t t t"
-        "l l l l l l l l"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        ". . . . . b b b"
-        ". . . . . b b b"
+    grid-template-areas: "t t t t t t t t" "l l l l l l l l" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" ". . . . . b b b" ". . . . . b b b"
 }
 
 .slide_txt {
     grid-area: p;
-
-
 }
 
 .slide_txt p {}
@@ -224,22 +176,16 @@ main p {
 }
 
 .slide_tagline {
-
     grid-area: l;
-
 }
 
 .slide_knap {
-
     grid-area: b;
-
     width: 100%;
     height: 100%;
-
-
 }
 
-.slide_pil_right{
+.slide_pil_right {
 
     background-image: url(../svg/huset_pil_hvid.svg);
     background-size: 100% 100%;
@@ -259,7 +205,7 @@ main p {
     padding: 5px;
     float: left;
     font-size: 1em;
-   font-family: "huset";
+    font-family: "huset";
     text-transform: uppercase;
 }
 
@@ -267,9 +213,8 @@ main p {
 .slide_knap button:hover {
     cursor: pointer;
     background-color: rgb(221, 7, 42, 0.68);
-        transition: .4s;
-       box-shadow: 20px 20px 20px black;
-
+    transition: .4s;
+    box-shadow: 20px 20px 20px black;
 }
 
 .slide_tekst_1 {}
@@ -376,17 +321,13 @@ main p {
     }
 }
 
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------KOMMENDE EVENTS--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .kommende_events {
-float: left;
+    float: left;
     width: 100%;
     padding-top: 50px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(27, 19, 100, 0.48));
-
-
 }
 
 .kommende_events_header {}
@@ -395,24 +336,15 @@ float: left;
 
 .kommende_events_text p {}
 
-.kommende_event_knap {
-
-
-}
+.kommende_event_knap {}
 
 .kommende_event_knap:hover {}
 
-
-
 .kommende_event_knap button {}
-
-
 
 .kommende_events_con {}
 
-
-.kalender_txt{
-
+.kalender_txt {
     margin-top: 30px;
     color: white;
     font-family: "", sans-serif;
@@ -421,12 +353,11 @@ float: left;
     float: left;
     padding-left: 5px;
     margin-bottom: 5px;
-
-
 }
-.event_pil_ned{
+
+.event_pil_ned {
     float: right;
-     background-image: url(../svg/huset_pil_hvid.svg);
+    background-image: url(../svg/huset_pil_hvid.svg);
     background-size: 100% 100%;
     width: 15px;
     height: 15px;
@@ -434,32 +365,23 @@ float: left;
 }
 
 ::-webkit-scrollbar {
-
     width: 2px;
 }
 
-
 ::-webkit-scrollbar-thumb {
-
     border-radius: 50%;
     background-color: rgb(221, 7, 42, 0.68);
-
 }
 
 .kalender_wrapper {
-
     width: 100%;
-
     border: 1px solid black;
     height: 308px;
     overflow: hidden;
     box-shadow: 10px 10px 140px black;
-
-
 }
 
 .kalender_container {
-
     width: 100%;
     height: 322px;
     padding: 0;
@@ -476,33 +398,25 @@ float: left;
     display: grid;
     grid-template-columns: 100px 3fr;
     grid-template-rows: 100px;
-
     grid-template-areas: "img txt"
 }
 
 .event_info_con {
-
     color: white;
     background-color: #0f0f0f;
     background-image: linear-gradient(rgba(230, 230, 230, 0.04), #0f0f0f);
-
     grid-area: txt;
     width: 100%;
-
     font-size: .81em;
     font-family: "Nunito", sans-serif;
-
     display: grid;
     grid-template-columns: 5px repeat(10, 1fr) 5px;
     grid-template-rows: 5px repeat(10, 1fr) 5px;
     grid-template-areas: ". . . . . . . . . . . ." ". d d d d d . k k k k ." ". d d d d d . k k k k ." ". g g g g g . v v v v ." ". . . . . . . . . . . ." ". t t t t t . . . . . ." ". t t t t t . . . . . ." ". t t t t t . p p p p ." ". t t t t t . z z z z ." ". t t t t t . z z z z ." ". t t t t t . z z z z ." ". . . . . . . . . . . .";
-
-
 }
 
 .event_image_con {
     grid-area: img;
-
 }
 
 .dato_con {
@@ -511,36 +425,29 @@ float: left;
 }
 
 .dag {
-
     font-family: "huset";
     font-size: 1.2em;
 }
-
 
 .maaned {
     font-weight: 600;
     font-size: .8em;
     margin-left: 2px;
-
 }
 
 .tid {
-
     grid-area: k;
     text-align: right;
 }
 
 .genre {
-
     grid-area: g;
     font-size: .5em;
-
 }
 
 .venue {
     font-size: .5em;
     text-align: right;
-
     grid-area: v;
 }
 
@@ -550,23 +457,17 @@ float: left;
     align-self: flex-end;
     line-height: 15px;
     font-weight: 600;
-
-
 }
 
 .se_mere {}
 
-
-
 .pris {
     grid-area: p;
-
     text-align: right;
 }
 
 .knap_link {
     grid-area: z;
-
 }
 
 .kob_knap {
@@ -589,87 +490,70 @@ float: left;
 }
 
 .grey_bg {}
+
 .grey_bg {}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------KOMMENDE SLUT-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.find_vej{
-padding-top: 50px;
-     float: left;
+
+.find_vej {
+    padding-top: 50px;
+    float: left;
     width: 100%;
     font-family: "", sans-serif;
     color: white;
-      background-image: url(../images/texture.png);
+    background-image: url(../images/texture.png);
     background-color: rgba(66, 66, 66, 0.11);
-
 }
 
-.find_vej a{
-
-}
+.find_vej a {}
 
 
-.find_vej_svg{
- float: left;
-
+.find_vej_svg {
+    float: left;
     width: 100%;
     font-family: "", sans-serif;
     color: white;
     padding: 10px 30px 50px 30px;
-
-
- display: grid;
-    grid-template-columns: 1fr ;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.find_vej_svg a:hover{
+.find_vej_svg a:hover {
     cursor: pointer;
     position: relative;
     transform: scale(1.25);
-
-
 }
 
 svg {
-padding: 0px;
+    padding: 0px;
 
     filter: drop-shadow(10px 15px 2px rgba(221, 219, 219, 0.42));
-        filter: drop-shadow(10px 15px 2px rgba(145, 145, 145, 0.67));
-
-animation: shadow 4s infinite alternate-reverse ease;
-
+    filter: drop-shadow(10px 15px 2px rgba(145, 145, 145, 0.67));
+    animation: shadow 4s infinite alternate-reverse ease;
 }
 
-@keyframes shadow{
+@keyframes shadow {
 
-    from{
-
-          filter: drop-shadow(10px 15px 2px rgba(221, 219, 219, 0.42));
+    from {
+        filter: drop-shadow(10px 15px 2px rgba(221, 219, 219, 0.42));
         filter: drop-shadow(10px 15px 2px rgba(145, 145, 145, 0.67));
     }
 
-    to{
-
-          filter: drop-shadow(10px 5px 2px rgba(221, 219, 219, 0.15));
+    to {
+        filter: drop-shadow(10px 5px 2px rgba(221, 219, 219, 0.15));
         filter: drop-shadow(10px 5px 2px rgba(77, 77, 77, 0.36));
     }
 }
 
-
 svg:hover {
-padding: 1px;
-
+    padding: 1px;
     filter: drop-shadow(5px 20px 2px rgba(221, 219, 219, 0.42));
-        filter: drop-shadow(5px 20px 2px rgba(145, 145, 145, 0.67));
-
-
-
+    filter: drop-shadow(5px 20px 2px rgba(145, 145, 145, 0.67));
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------FRIVILLIGT ARBEJD-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .frivilligt_arbejde {
-
-
     float: left;
     width: 100%;
     font-family: "", sans-serif;
@@ -696,9 +580,8 @@ padding: 1px;
 
 .f_a_knap button {}
 
-.f_a_txt{
-
-        margin-top: 30px;
+.f_a_txt {
+    margin-top: 30px;
     color: white;
     font-family: "", sans-serif;
     font-weight: 200;
@@ -709,38 +592,28 @@ padding: 1px;
 }
 
 .f_a_video iframe {
-
     width: 100%;
     margin: 0px;
     padding: 0px;
     display: block;
     box-shadow: 10px 10px 20px black;
-
 }
-
-
-
-
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .skab_arrangement {
     float: left;
-width: 100%;
-
+    width: 100%;
     font-family: "", sans-serif;
     color: white;
     padding: 50px 0px 0px 0px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(215, 23, 52, 0.29));
-
-
 }
 
 .s_a_con {
 
-
-width: 100%;
+    width: 100%;
 }
 
 .s_a_header {}
@@ -751,511 +624,372 @@ width: 100%;
 
 .s_a_knap {}
 
-.s_a_knap button {
+.s_a_knap button {}
 
-}
-
-.s_a_txt{
-
-
-}
-
-
-
-
+.s_a_txt {}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------SKAB ET ARRANGE MENT--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
-
-
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------SKAB ARRANGEMENT --------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 
 @media screen and (min-width: 370px) {
 
-
-   h3 {
-
-    font-size: 1.7em;
-
-}
-
-h4 {
-
-
-    text-transform: uppercase;
-    text-transform: uppercase;
-    font-size: 1.2em;
-
-}
-
-main p {
-
-    font-size: 1.1em;
-    line-height: 23px;
-
-}
-
-    .site_content_container p{
-
-        padding-bottom: 30px;
-        padding-top:30px;
-
+    h3 {
+        font-size: 1.7em;
     }
 
-}
+    h4 {
+        text-transform: uppercase;
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
 
+    main p {
+        font-size: 1.1em;
+        line-height: 23px;
+    }
+
+    .site_content_container p {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+}
 
 @media screen and (min-width: 410px) {
 
-
-   h3 {
-
-    font-size: 2.1em;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-h4 {
-
+    h3 {
+        font-size: 2.1em;
         padding-left: 25px;
-    padding-right: 25px;
-    text-transform: uppercase;
-    font-size: 1.7em;
-
-
-}
-
-main p {
-
-    font-size: 1.2em;
-    line-height: 27px;
-    padding-right: 40px ;
-    padding-left: 40px;
-}
-
-    .site_content_container p{
-
-        padding-bottom: 40px;
-        padding-top:40px;
-            padding-right: 45px ;
-        padding-left: 45px
+        padding-right: 25px;
     }
 
+    h4 {
+        padding-left: 25px;
+        padding-right: 25px;
+        text-transform: uppercase;
+        font-size: 1.7em;
+    }
+
+    main p {
+        font-size: 1.2em;
+        line-height: 27px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .site_content_container p {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        padding-right: 45px;
+        padding-left: 45px
+    }
 }
 
 @media screen and (min-width: 700px) {
 
-/*----------------------------------overall-------------------------------------------------*/
-   h3 {
-
-    font-size: 3.6em;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-
-h4 {
-
-        padding-left:70px;
-    padding-right: 70px;
-    text-transform: uppercase;
-    font-size: 2.3em;
-
-
-}
-
-    .function_txt{
-        font-size: 2.2em;
-
+    /*----------------------------------overall-------------------------------------------------*/
+    h3 {
+        font-size: 3.6em;
+        padding-left: 70px;
+        padding-right: 70px;
     }
-main p {
 
-    font-size: 1.8em;
-    line-height: 40px;
-    padding-top: 50px;
-    padding-right: 100px ;
-    padding-left: 100px;
-}
+    h4 {
+        padding-left: 70px;
+        padding-right: 70px;
+        text-transform: uppercase;
+        font-size: 2.3em;
+    }
 
-    .site_content_container p{
+    .function_txt {
+        font-size: 2.2em;
+    }
 
+    main p {
+        font-size: 1.8em;
+        line-height: 40px;
+        padding-top: 50px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .site_content_container p {
         padding-bottom: 70px;
-        padding-top:70px;
-            padding-right: 100px ;
+        padding-top: 70px;
+        padding-right: 100px;
         padding-left: 100px
     }
 
+    .f_knap {
+        border: solid 1px white;
+        padding: 4px;
+        margin-right: 40px;
+        margin: 60px;
+        margin-right: 100px;
+        float: right;
+    }
 
-    .f_knap{
-    border: solid 1px white;
-    padding: 30px;
-    margin-right:40px;
-    margin: 60px;
-    margin-right:100px;
-    float: right;
-}
-
-.f_knap button{
-    color: white;
-    font-family: "huset";
-    text-transform: uppercase;
-    font-size: 3em;
+    .f_knap button {
+        color: white;
+        font-family: "huset";
+        text-transform: uppercase;
+        font-size: 3em;
         float: left;
+    }
 
-
-}
-
-
-/*--------------------------------sLIDE--------------------------------------------------*/
-
+    /*--------------------------------sLIDE--------------------------------------------------*/
     .text_con {
-    z-index: 3;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-    grid-column: 2/3;
-    grid-row: 5/13;
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "t t t t t t t t"
-        "l l l l l l l l"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        ". . . . b b b ."
-        ". . . . b b b ."
-}
+        z-index: 3;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+        grid-column: 2/3;
+        grid-row: 5/13;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "t t t t t t t t" "l l l l l l l l" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" ". . . . b b b ." ". . . . b b b ."
+    }
 
     .slide_knap {
+        grid-area: b;
+        width: 100%;
+        height: 100%;
+        border: solid 1px white;
+    }
 
-    grid-area: b;
+    .slide_pil_right {
+        width: 50px;
+        height: 50px;
+    }
 
-    width: 100%;
-    height: 100%;
-    border: solid 1px white;
-
-}
-
-.slide_pil_right{
-
-    width: 50px;
-    height: 50px;
-
-}
-
-.slide_knap button {
-    width: 100%;
-    height: 100%;
-    color: white;
-    border: .1px solid white;
-    text-align: center;
-    color: white;
-    padding: 5px;
-    float: left;
-    font-size: 2.5em;
-   font-family: "huset";
-    text-transform: uppercase;
-}
+    .slide_knap button {
+        width: 100%;
+        height: 100%;
+        color: white;
+        border: .1px solid white;
+        text-align: center;
+        color: white;
+        padding: 5px;
+        float: left;
+        font-size: 2.5em;
+        font-family: "huset";
+        text-transform: uppercase;
+    }
 
 
-  /*--------------------------------sLIDE--------------------------------------------------*/
-
-
-
-/*---------------------------------overall--------------------------------------------------*/
-
-    .kommende_events, .frivilligt_arbejde, .skab_arrangement, .find_vej{
-
-        padding-top: 150px ;
+    /*--------------------------------sLIDE--------------------------------------------------*/
+    /*---------------------------------overall--------------------------------------------------*/
+    .kommende_events,
+    .frivilligt_arbejde,
+    .skab_arrangement,
+    .find_vej {
+        padding-top: 150px;
         padding-bottom: ;
 
     }
 
-
-
-/*-----------------------------------------------------------------------------------*/
-
-/*  ---------------------------------EVENTS--------------------------------------------  */
-
-
+    /*-----------------------------------------------------------------------------------*/
+    /*  ---------------------------------EVENTS--------------------------------------------  */
     .kommende_events {
-    float: left;
-    width: 100%;
-    padding-top: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(27, 19, 100, 0.48));
+        float: left;
+        width: 100%;
+        padding-top: 50px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(27, 19, 100, 0.48));
+    }
 
+    .kommende_events_header {}
 
-}
+    .kommende_events_tagline {}
 
-.kommende_events_header {}
+    .kommende_events_text p {}
 
-.kommende_events_tagline {}
+    .kommende_event_knap {}
 
-.kommende_events_text p {}
+    .kommende_event_knap:hover {}
 
-.kommende_event_knap {
+    .kommende_event_knap button {}
 
+    .kommende_events_con {}
 
-}
+    .kalender_txt {
+        margin-top: 30px;
+        color: white;
+        font-family: "", sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+        float: left;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+    .event_pil_ned {
+        float: right;
+        background-image: url(../svg/huset_pil_hvid.svg);
+        background-size: 100% 100%;
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
 
-.kommende_event_knap:hover {}
+    ::-webkit-scrollbar {
 
+        width: 2px;
+    }
 
+    ::-webkit-scrollbar-thumb {
+        border-radius: 50%;
+        background-color: rgb(221, 7, 42, 0.68);
+    }
 
-.kommende_event_knap button {}
+    .kalender_wrapper {
+        width: 100%;
+        border: 0px solid black;
+        height: 738px;
+        overflow: hidden;
+        border-radius: 1%;
+    }
 
+    .kalender_container {
+        width: 100%;
+        height: 750px;
+        padding: 0;
+        overflow: scroll;
+    }
 
+    .event_kalender {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-.kommende_events_con {}
+    .event_con {
+        border: solid #373737 1px;
+        display: grid;
+        grid-template-columns: 250px 3fr;
+        grid-template-rows: 250px;
+        grid-template-areas: "img txt"
+    }
 
+    .event_info_con {
+        color: white;
+        background-color: #0f0f0f;
+        grid-area: txt;
+        width: 100%;
+        font-size: .81em;
+        font-family: "Nunito", sans-serif;
+        display: grid;
+        grid-template-columns: 5px repeat(10, 1fr) 5px;
+        grid-template-rows: 5px repeat(10, 1fr) 5px;
+        grid-template-areas: ". . . . . . . . . . . ." ". d d d d d . k k k k ." ". d d d d d . k k k k ." ". d d d d d . v v v v ." ". t t t t t . g g g g ." ". t t t t t . . . . . ." ". t t t t t . . . . . ." ". t t t t t . p p p p ." ". t t t t t . z z z z ." ". t t t t t . z z z z ." ". t t t t t . z z z z ." ". . . . . . . . . . . .";
+    }
 
-.kalender_txt{
+    .event_image_con {
+        grid-area: img;
+    }
 
-    margin-top: 30px;
-    color: white;
-    font-family: "", sans-serif;
-    font-weight: 200;
-    text-transform: uppercase;
-    float: left;
-    padding-left: 5px;
-    margin-bottom: 5px;
+    .dato_con {
+        grid-area: d;
+        display: flex;
+    }
 
+    .dag {
+        font-family: "huset";
+        font-size: 6em;
+    }
 
-}
-.event_pil_ned{
-    float: right;
-     background-image: url(../svg/huset_pil_hvid.svg);
-    background-size: 100% 100%;
-    width: 15px;
-    height: 15px;
-    margin-left: 5px;
-}
+    .maaned {
+        font-weight: 600;
+        font-size: 3em;
+        margin-left: 2px;
+    }
 
-::-webkit-scrollbar {
-
-    width: 2px;
-}
-
-
-::-webkit-scrollbar-thumb {
-
-    border-radius: 50%;
-    background-color: rgb(221, 7, 42, 0.68);
-
-}
-
-.kalender_wrapper {
-
-    width: 100%;
-
-    border: 0px solid black;
-    height: 738px;
-    overflow: hidden;
-    border-radius: 1%;
-
-
-}
-
-.kalender_container {
-
-    width: 100%;
-    height: 750px;
-    padding: 0;
-    overflow: scroll;
-}
-
-.event_kalender {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.event_con {
-    border: solid #373737 1px;
-    display: grid;
-    grid-template-columns: 250px 3fr;
-    grid-template-rows: 250px;
-
-    grid-template-areas: "img txt"
-}
-
-.event_info_con {
-
-    color: white;
-    background-color: #0f0f0f;
-    grid-area: txt;
-    width: 100%;
-
-    font-size: .81em;
-    font-family: "Nunito", sans-serif;
-
-    display: grid;
-    grid-template-columns: 5px repeat(10, 1fr) 5px;
-    grid-template-rows: 5px repeat(10, 1fr) 5px;
-    grid-template-areas:
-
-        ". . . . . . . . . . . ."
-        ". d d d d d . k k k k ."
-        ". d d d d d . k k k k ."
-        ". d d d d d . v v v v ."
-        ". t t t t t . g g g g ."
-        ". t t t t t . . . . . ."
-        ". t t t t t . . . . . ."
-        ". t t t t t . p p p p ."
-        ". t t t t t . z z z z ."
-        ". t t t t t . z z z z ."
-        ". t t t t t . z z z z ."
-        ". . . . . . . . . . . .";
-
-
-}
-
-.event_image_con {
-    grid-area: img;
-
-}
-
-.dato_con {
-    grid-area: d;
-    display: flex;
-}
-
-.dag {
-
-    font-family: "huset";
-    font-size: 6em;
-}
-
-
-.maaned {
-    font-weight: 600;
-    font-size: 3em;
-    margin-left: 2px;
-
-}
-
-.tid {
-    font-size: 3em;
-    grid-area: k;
-    text-align: right;
-}
-
-.genre {
-
-    grid-area: g;
-    font-size: 1.5em;
+    .tid {
+        font-size: 3em;
+        grid-area: k;
         text-align: right;
+    }
 
+    .genre {
+        grid-area: g;
+        font-size: 1.5em;
+        text-align: right;
+    }
 
+    .venue {
+        font-size: 1.5em;
+        text-align: right;
+        grid-area: v;
+    }
+
+    .event_navn {
+        grid-area: t;
+        font-size: 2.5em;
+        align-self: flex-end;
+        line-height: 40px;
+        font-weight: 600;
+        color: #b74040;
+    }
+
+    .se_mere {}
+
+    .pris {
+        grid-area: p;
+        font-size: 2em;
+        text-align: right;
+    }
+
+    .knap_link {
+        grid-area: z;
+
+    }
+
+    .kob_knap {
+        background-color: rgb(252, 229, 241, 0.8);
+        color: white;
+        border: 1px solid white;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+    }
+
+    .grey_bg {}
+    .grey_bg {}
+
+    /*  ---------------------------------EVENTS sLUT--------------------------------------------  */
 }
 
-.venue {
-    font-size: 1.5em;
-    text-align: right;
-
-    grid-area: v;
-}
-
-.event_navn {
-    grid-area: t;
-    font-size: 2.5em;
-    align-self: flex-end;
-    line-height: 40px;
-    font-weight: 600;
-color: #b74040;
-
-}
-
-.se_mere {}
-
-
-
-.pris {
-    grid-area: p;
-    font-size: 2em;
-    text-align: right;
-}
-
-.knap_link {
-    grid-area: z;
-
-}
-
-.kob_knap {
-    background-color: rgb(252, 229, 241, 0.8);
-    color: white;
-    border: 1px solid white;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    font-size: 2em;
-}
-
-
-
-
-
-.grey_bg {}
-.grey_bg {}
-
-
-
-
-/*  ---------------------------------EVENTS sLUT--------------------------------------------  */
-
-}
-
-@media screen and (min-width: 800px){
-
-    body{
+@media screen and (min-width: 800px) {
+    body {
         background-image: none;
     }
 
-
-    .function_txt{
+    .function_txt {
         margin: 20px;
         margin-left:
     }
 
+    .event_pil_right {
+        float: right;
+        background-image: url(../svg/huset_pil_hvid.svg);
+        background-size: 100% 100%;
+        width: 40px;
+        height: 40px;
+        flex: right;
+        transform: rotate(-90deg);
+    }
 
-.event_pil_right {
+    .site_content_wrapper {
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 20px;
+        font-size: 80%;
+        text-shadow: 10px 10px 10px black;
+    }
 
-
-    float: right;
-
-    background-image: url(../svg/huset_pil_hvid.svg);
-    background-size: 100% 100%;
-    width: 40px;
-    height: 40px;
-    flex: right;
-    transform: rotate(-90deg);
-
-}
-
-
-.site_content_wrapper {
-    display: grid;
-    grid-template-columns: 1fr minmax(200px, 800px) 1fr;
-     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 20px;
-    font-size: 80%;
-    text-shadow: 10px 10px 10px black;
-
-}
-
-
-/*
+    /*
     @keyframes text_shadow{
 
         from{    text-shadow: 10px 10px 500px;
@@ -1264,354 +998,289 @@ color: #b74040;
  }
     }
 */
-
-.site_content_container {
-    grid-column: 1/4;
-    padding: 0px;
-}
-
-    .kommende_events{
-        display: grid;
-            grid-template-columns: 1fr minmax(200px, 800px) 1fr;
-
-
-
+    .site_content_container {
+        grid-column: 1/4;
+        padding: 0px;
     }
 
-    .kommende_events, .frivilligt_arbejde, .find_vej, .skab_arrangement{
+    .kommende_events {
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+    }
 
+    .kommende_events,
+    .frivilligt_arbejde,
+    .find_vej,
+    .skab_arrangement {
         padding-bottom: 50px;
     }
 
-    .kommende_events_con{
-
-        grid-column: 2/3 ;
-
-    }
-
-    .frivilligt_arbejde{
-          display: grid;
-            grid-template-columns: 1fr minmax(200px, 800px) 1fr;
-    }
-    .f_a_con{
-        grid-column: 2/3 ;
+    .kommende_events_con {
+        grid-column: 2/3;
 
     }
 
-       .find_vej{
-          display: grid;
-            grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+    .frivilligt_arbejde {
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 800px) 1fr;
     }
-    .f_v_con{
-        grid-column: 2/3 ;
-
-    }
-
-         .skab_arrangement{
-          display: grid;
-            grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+    .f_a_con {
+        grid-column: 2/3;
     }
 
-    .find_vej_svg{
- float: left;
+    .find_vej {
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+    }
+    .f_v_con {
+        grid-column: 2/3;
+    }
 
-    font-family: "", sans-serif;
-    color: white;
-    padding: 0px;
-    position: relative;
+    .skab_arrangement {
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+    }
 
+    .find_vej_svg {
+        float: left;
+        font-family: "", sans-serif;
+        color: white;
+        padding: 0px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+    }
 
- display: grid;
-    grid-template-columns: 1fr 1.2fr;
-}
+    .find_vej_svg a:hover {
+        cursor: pointer;
+        position: relative;
+        transform: scale(1.4);
+        transition: .4s;
+    }
 
-
-.find_vej_svg a:hover{
-    cursor: pointer;
-    position: relative;
-    transform: scale(1.4);
-    transition: .4s;
-
-
-}
-
-svg {
-padding: 0px;
-
-    filter: drop-shadow(10px 15px 2px rgba(231, 29, 29, 0.42));
+    svg {
+        padding: 0px;
+        filter: drop-shadow(10px 15px 2px rgba(231, 29, 29, 0.42));
         filter: drop-shadow(10px 15px 2px rgb(0, 0, 0));
+        animation: shadow 0s infinite alternate-reverse ease;
+    }
 
-animation: shadow 0s infinite alternate-reverse ease;
-
-}
-
-
-svg:hover {
-padding: 1px;
-
- filter: drop-shadow(50px 35px 1px rgb(0, 0, 0));
+    svg:hover {
+        padding: 1px;
         filter: drop-shadow(50px 35px 1px rgb(0, 0, 0));
-    transition: .4s;
-
-
-
-}
-
-    .s_a_con{
-        grid-column: 2/3 ;
-
+        filter: drop-shadow(50px 35px 1px rgb(0, 0, 0));
+        transition: .4s;
     }
-/*    -------------------------------------------------------------------------------------------------------------------SLIDE-------------------------------------------------------------------------------------------------------------*/
 
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: 0;
-}
-
-/* Hide the images by default */
-
-.mySlides {
-    display: none;
-}
-
-/*Slide content------------------------------*/
-
-.slide_content_con {
-
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    grid-template-columns: 1fr minmax(50px, 800px) 1fr;
-    ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-    grid-template-areas: "t t t t t t t t" ". . . . . t t t" ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . .";
-}
-
-.gradient_fade {
-
-    grid-column: 1/4;
-    grid-row: 4/13;
-    z-index: 2;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0));
-
-}
-
-.slide_img_con {
-
-    z-index: 1;
-
-    grid-column: 1/4;
-    grid-row: 1/13;
-    overflow: hidden;
-
-    width: 100%;
-    height: 100%;
-
-
-
-}
-
-/*slide tekst-------------------------------------------------*/
-
-.text_con {
-    z-index: 3;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-    grid-column: 2/3;
-    grid-row: 4/13;
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "t t t t t t t t"
-        "l l l l l l l l"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        "p p p p p p p p"
-        ". . . . . b b b"
-        ". . . . . b b b"
-}
-
-.slide_txt {
-    grid-area: p;
-
-
-}
-
-.slide_txt p {}
-
-.slide_header {
-    grid-area: t;
-    align-self: flex-end;
-}
-
-.slide_tagline {
-
-    grid-area: l;
-
-}
-
-.slide_knap {
-
-    grid-area: b;
-
-    width: 100%;
-    height: 100%;
-    border: solid 1px white;
-
-
-}
-
-.slide_pil_right{
-
-    background-image: url(../svg/huset_pil_hvid.svg);
-    background-size: 100% 100%;
-    width: 35px;
-    height: 35px;
-    transform: rotate(-90deg);
-    float: right;
-}
-
-.slide_knap button {
-    width: 100%;
-    height: 100%;
-    color: white;
-    border: .1px solid white;
-    text-align: center;
-    color: white;
-    padding: 5px;
-    float: left;
-    font-size: 2.em;
-   font-family: "huset";
-    text-transform: uppercase;
-}
-
-
-.slide_knap button:hover {
-    cursor: pointer;
-    background-color: rgb(221, 7, 42, 0.68);
-}
-
-.slide_tekst_1 {}
-
-.slide_tekst_2 {}
-
-.slide_tekst_3 {}
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
-
-.dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: rgba(111, 47, 47, 0.45);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .7
+    .s_a_con {
+        grid-column: 2/3;
     }
-    to {
-        opacity: 1
+    /*    -------------------------------------------------------------------------------------------------------------------SLIDE-------------------------------------------------------------------------------------------------------------*/
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: 0;
     }
-}
 
-@keyframes fade {
-    from {
-        opacity: .7
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
     }
-    to {
-        opacity: 1
+
+    /*Slide content------------------------------*/
+    .slide_content_con {
+
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        grid-template-columns: 1fr minmax(50px, 800px) 1fr;
+        ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "t t t t t t t t" ". . . . . t t t" ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . .";
     }
+
+    .gradient_fade {
+        grid-column: 1/4;
+        grid-row: 4/13;
+        z-index: 2;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0));
+    }
+
+    .slide_img_con {
+        z-index: 1;
+        grid-column: 1/4;
+        grid-row: 1/13;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*slide tekst-------------------------------------------------*/
+    .text_con {
+        z-index: 3;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+        grid-column: 2/3;
+        grid-row: 4/13;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "t t t t t t t t" "l l l l l l l l" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" "p p p p p p p p" ". . . . . b b b" ". . . . . b b b"
+    }
+
+    .slide_txt {
+        grid-area: p;
+    }
+
+    .slide_txt p {}
+
+    .slide_header {
+        grid-area: t;
+        align-self: flex-end;
+    }
+
+    .slide_tagline {
+        grid-area: l;
+    }
+
+    .slide_knap {
+        grid-area: b;
+        width: 100%;
+        height: 100%;
+        border: solid 1px white;
+    }
+
+    .slide_pil_right {
+        background-image: url(../svg/huset_pil_hvid.svg);
+        background-size: 100% 100%;
+        width: 35px;
+        height: 35px;
+        transform: rotate(-90deg);
+        float: right;
+    }
+
+    .slide_knap button {
+        width: 100%;
+        height: 100%;
+        color: white;
+        border: .1px solid white;
+        text-align: center;
+        color: white;
+        padding: 5px;
+        float: left;
+        font-size: 2.em;
+        font-family: "huset";
+        text-transform: uppercase;
+    }
+
+
+    .slide_knap button:hover {
+        cursor: pointer;
+        background-color: rgb(221, 7, 42, 0.68);
+    }
+
+    .slide_tekst_1 {}
+
+    .slide_tekst_2 {}
+
+    .slide_tekst_3 {}
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: rgba(111, 47, 47, 0.45);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .7
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .7
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /*    -------------------------------*/
 }
-
-
-
-/*    -------------------------------*/
-
-}
-

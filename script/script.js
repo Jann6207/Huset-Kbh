@@ -9,12 +9,7 @@ function trykPaaMenubutton() {
     console.log("Tryk paa menubutton");
     $("nav").slideToggle(".navbar2");
     $(".menubutton").toggleClass("kryds");
-
-
-
-
 }
-
 
 /* POP UP START */
 

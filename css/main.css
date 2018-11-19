@@ -1,46 +1,37 @@
         @font-face {
             font-family: "Huset";
             src: url("../fonts/huset.otf");
-
         }
 
         @font-face {
             font-family: "Avenir";
             src: url("../fonts/Avenir.ttc");
-
         }
 
         @font-face {
             font-family: "Helvetica";
             src: url("../fonts/Helvetica.dfont.ttc");
-
         }
 
         @font-face {
             font-family: "AvenirNext";
             src: url("../fonts/AvenirNext.ttc");
-
         }
 
         @font-face {
             font-family: "Portrait";
             src: url("../fonts/Portrait-Medium.otf");
-
         }
 
         body {
             background-color: #0f0f0f;
-
         }
-
-
 
         .splash_wrapper {
             width: 100%;
             height: 100px;
             overflow: hidden;
             margin-bottom: 8vh;
-
         }
 
         .content_image {
@@ -67,18 +58,14 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-areas: "head" "head" "tag";
-
         }
 
         .site_header {
             grid-area: head;
-
             text-align: center;
             text-transform: uppercase;
             z-index: 90;
-
             font-size: 1.5em;
-
             /*
     font-family: "Huset";
 
@@ -92,8 +79,6 @@
             font-family: "", sans-serif;
             font-weight: 900;
             text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-
         }
 
         .tag_line {
@@ -108,7 +93,6 @@
             font-weight: 900;
             text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
             text-transform: uppercase;
-
         }
 
         iframe {
@@ -121,7 +105,6 @@
             font-weight: 700;
             color: darkred;
             text-decoration: none;
-
         }
 
         .site_content_wrapper a:hover {
@@ -131,17 +114,12 @@
         .site_content_wrapper {
             display: grid;
             grid-template-columns: 1fr minmax(200px, 800px) 1fr;
-
             padding-top: 20px;
-
-
-
         }
 
         .site_content_container {
             grid-column: 2/3;
             padding: 10px;
-
         }
 
         h3 {
@@ -214,7 +192,6 @@
             color: #b74040;
             font-family: "", sans-serif;
             font-weight: 900;
-
         }
 
         hr {
@@ -227,9 +204,6 @@
         #kontaktformular_container form {
             background-image: url(/Assets/grey_news.jpg);
             color: white;
-
-
-
         }
 
         #kontaktformular_container a {
@@ -242,7 +216,6 @@
             cursor: pointer;
             border: 1px solid #434343;
             border-radius: 50px;
-
             font-family: "huset", sans-serif;
             color: #fff;
             text-transform: uppercase;
@@ -252,13 +225,10 @@
             box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
             justify-self: center;
             width: 30%;
-
-
         }
 
         #kontaktformular_container input[type=submit]:hover {
             background-color: #aa021e;
-
             box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
             text-shadow: 0 0px 0px, 0 0 .2px, 0 0 .01em #f50b26, 0 0 .01em #f50b26, 0 0 0.01em #f50b26, 0 0.2px 0.2px #fff;
             margin-left: 0%;
@@ -266,23 +236,17 @@
             -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
             -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
             width: 50%;
-
-
         }
 
 
         #kontaktformular_container input,
         #kontaktformular_container textarea {
             border: none;
-
             color: grey;
             padding: 0;
             font-size: 1.2em;
             font-family: "Nunito", sans-serif;
             width: 100%;
-
-
-
         }
 
 
@@ -315,51 +279,27 @@
             .tag_line {
                 font-size: 1.5em;
                 padding-bottom: 15px;
-
-
-
-
             }
-
-
         }
-
-
-
-
-
 
         /*
 
-
 .kob_knap {
-
     border: solid 1px white;
     font-family: "AvenirNext";
     background-color: rgb(252, 229, 241, 0.8);
     color: white;
     z-index: 1;
-
     width: 90%;
     height: 90%;
     font-size: 1.5rem;
     transition: .5s;
-
 }
 
 .kob_knap:hover {
     border: solid 1px white;
-
     background-color: rgba(221, 7, 42, 0.68);
     color: white;
     cursor: pointer;
-
-
 }
-
-
-
-
-
-
 */

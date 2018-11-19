@@ -3,32 +3,22 @@
         src: url(fonts/huset.otf);
     }
 
-
-
-
-
     #kontaktformular_container {
         width: 100%;
         background-color: lightgray;
         border: solid 1px grey;
         margin: 0px;
-
     }
-
 
     #kontaktformular_container form {
         width: 100%;
         height: 100%;
         background-color: whitesmoke;
-
         display: grid;
         grid-template-columns: 20px 1fr 100px 1fr 20px;
         grid-template-rows: 5px 70px 1fr 50px repeat(3, 1fr) 60px 30px 20px;
-
         grid-template-areas: ". . . . ." ". title title title ." ". tekst tekst tekst ." ". navn . email ." ". besked besked besked ." ". besked besked besked ." ". besked besked besked ." ". send send send ." ". links links links ." ". . . . ." ". . . . ."
     }
-
-
 
     #kontaktformular_container input {
         border: none;
@@ -38,9 +28,6 @@
         font-size: 1.2em;
         font-family: sans-serif;
         width: 100%;
-
-
-
     }
 
     #kontaktformular_container textarea {
@@ -82,17 +69,13 @@
     #kontaktformular_container p {
         grid-area: tekst;
         font-size: 1.4em;
-
-
     }
-
 
     #kontaktformular_container input[type=submit] {
         background-color: black;
         color: antiquewhite;
         cursor: pointer;
         border: 3px solid #434343;
-
     }
 
     #kontaktformular_container input[type=email]:focus {
@@ -112,7 +95,6 @@
         color: grey;
     }
 
-
     #kontaktformular_container input[type=text] {
         background-color: rgba(222, 222, 222, 0.9);
         align-self: center;
@@ -126,18 +108,14 @@
     #kontaktformular_container input[type=submit]:hover {
         background-color: #aa021e;
         border: 2px solid rgb(173, 56, 75);
-
     }
 
     #kontaktformular_container a {
         color: black;
         text-decoration: none;
-
         font-family: "Avenir";
         font-weight: 500;
         grid-area: links;
-
-
     }
 
     #kontaktformular_container a:hover {
@@ -147,20 +125,14 @@
     @media only screen and (max-width: 700px) {
         #kontaktformular_container {
             width: 100%;
-
-
         }
         #kontaktformular_container form {
             width: 100%;
             height: 100%;
             background-color: whitesmoke;
-
             display: grid;
             grid-template-columns: 20px 1fr 100px 1fr 20px;
             grid-template-rows: 5px 70px 1fr 50px repeat(2, 1fr) 60px 30px 20px;
-
             grid-template-areas: ". . . . ." ". title title title ." ". tekst tekst tekst ." ". navn . email ." ". besked besked besked ." ". besked besked besked ." ". send send send ." ". links links links ." ". . . . ." ". . . . ."
         }
-
-
     }
