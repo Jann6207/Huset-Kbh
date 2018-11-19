@@ -5,13 +5,13 @@ let TimeOut;
 function start() {
     TimeOut = setTimeout(showPage, 3000);
 }
-
+// Når DOM er loaded, skal loaderne fjernes & content tilføjes
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("content").style.display = "block";
 }
 
-// When the user scrolls the page, execute myFunction
+// Når brugeren scrolls, udfør denne funktion
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
