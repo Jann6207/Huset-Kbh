@@ -5,7 +5,7 @@
         //henter json fil fra WP url
         async function getJson() {
 
-            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/evoo_street_kitchen");
+            let jsonObject = await fetch("https://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/evoo_street_kitchen");
             page = await jsonObject.json();
 
             post186Output();
