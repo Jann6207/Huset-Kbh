@@ -12,7 +12,7 @@
 
     async function getJson() {
 
-        let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/event");
+        let jsonObject = await fetch("https://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/event");
         allEvents = await jsonObject.json();
 
 
