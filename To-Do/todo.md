@@ -1,0 +1,24 @@
+TO-DO Liste:
+
+________________________________________________________________________________
+
+
+
+// TODO: Sæt baggrund tilbage til hvid
+
+// TODO: Sæt text tilbage til sort
+
+// TODO: Komprimer og evt. skift format på Newsletter img.
+
+// FIXME: Fix logo = Link tilbage til Forside/News.
+
+// FIXME: Fix News Pop Up = Lav den responsiv til tablet/phone.
+
+// FIXME: Fix Dropdown på tablet/mobile.
+
+// FUTURE: Ryd op i Asset mappen og evt. andre img mapper.
+
+
+
+________________________________________________________________________________
+
