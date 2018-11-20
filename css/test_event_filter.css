@@ -6,7 +6,8 @@
 
 body {
 
-    background-color: #ffffff;
+
+    background-color: #1b1b1b;
 }
 
 img {
@@ -42,7 +43,7 @@ img {
     margin: 0;
     padding: 10px 0px 50px 0px;
     text-align: center;
-    color: black;
+    color: #d6d6d6;
     font-weight: 300;
 }
 
@@ -106,6 +107,7 @@ img {
     font-size: 3em;
     padding: 10px;
     display: flex;
+
 
 
 
@@ -1213,29 +1215,40 @@ font-family: "Roboto";
     font-family: "huset";
     font-size: 30px;
     text-align: left;
+    color: white;
 
 }
 
-    .reset_alle{
-    grid-row: 1/2;
-    grid-column: 5/6;
-    display: block;
-    font-size: 30px;
-    color: grey;
-    text-decoration: underline;
-    text-align: right;
+    .reset_alle {
+        grid-row: 1/2;
+        grid-column: 5/6;
+        display: block;
+        font-family: "huset", sans-serif;
+        font-size: 24px;
+        color: white;
+        border-bottom: solid white .8px;
+        margin-bottom: 12px;
+        margin-left: 125px;
+        text-align: right;
+        transition: 0.3s ease-out;
 
+        /*
+    text-decoration: underline;
+    text-decoration-line: underline .5px;
+*/
 
 
     }
 
-    .reset_alle:hover{
-    text-decoration: underline;
-color: black;
+    .reset_alle:hover {
+
+        color: red;
+        border-bottom: solid white .8px;
+         margin-left: 50px;
         cursor: pointer;
     }
 
 
-}
+    }
 
 /**/

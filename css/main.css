@@ -25,6 +25,9 @@
 
         body {
 /*            background-color: #0f0f0f;*/
+            background-color: #1b1b1b;
+           /* background-color: #171718;
+            background-color: #292a2c;*/
         }
 
         .splash_wrapper {
@@ -149,25 +152,37 @@
 */
 
         .bastard_content p,
+        .bastard_content li,
         .husets_biograf_content p,
+        .husets_biograf_content li,
         .musickafeen_wrapper_content p,
+        .musickafeen_wrapper_content li,
         .bib_bib_bar_content p,
         .evoo_street_kitchen_content p,
         .xenon_vox_content p,
+        .xenon_vox_content li,
         .stardust_content p,
+        .stardust_content li,
         .salon_k_content p,
+        .salon_k_content li,
         .balsalen_content p,
+        .balsalen_content li,
         .offentligt_arrangement_content p,
         .privat_arrangement_content p,
         .frivilligt_arbejde_content p,
+        .frivilligt_arbejde_content li,
         .kultur_historie_content p,
         .arrangore_sammenarbejdspartnere_content p,
+        .arrangore_sammenarbejdspartnere_content li,
         .kontakt_os_content p,
+        .kontakt_os_content li,
         .bliv_en_del_af_huset_content p,
-        .generelle_sporgsmaal_content p {
+        .generelle_sporgsmaal_content p,
+        .generelle_sporgsmaal_content li {
             font-family: "Nunito", sans-serif;
             color: black;
             font-weight: 600;
+            color: #d6d6d6;
         }
 
         .bastard_content h3,
