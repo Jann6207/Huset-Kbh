@@ -24,7 +24,7 @@
         }
 
         body {
-            background-color: #0f0f0f;
+/*            background-color: #0f0f0f;*/
         }
 
         .splash_wrapper {
@@ -166,7 +166,7 @@
         .bliv_en_del_af_huset_content p,
         .generelle_sporgsmaal_content p {
             font-family: "Nunito", sans-serif;
-            color: white;
+            color: black;
             font-weight: 600;
         }
 
