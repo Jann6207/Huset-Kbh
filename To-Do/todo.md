@@ -4,9 +4,9 @@ ________________________________________________________________________________
 
 
 
-// TODO: Sæt baggrund tilbage til hvid
+// TODO: [x]Sæt baggrund tilbage til hvid.
 
-// TODO: Sæt text tilbage til sort
+// TODO: [x]Sæt text tilbage til sort.
 
 // TODO: Komprimer og evt. skift format på Newsletter img.
 
