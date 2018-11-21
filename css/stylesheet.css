@@ -289,12 +289,14 @@ header input[type="submit"]:hover {
     z-index: 30;
     position: relative;
     display: inline-block;
+
 }
 
 .dropdown-content {
+
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.3s linear;
+    transition: visibility 0s, opacity .3s linear;
     border: solid;
     border-color: black;
     border-width: thin;
@@ -305,8 +307,10 @@ header input[type="submit"]:hover {
     background-color: #eaeaea;
     min-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
-    z-index: 1;
+    z-index: 99;
+
 }
+
 
 .dropbtn a {
     text-decoration: none;
@@ -315,6 +319,7 @@ header input[type="submit"]:hover {
 .dropdown-content1 {
     min-width: 260px;
     left: -95px;
+
 }
 
 .dropdown-content2 {
@@ -350,18 +355,25 @@ header input[type="submit"]:hover {
 .dropdown-content a:hover {
     text-decoration: underline;
     color: black;
+
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
     visibility: visible;
     opacity: 1;
+
+
 }
+
+
+
 
 .dropdown:hover .dropbtn p {
     cursor: pointer;
     color: grey;
 }
+
 
 .dropdown .dropdown-content::after {
     content: " ";
@@ -372,6 +384,8 @@ header input[type="submit"]:hover {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent white transparent;
+
+
 }
 
 #wrap2 {
@@ -617,6 +631,7 @@ header input[type="submit"]:hover {
 
     header {
          margin-top: -160px;
+
     }
      .nav-container {
     z-index: 30;
