@@ -649,7 +649,8 @@ header input[type="submit"]:hover {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger";
+        grid-template-areas:
+"sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger";
         background-color: black;
     }
 
@@ -877,9 +878,9 @@ header input[type="submit"]:hover {
         grid-template-areas:
 ". . . sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner sociale_ikoner . . ."
 " . b b . d d . f f . h h ."
- ". c c . e e . g g . i i ."
+". c c . e e . g g . i i ."
 ". . . . j . k . l . . . ."
-"m m m m m m m m m m m m"  ;
+"m m m m m m m m m m m m m"  ;
         /*
          ". . sociale_ikoner sociale_ikoner sociale_ikoner  sociale_ikoner  sociale_ikoner  sociale_ikoner sociale_ikoner sociale_ikoner . ."
     ". . b b b . . . d d d ."
