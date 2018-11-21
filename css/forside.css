@@ -364,14 +364,7 @@ main p {
     margin-left: 5px;
 }
 
-::-webkit-scrollbar {
-    width: 2px;
-}
 
-::-webkit-scrollbar-thumb {
-    border-radius: 50%;
-    background-color: rgb(221, 7, 42, 0.68);
-}
 
 .kalender_wrapper {
     width: 100%;
@@ -833,15 +826,7 @@ svg:hover {
         margin-left: 5px;
     }
 
-    ::-webkit-scrollbar {
 
-        width: 2px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 50%;
-        background-color: rgb(221, 7, 42, 0.68);
-    }
 
     .kalender_wrapper {
         width: 100%;

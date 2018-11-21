@@ -42,7 +42,15 @@
 
 
         }
+::-webkit-scrollbar {
 
+        width: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 50%;
+        background-color: rgb(221, 7, 42, 0.68);
+    }
         .splash_wrapper {
             width: 100%;
             height: 100px;
