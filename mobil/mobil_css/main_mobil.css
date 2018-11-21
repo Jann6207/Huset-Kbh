@@ -241,6 +241,34 @@
             justify-self: center;
             width: 30%;
         }
+@media only screen and (max-width: 480px) {
+
+    #kontaktformular_container input[type=submit] {
+        width: 100%;
+    }
+            .content_image {
+            width: 100%;
+            z-index: 2;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: inherit;
+            background-position: top;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr minmax(50px, 800px) 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: ". . ." ". head ." ". . .";
+
+        }
+    .header_wrapper {
+    background: none;
+        border: none;
+    }
+    .tag_line {
+        display: none;
+    }
+
+}
 
         #kontaktformular_container input[type=submit]:hover {
             background-color: #aa021e;
