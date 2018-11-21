@@ -29,6 +29,9 @@ body {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "logo logo logo . . . . . . . . ." "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar";
     background-color: #0f0f0f;
+    box-shadow: 0px 1px 10px #070707;
+
+
 }
 
 /* GRID TIL NAV END */
@@ -358,6 +361,7 @@ header input[type="submit"]:hover {
     "m m m m m m m m m m m m";
     background-color: #0f0f0f;
     padding-bottom: 25px;
+    box-shadow: 0px 1px 10px #070707;
 }
 
 .adresse {
