@@ -1205,7 +1205,7 @@ grid-row: 1/9;
     .tema {
         padding: 10px 0px 10px 0px;
         margin-top: 20px;
-        background-color: #0f0f0f;
+        background-color: #1d1d1d;
         color: white;
         box-shadow: none;
         transition: .3s;
@@ -1261,7 +1261,7 @@ grid-row: 1/9;
 
     .venues_block ul li:nth-child(even),
     .venues_block ul li:nth-child(odd) {
-        background-color: #0f0f0f;
+        background-color: #1d1d1d;
         border: none;
         border-bottom: solid 1px transparent;
         transition: .3s;
