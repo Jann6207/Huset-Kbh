@@ -101,6 +101,13 @@ body {
 
 /* STYLING AF P START */
 
+/*
+header {
+    position: fixed;
+    z-index: 100;
+}
+*/
+
 header p {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
@@ -188,6 +195,8 @@ footer p {
     padding: 0;
     position: relative;
 }
+
+
 
 header input[type="text"] {
     height: 40px;
