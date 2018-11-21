@@ -16,6 +16,21 @@ body {
     /*    background-color: #121212;*/
 }
 
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: black;
+    position: fixed;
+    z-index: 100;
+
+}
+.progress-bar {
+    height: 5px;
+    background: #d3072a;
+    width: 0%;
+}
+
 /* STYLING AF CONTENT I P START (TEST)*/
 
 /* STYLING AF CONTENT I P END (TEST)*/

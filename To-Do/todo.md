@@ -2,8 +2,6 @@ TO-DO Liste:
 
 ________________________________________________________________________________
 
-
-
 // TODO: Skift til hvid pil på scroll button.
 
 // TODO: [x]Skift pil på mobile til hvid.

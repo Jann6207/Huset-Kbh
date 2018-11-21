@@ -44,6 +44,8 @@ $('#scroll').click(function () {
     return false;
 });
 
+
+
 /* TILBAGE TIL TOP KNAP SLUT */
 
 
