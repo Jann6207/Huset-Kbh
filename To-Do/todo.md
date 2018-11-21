@@ -2,11 +2,11 @@ TO-DO Liste:
 
 ________________________________________________________________________________
 
-// TODO: Skift til hvid pil på scroll button.
+// TODO: [x]Skift til hvid pil på scroll button.
 
 // TODO: [x]Skift pil på mobile til hvid.
 
-// TODO: Header Fixed + Ryk body ned.
+// TODO: [x]Header Fixed + Ryk body ned.
 
 // TODO: [x]Test af farver på undersider jf. forside.
 

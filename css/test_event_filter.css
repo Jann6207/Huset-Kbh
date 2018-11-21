@@ -39,14 +39,16 @@ img {
 }
 
 .overskrift_events {
-    font-family: "Huset";
+    font-family: "", sans-serif;
     text-transform: uppercase;
-    font-size: 6em;
+    font-size: 4em;
     margin: 0;
     padding: 10px 0px 50px 0px;
     text-align: center;
     color: #d6d6d6;
-    font-weight: 300;
+     color: #b74040;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -90,6 +92,7 @@ img {
 .filter_knap_2 {
 
     display: none;
+
 }
 
 .reset_alle {
@@ -1363,12 +1366,12 @@ grid-row: 1/9;
         justify-content: center;
         border-left: none;
         border-right: none;
-        border: solid 1px white;
+        border: solid .5px white;
         padding-bottom: 40px;
         padding-top: 40px;
         width: 30%;
         margin-left: 35%;
-        background-color: rgba(0, 0, 0, 0.65);
+        background-color: rgba(0, 0, 0, 0.4);
 
 
     }

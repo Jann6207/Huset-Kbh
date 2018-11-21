@@ -112,7 +112,7 @@ iframe:hover{
         .header_wrapper {
             grid-area: head;
             border: white solid .5px;
-            background-color: rgba(255, 255, 255, 0.16);
+            background-color: rgba(0, 0, 0, 0.4);
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
