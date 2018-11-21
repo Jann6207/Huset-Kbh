@@ -2,7 +2,13 @@ TO-DO Liste:
 
 ________________________________________________________________________________
 
+// TODO: Skift pil på mobile til hvid.
 
+// TODO: Header Fixed + Ryk body ned.
+
+// TODO: [x]Test af farver på undersider jf. forside.
+
+// TODO: Overskrift overbrug af flugt fra brødtekst.
 
 // TODO: [x]Sæt baggrund tilbage til hvid.
 

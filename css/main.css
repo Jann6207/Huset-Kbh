@@ -25,9 +25,22 @@
 
         body {
 /*            background-color: #0f0f0f;*/
-            background-color: #1b1b1b;
+/*            background-color: #1b1b1b;*/
            /* background-color: #171718;
             background-color: #292a2c;*/
+/*            background-color: #360404;*/
+
+            background: rgba(15,15,15,1);
+background: -moz-linear-gradient(top, rgba(15,15,15,1) 0%, rgba(15,15,15,1) 20%, rgba(56,56,56,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(15,15,15,1)), color-stop(20%, rgba(15,15,15,1)), color-stop(100%, rgba(56,56,56,1)));
+background: -webkit-linear-gradient(top, rgba(15,15,15,1) 0%, rgba(15,15,15,1) 20%, rgba(56,56,56,1) 100%);
+background: -o-linear-gradient(top, rgba(15,15,15,1) 0%, rgba(15,15,15,1) 20%, rgba(56,56,56,1) 100%);
+background: -ms-linear-gradient(top, rgba(15,15,15,1) 0%, rgba(15,15,15,1) 20%, rgba(56,56,56,1) 100%);
+background: linear-gradient(to bottom, rgba(15,15,15,1) 0%, rgba(15,15,15,1) 20%, rgba(56,56,56,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#383838', GradientType=0 );
+
+
+
         }
 
         .splash_wrapper {
@@ -180,8 +193,10 @@
         .generelle_sporgsmaal_content p,
         .generelle_sporgsmaal_content li {
             font-family: "Nunito", sans-serif;
-            font-weight: 600;
-            color: #d6d6d6;
+            font-weight: 700;
+            color: #fee;
+            line-height: 23px;
+            word-spacing: .1em;
         }
 
 
