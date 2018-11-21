@@ -1,0 +1,390 @@
+/* POP UP NYHEDSBREV START */
+
+#newsletter_container {
+
+    visibility: hidden;
+    position: fixed;
+    z-index: 90;
+    left: 5%;
+    bottom: 8%;
+    box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.8);
+
+
+
+}
+
+#newsletter_close {
+    color: white;
+    font-weight: 300;
+    font-family: "huset";
+    font-size: 1.5em;
+    cursor: pointer;
+
+    grid-area: newsclose;
+    transition: .5s;
+
+
+}
+
+#newsletter_close:hover {
+    color: grey;
+    transform: scale(1.2);
+}
+
+@keyframes News_fadeIn {
+    0% {
+        transform: translateY(400px);
+        opacity: 0.5;
+
+    }
+    50% {
+
+        opacity: 1;
+
+    }
+    100% {
+        /*        transform: rotate(xx) translateX(0);*/
+        opacity: 1;
+
+    }
+}
+
+#newsletter_container {
+    animation: News_fadeIn 1s 5s 1 linear;
+    opacity: 1;
+}
+
+/* POP UP NYHEDSBREV SLUT */
+
+@font-face {
+    font-family: "Huset";
+    src: url(fonts/huset.otf);
+}
+
+
+/* CONTAINER START*/
+
+#newsletter_container {
+    background-image: url(../Assets/red_news.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: auto;
+
+
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 40px;
+    grid-template-rows: 40px 1fr 1fr 40px;
+    grid-template-areas:
+". . . newsclose "
+". form form ."
+". form form ."
+". . . .";
+    margin-bottom: 20px;
+
+}
+
+/* CONTAINER SLUT*/
+
+/* TILMELDINGS MENU GRID START*/
+
+#newsletter_container form {
+    background-image: url(/Assets/blur-bar-png-2.png);
+    padding: 15px;
+    border: solid .5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    grid-template-rows: 20px repeat(6, 1fr) 20px;
+
+}
+
+/* TILMELDINGS MENU GRID SLUT*/
+
+/* MEDIA QUERY START*/
+
+
+@media only screen and (min-width: 680px) {
+
+
+    #newsletter_container {
+        width: 90%;
+    }
+
+
+
+#newsletter_container {
+    background-image: url(../Assets/red_news.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: auto;
+
+
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 40px;
+    grid-template-rows: 40px 1fr 1fr 40px;
+    grid-template-areas:
+". . . newsclose "
+". form . ."
+". form . ."
+". . . .";
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    #newsletter_container {
+
+    visibility: hidden;
+    position: fixed;
+    z-index: 90;
+    left: 2%;
+    bottom: 2%;
+    box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.8);
+    width: 45%;
+
+
+
+}
+
+    /* CONTAINER RESPONSIV START*/
+    #newsletter_container {
+        grid-template-columns: 40px 1.2fr 1fr 40px;
+        grid-template-rows: 40px 1fr 1fr 40px;
+        grid-template-areas: ". . . newsclose" ". form . ." ". form . ." ". . . .";
+    }
+
+    /* CONTAINER RESPONSIV SLUT*/
+    /* TILMELDNINGS MENU RESPONSIV START*/
+    #newsletter_container form {
+        background-image: url(/Assets/blur-bar-png-2.png);
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: solid .5px;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        grid-template-rows: 20px repeat(6, 1fr) 20px;
+
+    }
+
+}
+
+/*
+#image_newsletter_con {
+    grid-area: image;
+    width: 100%;
+}
+    .image_newsletter {
+        width: 100%;
+    }
+*/
+
+#newsletter_container form {
+    width: 100%;
+    height: 100%;
+    grid-area: form;
+
+    /*       display: grid;*/
+    /*        grid-template-columns: 2px 1fr 1fr 5px 5px 1fr 1fr 2px;
+        grid-template-rows: 2px repeat(5, 1fr) 2px;
+        grid-template-areas:
+
+            ". . . . . . . ."
+            ". title title title title title title ."
+            ". tekst tekst tekst tekst tekst tekst ."
+            ". navn navn . . email email ."
+            ". send send send send send send ."
+            ". links links links links links links ."
+            ". . . . . . . .";
+
+        */
+}
+
+/* TILMELDNINGS MENU RESPONSIV SLUT*/
+
+/* CONTENT I TILMELDNINGS MENU RESPONSIV START*/
+
+#newsletter_container input {
+    border: none;
+    border-bottom: 1px solid #efeded;
+    color: grey;
+    padding: 0;
+    font-size: 1em;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+
+
+
+}
+
+#newsletter_container .navn_box {
+    width: 100%;
+    grid-area: navn;
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+}
+
+#newsletter_container .email_box {
+    width: 100%;
+    grid-area: email;
+    margin-top: 5px;
+
+}
+
+#newsletter_container .send {
+    font-family: "huset", sans-serif;
+    color: white;
+    grid-area: send;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    transition: .3s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 300;
+    border-radius: 20px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+
+    /*        box-shadow: 0px 3px 2px rgba(222, 222, 222, 0.2);*/
+}
+
+#newsletter_container h3 {
+
+    grid-area: title;
+    font-family: "huset";
+    font-weight: 300;
+    font-size: 2.5em;
+    color: #fee;
+    text-shadow: 0 -20px 200px, 0 0 .1px, 0 0 50em #fff, 0 0 .1em #fff;
+    /*        text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em #f50b26, 0 0 0.5em #f50b26, 0 0 0.1em #f50b26, 0 5px 3px #000;*/
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 0;
+
+}
+
+#newsletter_container span {
+    grid-area: tekst;
+    font-size: 0.8em;
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    color: #efeded;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    line-height: 25px;
+    padding-left: 0;
+    text-shadow: none;
+    text-shadow: 1.5px 2px 5px #000;
+
+
+}
+
+#newsletter_container input[type=submit] {
+    display: grid;
+    margin-left: 10%;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+#newsletter_container input[type=email]:focus {
+    color: black;
+}
+
+#newsletter_container input[type=text]:focus {
+    color: black;
+}
+
+#newsletter_container input[type=email]:hover {
+    color: grey;
+}
+
+#newsletter_container input[type=text]:hover {
+    color: grey;
+}
+
+
+#newsletter_container input[type=text] {
+    background-color: whitesmoke;
+}
+
+#newsletter_container input[type=email] {
+    background-color: whitesmoke;
+}
+
+#newsletter_container input[type=submit]:hover {
+    width: 100%;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #aa021e;
+
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0px 0px, 0 0 .2px, 0 0 .01em #f50b26, 0 0 .01em #f50b26, 0 0 0.01em #f50b26, 0 0.2px 0.2px #fff;
+    margin-left: 0%;
+    letter-spacing: 2px;
+
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+
+
+}
+
+#newsletter_container a {
+    color: black;
+    text-decoration: none;
+    font-family: "Nunito";
+    grid-area: links;
+    font-size: 0.8em;
+
+}
+
+#newsletter_container a:hover {
+    color: grey;
+}
+
+#newsletter_container input[type="text"],
+#newsletter_container input[type="email"] {
+
+    background-color: transparent;
+
+}
+
+input::placeholder {
+    color: #292929;
+    font-style: italic;
+    font-size: 0.8em;
+    font-weight: 600;
+
+}
+
+#newsletter_container a[href^="tel:"]:before {
+    content: "\1F4F1";
+}
+
+/* CONTENT I TILMELDNINGS MENU RESPONSIV SLUT*/
+
+
+
+
+
+/* MEDIA QUERY SLUT*/
