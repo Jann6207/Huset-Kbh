@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 // TODO: [x]Test af farver på undersider jf. forside.
 
-// TODO: Overskrift overbrug af flugt fra brødtekst.
+// TODO: [x]Overskrift overbrug af flugt fra brødtekst.
 
 // TODO: [x]Sæt baggrund tilbage til hvid.
 
