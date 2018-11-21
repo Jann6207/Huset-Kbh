@@ -48,7 +48,7 @@ function resetAlle (){
       document.querySelectorAll(".event_venue").forEach(venue => {
 
       venue.classList.remove("when_clicked");
-     venue.parentElement.style.backgroundColor = "lightgray";
+     venue.parentElement.style.backgroundColor = "#1d1d1d";
 
     });
 
@@ -103,7 +103,7 @@ function resetAlle (){
            document.querySelectorAll(".event_venue").forEach(knap => {
 
         knap.classList.remove("when_clicked");
-        knap.parentElement.style.backgroundColor = "lightgray";
+        knap.parentElement.style.backgroundColor = "#1d1d1d";
 
 
 
@@ -111,7 +111,8 @@ function resetAlle (){
 
 
         this.classList.add("when_clicked");
-        this.parentElement.style.backgroundColor = "black";
+        this.parentElement.style.backgroundColor = "grey";
+
 
      }
         eventOutPut.textContent = "";
