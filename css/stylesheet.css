@@ -396,11 +396,14 @@ header input[type="submit"]:hover {
 .hrfirst {
     margin-bottom: -6px;
      height: 1px;
+   margin-top: 10px;
+
 }
 
 .hrsecond {
     margin-top: -6px;
      height: 1px;
+     margin-bottom: 10px;
 }
 
 .footer_container p {
