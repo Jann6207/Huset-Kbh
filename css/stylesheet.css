@@ -14,15 +14,26 @@
 body {
     margin: 0;
     /*    background-color: #121212;*/
+
 }
 
+header {
+    position: fixed;
+    z-index: 99;
+  margin-top: -55px;
+   width: 100%;
+
+
+}
 
 .progress-container {
     width: 100%;
     height: 5px;
-    background: black;
+    background: transparent;
     position: fixed;
     z-index: 100;
+
+
 
 }
 .progress-bar {
@@ -45,6 +56,7 @@ body {
     grid-template-areas: "logo logo logo . . . . . . . . ." "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar";
     background-color: #0f0f0f;
     box-shadow: 0px 1px 10px #070707;
+    height: 60px;
 
 
 }
@@ -71,6 +83,8 @@ body {
     font-family: 'huset';
     color: #fee;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f50b26, 0 0 0.5em #f50b26, 0 0 0.1em #f50b26, 0 10px 3px #000;
+    font-size: 34px;
+
 }
 
 
@@ -595,6 +609,30 @@ header input[type="submit"]:hover {
 
 /* MEDIA QUERY SØRGER FOR AT DROPDOWN BRUGER MENU IKKE VISES VED WIDTH PÅ OVER 1025px START */
 
+@media only screen and (min-width: 1000px) {
+    .logo span {
+
+        font-size: 8.5vw;
+    }
+
+    header {
+         margin-top: -160px;
+    }
+     .nav-container {
+    z-index: 30;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "logo logo logo . . . . . . . . ." "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar";
+    background-color: #0f0f0f;
+    box-shadow: 0px 1px 10px #070707;
+    height: auto;
+
+
+}
+
+}
+
 @media only screen and (min-width: 1025px) {
     .navbar2,
     .link_container,
@@ -602,6 +640,8 @@ header input[type="submit"]:hover {
     .dropdown_content_mobile {
         display: none;
     }
+
+
 }
 
 @media only screen and (max-width: 1475px) {
@@ -690,6 +730,9 @@ header input[type="submit"]:hover {
     .navbar {
         display: none;
     }
+
+
+
 
     /* SOCIAL ICONS HAVE BEEN REMOVED IN NAV IN TABLET/MOBILE VERSION - SEE BENEATH */
     .sociale_ikoner {
@@ -995,11 +1038,7 @@ header input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 686px) {
-    .logo {
-        width: auto;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
+
 
     .footer_container {
         display: grid;
