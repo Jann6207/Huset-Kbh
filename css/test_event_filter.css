@@ -1377,8 +1377,9 @@ grid-row: 1/9;
     }
 
     .overskrift_container {
-        background-image: url(/Assets/bg.jpg);
+        background-image: url(../Assets/bg.jpg);
         background-attachment: fixed;
+
         border: solid .5px white;
         border: none;
         max-width: 100%;
