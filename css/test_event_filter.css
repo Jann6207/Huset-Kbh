@@ -1281,8 +1281,11 @@ grid-row: 1/9;
 
 
     .when_clicked {
-        text-decoration: underline;
-        color: white;
+
+       color: white;
+
+
+
     }
 
 
