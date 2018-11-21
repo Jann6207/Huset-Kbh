@@ -32,7 +32,7 @@ img {
     background-repeat: repeat;
     background-size:100%;
 */
-
+  margin-top: 55px;
 
     padding: 0px 0px 0px 0px;
 
@@ -712,7 +712,9 @@ grid-row: 1/9;
 
 @media screen and (min-width: 1000px) {
 
-
+    .main_content {
+         margin-top: 160px;
+    }
     :root {}
 
     .event_kalender {
