@@ -772,8 +772,20 @@ header input[type="submit"]:hover {
         justify-self: center;
         display: inline-block;
         cursor: pointer;
-        z-index: 90;
+        z-index: 96;
+
+        right: 3%;
+        top: 1.5%;
+/*
+        position: fixed;
+        right: 3%;
+        top: 1%;
+*/
+
     }
+
+
+
 
     .bar1,
     .bar2,
@@ -801,7 +813,7 @@ header input[type="submit"]:hover {
 
     .navbar2 {
         display: none;
-        z-index: 80;
+        z-index: 95;
         position: fixed;
         background-color: rgba(0, 0, 0, 1);
         width: 100%;
@@ -1040,5 +1052,7 @@ header input[type="submit"]:hover {
             grid-template-rows: repeat(3, 1fr);
             grid-template-areas: "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger" "sprog . . . . logo logo . . . wrap1 burger";
             background-color: black;
+
+
         }
     }

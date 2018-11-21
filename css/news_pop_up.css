@@ -5,8 +5,8 @@
     visibility: hidden;
     position: fixed;
     z-index: 90;
-    left: 2%;
-    bottom: 2%;
+    left: 5%;
+    bottom: 8%;
     box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.8);
 
 
@@ -69,14 +69,18 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-    width: 45%;
+    width: 90%;
     height: auto;
 
 
     display: grid;
-    grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: 20px 1fr 1fr 20px;
-    grid-template-areas: ". . . newsclose " ". form form ." ". form form ." ". . . .";
+    grid-template-columns: 40px 1fr 1fr 40px;
+    grid-template-rows: 40px 1fr 1fr 40px;
+    grid-template-areas:
+". . . newsclose "
+". form form ."
+". form form ."
+". . . .";
     margin-bottom: 20px;
 
 }
@@ -99,7 +103,62 @@
 
 /* MEDIA QUERY START*/
 
-@media only screen and (min-width: 740px) {
+
+@media only screen and (min-width: 680px) {
+
+
+    #newsletter_container {
+        width: 90%;
+    }
+
+
+
+#newsletter_container {
+    background-image: url(../Assets/red_news.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: auto;
+
+
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 40px;
+    grid-template-rows: 40px 1fr 1fr 40px;
+    grid-template-areas:
+". . . newsclose "
+". form . ."
+". form . ."
+". . . .";
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    #newsletter_container {
+
+    visibility: hidden;
+    position: fixed;
+    z-index: 90;
+    left: 2%;
+    bottom: 2%;
+    box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.8);
+    width: 45%;
+
+
+
+}
 
     /* CONTAINER RESPONSIV START*/
     #newsletter_container {
@@ -323,5 +382,9 @@ input::placeholder {
 }
 
 /* CONTENT I TILMELDNINGS MENU RESPONSIV SLUT*/
+
+
+
+
 
 /* MEDIA QUERY SLUT*/
