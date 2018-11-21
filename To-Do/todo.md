@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 // TODO: Komprimer og evt. skift format på Newsletter img.
 
-// FIXME: Fix logo = Link tilbage til Forside/News.
+// FIXME: [x]Fix logo = Link tilbage til Forside/News.
 
 // FIXME: Fix News Pop Up = Lav den responsiv til tablet/phone.
 

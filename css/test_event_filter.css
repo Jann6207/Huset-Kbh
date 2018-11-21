@@ -301,7 +301,8 @@ img {
     display: grid;
     grid-template-columns: 10px repeat(6, 1fr) 10px;
     grid-template-rows: 10px repeat(6, 1fr) 10px;
-    grid-template-areas: ". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."
+    grid-template-areas: ". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . ."". . . . . . . .";
+    transition: .5s;
 }
 
 .event_con:hover {
@@ -323,7 +324,7 @@ img {
     opacity: 0.5;
     grid-column: 1/9;
     grid-row: 1/9;
-    transition: 0.5s;
+    transition: .5s;
 
 }
 
