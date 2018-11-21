@@ -12,9 +12,9 @@ ________________________________________________________________________________
 
 // FIXME: [x]Fix logo = Link tilbage til Forside/News.
 
-// FIXME: Fix News Pop Up = Lav den responsiv til tablet/phone.
+// FIXME: [x]Fix News Pop Up = Lav den responsiv til tablet/phone.
 
-// FIXME: Fix Dropdown på tablet/mobile.
+// FUTURE: Fix Dropdown på tablet/mobile.
 
 // FUTURE: Ryd op i Asset mappen og evt. andre img mapper.
 
