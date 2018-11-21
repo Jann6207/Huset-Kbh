@@ -9,6 +9,8 @@ function trykPaaMenubutton() {
     console.log("Tryk paa menubutton");
     $("nav").slideToggle(".navbar2");
     $(".menubutton").toggleClass("kryds");
+    $(".progress-container").slideToggle("pb");
+
 }
 
 /* POP UP START */

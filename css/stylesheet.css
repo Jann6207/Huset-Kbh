@@ -26,6 +26,13 @@ header {
 
 }
 
+.pb {
+    display: none;
+    opacity: 0;
+    animation: bar .s3;
+}
+
+
 .progress-container {
     width: 100%;
     height: 5px;
