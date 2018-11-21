@@ -41,13 +41,13 @@
 
 
         background: rgba(36,36,36,1);
-background: -moz-linear-gradient(top, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(99,97,99,1) 99%, rgba(99,97,99,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(27%, rgba(36,36,36,1)), color-stop(42%, rgba(36,36,36,1)), color-stop(99%, rgba(99,97,99,1)), color-stop(100%, rgba(99,97,99,1)));
-background: -webkit-linear-gradient(top, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(99,97,99,1) 99%, rgba(99,97,99,1) 100%);
-background: -o-linear-gradient(top, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(99,97,99,1) 99%, rgba(99,97,99,1) 100%);
-background: -ms-linear-gradient(top, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(99,97,99,1) 99%, rgba(99,97,99,1) 100%);
-background: linear-gradient(to bottom, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(99,97,99,1) 99%, rgba(99,97,99,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#636163', GradientType=0 );
+background: -moz-linear-gradient(top, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(89,87,89,1) 99%, rgba(89,87,89,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(27%, rgba(36,36,36,1)), color-stop(42%, rgba(36,36,36,1)), color-stop(99%, rgba(89,87,89,1)), color-stop(100%, rgba(89,87,89,1)));
+background: -webkit-linear-gradient(top, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(89,87,89,1) 99%, rgba(89,87,89,1) 100%);
+background: -o-linear-gradient(top, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(89,87,89,1) 99%, rgba(89,87,89,1) 100%);
+background: -ms-linear-gradient(top, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(89,87,89,1) 99%, rgba(89,87,89,1) 100%);
+background: linear-gradient(to bottom, rgba(36,36,36,1) 27%, rgba(36,36,36,1) 42%, rgba(89,87,89,1) 99%, rgba(89,87,89,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#595759', GradientType=0 );
 
         overflow-x: hidden;
 
