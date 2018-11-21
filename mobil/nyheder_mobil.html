@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="mobil_css/stylesheet_mobil.css">
     <link rel="stylesheet" type="text/css" href="mobil_css/main_mobil.css">
     <link rel="stylesheet" type="text/css" href="mobil_css/forside_mobil.css">
+    <link rel="stylesheet" type="text/css" href="mobil_css/news_pop_up_mobil.css">
 
 
     <!--   Favicon   -->
@@ -173,13 +174,13 @@
                             <p>Kontakt <i class="arrow down"></i></p>
                         </a>
                         <div class="dropdown_content_mobile">
-                            <a href="kontakt_os.html">
+                            <a href="kontakt_os_mobil.html">
                                 <p>Kontakt Os</p>
                             </a>
-                            <a href="bliv_en_del_af_huset.html">
+                            <a href="bliv_en_del_af_huset_mobil.html">
                                 <p>Bliv en del af Huset</p>
                             </a>
-                            <a href="generelle_sporgsmaal.html">
+                            <a href="generelle_sporgsmaal_mobil.html">
                                 <p>FAQ</p>
                             </a>
 
@@ -353,88 +354,600 @@
            <div id="loader"></div>
     <div id="content" class="animate-bottom">
 
+    <!--       CONTENT SKAL IND HER START-->
+    <main>
 
-    <section id="forside_wrapper" class="site_content_wrapper">
-        <!--her indsættes url til billede -->
+        <!--     POP UP NYHEDSBREV START -->
 
-        <div class="site_content_container">
+        <div id="newsletter_container">
 
 
-            <!-- Slideshow container -->
 
-<section class="slideshow">
+            <form class="newsletter_content">
+                <h3>NYHEDSBREV</h3>
+                <span>Tilmeld dig nu <br> Gå ikke glip af de nyeste events!</span>
+
+                <input id="navn" class="navn_box" type="text" placeholder="Navn" required>
+                <input id="email" class="email_box" type="email" placeholder="Email" required>
+                <input class="send" type="submit" value="sign up"><span id="response"></span>
+
+            </form>
+            <button id="newsletter_close">X</button>
+        </div>
+
+        <!--     POP UP NYHEDSBREV SLUT -->
+
+        <section class="slideshow">
             <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade mySlide_con">
-                    <div class="numbertext">1 / 3</div>
                     <div class="slide_content_con">
+
+                        <div class="gradient_fade"></div>
                         <div class="slide_img_con">
                             <img class="slide_image_1" src="" style="width:100%">
                         </div>
-                       <div class="text_con">
-                        <div class="slide_header_1"></div>
-                        <div class="slide_txt slide_text_1"></div>
-                        </div>                      </div>
-                    <div class="text">Caption Text</div>
-                </div>
-
-                <div class="mySlides fade mySlide_con">
-                    <div class="numbertext">2 / 3</div>
-                    <div class="slide_content_con">
-                       <div class="slide_img_con">
-                        <img class="slide_image_2" src="" style="width:100%">
-                        </div>
                         <div class="text_con">
-                        <div class="slide_header_2"></div>
-                        <div class="slide_txt slide_text_2"></div>
-                        </div>
-
-                        </div>
-                    <div class="text">Caption Two</div>
-                </div>
-
-                <div class="mySlides fade mySlide_con">
-                    <div class="numbertext">3 / 3</div>
-                    <div class="slide_content_con">
-                        <div class="slide_img_con">
-                        <img class="slide_image_3" src="" style="width:100%">
-                        </div>
-                        <div class="text_con">
-                        <div class="slide_header_3"></div>
-                        <div class="slide_txt slide_text_3"></div>
+                            <h3 class="slide_header slide_header_1"></h3>
+                            <h4 class="slide_tagline tagline_1"></h4>
+                            <div class="slide_txt slide_text_1"></div>
+                            <a class="slide_knap slide_knap_1" href=""><button>Se mere                                <div class="slide_pil_right"></div>
+</button></a>
                         </div>
                     </div>
-                    <div class="text">Caption Three</div>
                 </div>
 
-                <!-- Next and previous buttons -->
+                <div class="mySlides fade mySlide_con">
+                    <div class="slide_content_con">
+                        <div class="gradient_fade"></div>
+                        <div class="slide_img_con">
+                            <img class="slide_image_2" src="" style="width:100%">
+                        </div>
+                        <div class="text_con">
+                            <h3 class="slide_header slide_header_2"></h3>
+                            <h4 class="slide_tagline tagline_2"></h4>
+                            <div class="slide_txt slide_text_2"></div>
+                            <a class="slide_knap slide_knap_2" href=""><button>Se mere                                <div class="slide_pil_right"></div>
+</button></a>
 
-            </div>
-            <br>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- The dots/circles -->
+                <div class="mySlides fade mySlide_con">
+                    <div class="slide_content_con">
+                        <div class="gradient_fade"></div>
+                        <div class="slide_img_con">
+                            <img class="slide_image_3" src="" style="width:100%">
+                        </div>
+                        <div class="text_con">
+                            <h3 class="slide_header slide_header_3"></h3>
+                            <h4 class="slide_tagline tagline_3"></h4>
+                            <div class="slide_txt slide_text_3"></div>
+                            <a class="slide_knap slide_knap_3" href=""><button>Se mere
+
+                                <div class="slide_pil_right"></div>
+                            </button></a>
+                        </div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <!--
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-</section>
+-->
+
+
+            </div>
+        </section>
+
+        <section id="forside_wrapper" class="site_content_wrapper">
+            <!--her indsættes url til billede -->
+
+            <div class="site_content_container">
+
+
+                <!--KOMMMENDE EVENTSS --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <section class="kommende_events">
+                    <div class="kommende_events_con">
+                        <h3 class="kommende_events_header"></h3>
+                        <h4 class="kommende_events_tagline"></h4>
+                        <div class="kommende_events_text"></div>
+                        <a class="f_knap kommende_event_knap" href="test_event_filter.html"><button>Event Kalender
+                    </button><div class="event_pil_right"></div></a>
+
+                        <div class="function_txt kalender_txt">kommende event
+                            <div class="event_pil_ned"></div>
+                        </div>
+                        <div class="kalender_wrapper">
+                            <div class="kalender_container">
+                                <section class="event_kalender">
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--KOMMMENDE EVENTSS --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <!-- FIND VEJ INTERAKTIV SVG START--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <section class="find_vej">
+                       <div class="f_v_con">
+                        <h3 class="f_v_header"></h3>
+                        <h4 class="f_v_tagline"></h4>
+                        <div class="f_v_text"></div>
+                    <div class="find_vej_svg">
+
+<a href="bastard_cafe.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">BASTARTD CAFÈ</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">9</text>
+</svg>
+</a>
+
+<a href="husets_biograf.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">HUSETS BIOGRAF</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">8</text>
+</svg>
+</a>
+
+<a href="musikcafeen.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">MUSIKCAFEÈN</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">7</text>
+</svg>
+</a>
+
+<a href="bib_bib_bar.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">BIB BIB BAR</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">6</text>
+</svg>
+</a>
+
+<a href="evoo_street_kitchen.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">EVOO</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">5</text>
+</svg>
+</a>
+
+<a href="xenon_vox.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">XENON - VOX</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">4</text>
+</svg>
+</a>
+<a href="stardust.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">STARDUST</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">3</text>
+</svg>
+</a>
+<a href="salon_k.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">SALON K</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">2</text>
+</svg>
+</a>
+<a href="balsalen.html"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="26.31,120.47 624.43,120.47
+		722.27,20.87 123,20.87 	"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92
+		C627.43,135.09,627.91,134.92,627.59,134.92"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" d="M627.59,134.92l95.78-101.38
+		c0.09-0.1,0.04-0.33,0.03-0.44V21.36c-0.05-0.54-1.69-0.14-2.67,1.39l-95.22,97.8c-0.16,0.17-0.45,0.27-0.77,0.27H28.44
+		c-0.53,0-0.95,0.28-0.89,0.61l0.96,5.95c0.05,0.28,0,4.37,0.46,4.37L627.59,134.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="627.59" y1="134.92" x2="626.99" y2="119.05"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 517.96,96.95
+		529.51,96.94 	"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="564.77" y1="96.93" x2="540.62" y2="96.94"/>
+
+		<line style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" x1="529.51" y1="96.94" x2="540.62" y2="96.94"/>
+	<polyline style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;" points="548.93,50.34 549.57,49.39
+		634.24,50.97 604.97,96.91 564.77,96.93 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.21" x2="548.93" y2="50.34"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="548.93" y1="50.34" x2="549.43" y2="64.46"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="572.64" y1="80.73" x2="560.68" y2="81.33"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="573.11" y1="96.27" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="549.43" y1="64.46" x2="529.51" y2="96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="529.51" y1="96.94" x2="529.41" y2="97.1"/>
+	<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M540.62,96.94"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="540.36" y1="96.73" x2="560.06" y2="63.92"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="560.68" y1="81.33" x2="552.57" y2="96.8"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="572.64" y2="80.73"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="564.77" y1="96.93" x2="564.83" y2="96.73"/>
+</g>
+<text transform="matrix(0.8398 0 0 1 159.231 106.5283)" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; font-family:'Avenir-Light'; font-size:46.9817px;">BALSALEN</text>
+<text transform="matrix(0.8398 0 0 1 113.231 106.5283)" style="fill:#B74040; font-family:'HUSET'; font-size:96px; letter-spacing:1.19;">1</text>
+</svg>
+</a>
+
+
+                        <!--                INDSÆT SVG KODE HER-->
+                    </div>
+                </div>
+
+
+                </section>
+
+
+
+                <!-- FIND VEJ INTERAKTIV SVG END --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <!--FRIVILLIGT ARBEJDE --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <section class="frivilligt_arbejde">
 
 
 
 
+                    <div class="f_a_con">
+
+                        <h3 class="f_a_header"></h3>
+                        <h4 class="f_a_tagline"></h4>
+                        <div class="f_a_text"></div>
+                        <a class="f_knap f_a_knap" href="frivilligt_arbejde.html"><button>Se Mere her</button><div class="event_pil_right"></div></a>
+                        <div class="function_txt">Mød de frivillige
+                            <div class="event_pil_ned"></div>
+                        </div>
+                        <div class="f_a_video"></div>
+
+
+                    </div>
+
+
+                </section>
+
+                <!--FRIVILLIGT ARBEJDE --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+                <!-- SKAB ARRANGEMETN --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <section class="skab_arrangement">
 
 
 
 
+                    <div class="s_a_con">
 
-            <!--her indsættes kontakt formular-->
+                        <h3 class="s_a_header"></h3>
+                        <h4 class="s_a_tagline"></h4>
+                        <div class="s_a_text"></div>
+
+                        <div class="_s_a_knap_wrap">
+                            <a class="f_knap s_a_knap" href="privat_arrangement.html"><button>Privat</button><div class="event_pil_right"></div></a>
+
+                            <a class="f_knap s_a_knap" href="offentligt_arrangement.html"><button>Offentligt</button><div class="event_pil_right"></div></a>
+                        </div>
+                        <!--
+                        <div class="s_a_txt">Frivillige arrangementer
+                            <div class="event_pil_ned"></div>
+                        </div>
+-->
 
 
+                    </div>
+
+
+                </section>
+
+                <!-- SKAB ARRANGEMENT --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+            </div>
+        </section>
+        <!--her indsættes kontakt formular-->
+
+
+        <template class="event_template">
+   <article class="event_con">
+
+<div class="event_info_con">
+        <div class="dato_con">
+          <div class="dag"></div>
+          <div class="maaned"></div>
+            </div>
+            <div class="tid"></div>
+            <div class="genre"></div>
+            <div class="event_navn"></div>
+            <div class="venue"></div>
+            <div class="pris"></div>
+        <a class="knap_link"href=""><button class="kob_knap">Find Billet</button></a>
+    </div>
+        <div class="event_image_con">
+          <img class="event_image" src="" alt="">
+          <div class="grey_bg"></div>
         </div>
-    </section>
+   </article>
+</template>
 
+    </main>
+
+    <!--       CONTENT SKAL IND HER END-->
 
 
     </div>
@@ -463,6 +976,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="mobil_script/mobil_script.js"></script>
     <script src="mobil_script/main_mobil.js"></script>
+    <script src="mobil_script/kommende_events_mobil.js"></script>
 
 
 

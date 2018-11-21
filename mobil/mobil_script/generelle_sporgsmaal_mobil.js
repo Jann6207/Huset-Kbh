@@ -5,7 +5,7 @@
         //henter json fil fra WP url
         async function getJson() {
 
-            let jsonObject = await fetch("http://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/generelle_sporgsmal");
+            let jsonObject = await fetch("https://jakobfalkenberg.dk/kea/2sem/tema7/huset/wordpress/wp-json/wp/v2/generelle_sporgsmal");
             page = await jsonObject.json();
 
             post229Output();
@@ -66,7 +66,6 @@ function post229Output (){
             document.querySelector(".section_12").addEventListener("click", section_12_mobil);
             document.querySelector(".section_13").addEventListener("click", section_13_mobil);
             document.querySelector(".section_14").addEventListener("click", section_14_mobil);
-                 document.getElementById("search_button").addEventListener("click", search_mobil);
 
 
             /* the viewport is less than 400 pixels wide */
@@ -221,17 +220,6 @@ function post229Output (){
         console.log("HEJ");
 
         let a = document.querySelector(".show_14");
-        if (a.style.display === "none") {
-            a.style.display = "block";
-        } else {
-            a.style.display = "none";
-        }
-    };
-
-    function search_mobil() {
-        console.log("HEJ");
-
-        let a = document.getElementById("search_bar");
         if (a.style.display === "none") {
             a.style.display = "block";
         } else {

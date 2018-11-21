@@ -64,7 +64,8 @@
     </style>
 
 
-    <title>test</title>
+    <title>Huset-Kbh</title>
+    <meta name="Description" content="Oversigt over events og begivenhader i Huset-kbh´s mange lokaler og spillesteder. Se priser og køb billet til at arrangement, se lokation, tidpunkt og datp for events og begivenheder i Huset-kbh">
 </head>
 
 <body>
@@ -374,228 +375,237 @@
 
     </header>
 
-      <section class="main_content">
-    <h2 class="overskrift_events">Find Event</h2>
-    <div class="overskrift_pil"></div>
+    <section class="main_content">
+        <h2 class="overskrift_events">Find Event</h2>
+        <div class="overskrift_pil"></div>
 
- <section class="filter_wrapper">
+        <section class="filter_wrapper">
 
-        <div class="filter_con">
+            <div class="filter_con">
 
-            <div class="filter_title">
-                <div class="filter_knap event_item knap" data-kategori="alle">Alle
-                    <div class="filter_pil"></div>
+                <div class="filter_title">
+                    <div class="filter_knap event_vis_alle knap">Alle
+                        <!--                        <div class="filter_pil"></div>-->
 
+                    </div>
+                </div>
+
+                <div class="filter_title">
+                    <div class="genre_tekst knap">Genre
+                        <div class="filter_pil"></div>
+
+                    </div>
+                </div>
+
+                <div class="filter_title">
+
+                    <div class="venues_tekst knap">Venues
+                        <div class="filter_pil"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="filter_title">
-                <div class="genre_tekst knap">Genre
-                    <div class="filter_pil"></div>
+            <div class="sub_filter">
 
+                <div class="genre_block">
+                    <div class="genre_knap_2 filter_knap_2">Genre</div>
+                    <div class="genre_text_2">Alle</div>
+                    <div class="genre_block_wrapper">
+                        <div class="tema tema_musik" data-kategori="Musik">Musik
+                            <div class="tema_pil"></div>
+
+                            <ul class="musik_filter filter_list">
+
+                                <li>
+                                    <div class="event_genre" data-genre="Jazz">Jazz</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Alternative">Alternative</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Rock">Rock</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Folk">Folk</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Elektronisk">Elektronisk</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Andet-Musik">Andet Musik</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tema tema_film" data-genre="Film">Film
+                            <div class="tema_pil"></div>
+
+                            <ul class="film_filter filter_list">
+                                <li>
+                                    <div class="event_genre" data-genre="Kult">Kult</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Erotica">Erotica</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Art">Art</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Klassiker">Klassiker</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Horror">Horror</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Musik">Musik</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Drama">Drama</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Western">Western</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Andre-Film">Andre Film</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tema tema_ord" data-genre="Ord">Ord
+                            <div class="tema_pil"></div>
+
+                            <ul class="ord_filter ">
+                                <li>
+                                    <div class="event_genre" data-genre="Stand-Up">Stand Up</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Poetry-Slam">Poetry Slam
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Litteratur">Litteratur</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Quiz">Quiz</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Historiefortælling">Historiefortælling</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Andre-Ord">Andre Ord
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tema tema_scenekunst" data-genre="Scenekunst">SceneKunst
+                            <div class="tema_pil"></div>
+
+                            <ul class="scenekunst_filter">
+                                <li>
+                                    <div class="event_genre" data-genre="Teater-Teaterkunst">Teater/Teaterkunst</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Andet-Teater">Andet Teater</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tema tema_andet" data-genre="Andet">Andet
+                            <div class="tema_pil"></div>
+
+                            <ul class="andet_filter">
+                                <li>
+                                    <div class="event_genre" data-genre="Hygge">Hygge</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Samlingspunkt-Indre-by">Samlingspunkt Indre By</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Familie">Familie</div>
+                                </li>
+                                <li>
+                                    <div class="event_genre" data-genre="Andre-Events">Andre Events</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="venues_block">
+                    <div class="venues_knap_2 filter_knap_2">VENUES</div>
+
+                    <div class="reset_alle event_vis_alle">reset filter</div>
+
+                    <ul>
+                        <li>
+                            <div class="event_venue" data-venue="Stardust">Stardust</div>
+                        </li>
+                        <li>
+                            <div class="event_venue" data-venue="Musikcaféen">Musikcafeen</div>
+                        </li>
+                        <li>
+                            <div class="event_venue" data-venue="Xenon">Xenon</div>
+                        </li>
+                        <li>
+                            <div class="event_venue" data-venue="Vox">Vox</div>
+                        </li>
+                        <li>
+                            <div class="event_venue" data-venue="Husets-Biograf">Husets Biograf</div>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
-
-            <div class="filter_title">
-
-                <div class="venues_tekst knap">Venues
-                    <div class="filter_pil"></div>
-                </div>
-
-            </div>
-
-
-        </div>
         </section>
 
-        <div class="genre_block">
+        <main class="kalender_container">
+            <section class="event_kalender">
+            </section>
+        </main>
+    </section>
 
-                <div class="tema tema_musik" data-kategori="Musik">Musik
-                <div class="tema_pil"></div>
-                </div>
+    <section class="modal_wrapper">
 
-            <ul class="musik_filter filter_list">
-                <li>
-                    <div class="event_item" data-kategori="Jazz">Jazz</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Alternative">Alternative</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Rock">Rock</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Folk">Folk</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Elektronisk">Elektronisk</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andet-Musik">Andet Musik</div>
-                </li>
+        <article class="modal_container">
+            <div class="luk"><span></span></div>
 
-            </ul>
-
-
-
-            <div class="tema tema_film" data-kategori="Film">Film
-            <div class="tema_pil"></div>
+            <div class="modal_image_com">
+                <img src="" alt="" title="">
             </div>
-            <ul class="film_filter filter_list">
-                <li>
-                    <div class="event_item" data-kategori="Kult">Kult</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Erotica">Erotica</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Art">Art</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Klassiker">Klassiker</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Horror">Horror</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Musik">Musik</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Drama">Drama</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Western">Western</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andre-Film">Andre Film</div>
-                </li>
-            </ul>
 
+            <div class="modal_title"></div>
+            <div class="modal_genre"></div>
+            <div class="modal_venue"></div>
 
-            <div class="tema tema_ord" data-kategori="Ord">Ord
-            <div class="tema_pil"></div>
-
+            <div class="modal_dato_con">
+                <div class="modal_dag"></div>
+                <div class="modal_maaned"></div>
             </div>
-            <ul class="ord_filter ">
-                <li>
-                    <div class="event_item" data-kategori="Stand-Up">Stand Up</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Poetry-Slam">Poetry Slam
-                    </div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Litteratur">Litteratur</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Quiz">Quiz</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Historiefortælling">Historiefortælling</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andre-Ord
-">Andre Ord
-                    </div>
-                </li>
 
-            </ul>
+            <div class="modal_tid"></div>
+            <div class="modal_pris"></div>
+            <div class="modal_langbeskrivelse"></div>
+            <a class="modal_knap_link" href=""><button class="_modal_kob_knap">Køb</button></a>
 
+        </article>
+    </section>
 
-
-            <div class="tema tema_scenekunst" data-kategori="Scenekunst">SceneKunst
-                        <div class="tema_pil"></div>
-
-            </div>
-            <ul class="scenekunst_filter">
-                <li>
-                    <div class="event_item" data-kategori="Teater-Teaterkunst">Teater/Teaterkunst</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andet-Teater">Andet Teater</div>
-                </li>
-
-            </ul>
-
-
-
-
-
-
-            <div class="tema tema_andet" data-kategori="Andet">Andet
-                        <div class="tema_pil"></div>
-
-            </div>
-            <ul class="andet_filter">
-                <li>
-                    <div class="event_item" data-kategori="Hygge">Hygge</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Samlingspunkt-Indre-by">Samlingspunkt Indre By</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Familie">Familie</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Andre-Events">Andre Events</div>
-                </li>
-
-
-
-            </ul>
-
-
-
-
-        </div>
-
-        <div class="venues_block">
-            <ul>
-                <li>
-                    <div class="event_item" data-kategori="Stardust">Stardust</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Musikcaféen">Musikcafeen</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Xenon">Xenon</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Vox">Vox</div>
-                </li>
-                <li>
-                    <div class="event_item" data-kategori="Husets-Biograf">Husets Biograf</div>
-                </li>
-
-            </ul>
-        </div>
-
-
-
-    <main class="kalender_container">
-        <section class="event_kalender">
-        </section>
-    </main>
-</section>
     <template class="event_template">
 
-
    <article class="event_con">
-
-
-
         <div class="dato_con">
           <div class="dag"></div>
           <div class="maaned"></div>
             </div>
 
-            <div class="tid"></div>
+        <div class="tid"></div>
 
        <div class="genre"></div>
 
        <div class="event_navn"></div>
 
-       <div class="se_mere">Klik og se mere.</div>
+       <div class="se_mere">Læs mere</div>
 
        <div class="venue"></div>
 
@@ -603,13 +613,10 @@
 
         <a class="knap_link"href=""><button class="kob_knap">Køb Billet</button></a>
 
-  <img class="event_image" src="" alt="">
+      <img class="event_image" src="" alt="">
           <div class="grey_bg"></div>
 
    </article>
-
-
-
 </template>
 
     <footer>
