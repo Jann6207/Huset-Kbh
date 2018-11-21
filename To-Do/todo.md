@@ -14,7 +14,7 @@ ________________________________________________________________________________
 
 // FIXME: [x]Fix News Pop Up = Lav den responsiv til tablet/phone.
 
-// FUTURE: Fix Dropdown på tablet/mobile.
+// FUTURE: [x]Fix Dropdown på tablet/mobile.
 
 // FUTURE: Ryd op i Asset mappen og evt. andre img mapper.
 
